@@ -43,7 +43,7 @@ const toggleMenu = () => {
           <li><a href="/projects" onClick={toggleMenu}>Projects</a></li>
           <li><a href="/career" onClick={toggleMenu}>Careers</a></li>
 
-          <li
+          {/* <li
             className="dropdown"
             onMouseEnter={() => setMoreDropdownOpen(true)}
             onMouseLeave={() => setMoreDropdownOpen(false)}
@@ -55,7 +55,7 @@ const toggleMenu = () => {
               <li><a href="/testReport">Test Reports</a></li>
               <li><a href="/certificates">Certificates</a></li>
             </ul>
-          </li>
+          </li> */}
 
         
           <li><a href="/contact">Contact Us</a></li>
