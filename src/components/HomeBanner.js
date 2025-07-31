@@ -21,9 +21,12 @@ const HomeBanner = () => {
     <Container fluid className="banner-fluid g-0">
       <Container className='banner-content-container'>
         <div className='left-side-wrapper'>
-          <h2>kkkkkkkkkkkkkk</h2>
+          <div className='left-banner-text-box'>
+ <h2>kkkkkkkkkkkkkk</h2>
           <p>dddddddddddddd</p>
           <p>dddddddddddddd</p>
+          </div>
+         
         </div>
 
         <div className='right-side-wrapper'>

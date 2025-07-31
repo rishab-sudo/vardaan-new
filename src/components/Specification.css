@@ -34,33 +34,36 @@
 }
 
 .color-circle-wrapper {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: transparent; /* default */
+  cursor: pointer;
 }
 
-.color-circle-wrapper.selected::before {
-  content: "";
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  background-color: #ccc;
-  border-radius: 6px;
-  z-index: 0;
+/* ✅ ONLY SELECTED one gets background */
+.color-circle-wrapper.selected {
+  background-color: #555; /* dark gray */
 }
 
 .color-circle {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  z-index: 1;
   border: 2px solid white;
+  z-index: 1;
   position: relative;
+  transition: transform 0.2s;
 }
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+
 
 /*  */
 .speci-center-wrapper {
