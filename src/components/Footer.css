@@ -23,11 +23,10 @@
   flex-direction: column;
   text-align: left;
   height: 100%;
- 
-
-}
+ }
 
 .footer-column {
+  margin-top: 9.5rem !important;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,8 +53,12 @@
   width: 100%;
   max-width: 400px;
   margin: auto;
-}
 
+}
+.logo-div{
+  min-width: 90% !important;
+  background-color: #ea3138;
+}
 .footer-logo {
   width: 120px;
   margin-bottom: 15px;
@@ -158,6 +161,7 @@ a:hover {
   }
 
   .footer-column {
+    margin: auto !important;
     align-items: flex-start;
     text-align: left;
   }
@@ -199,5 +203,9 @@ a:hover {
   text-align: left;
   min-width: 100% !important;
   }
-
+ .footer-column {
+    margin: auto !important;
+    align-items: flex-start;
+    text-align: left;
+  }
 }

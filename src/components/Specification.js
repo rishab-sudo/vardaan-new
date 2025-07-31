@@ -15,8 +15,8 @@ const Specification = () => {
   const [selectedColor, setSelectedColor] = useState(colorOptions[0].color); // ✅ Track color, not image
 
   return (
-    <Container fluid>
-      <Container className='speci-container-fluid'>
+    <Container fluid className='speci-fluid'>
+      <Container className='speci-content-container'>
         {/* LEFT: Color Circles */}
         <div className='speci-left-wrapper'>
           {colorOptions.map((option, index) => (
