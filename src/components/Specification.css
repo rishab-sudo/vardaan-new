@@ -1,0 +1,126 @@
+.speci-container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+}
+
+.speci-left-wrapper {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+.color-selector {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0 10px 20px;
+  align-items: center;
+}
+
+.color-circle-wrapper {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-circle-wrapper.selected::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: #ccc;
+  border-radius: 6px;
+  z-index: 0;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid white;
+  position: relative;
+}
+
+/*  */
+.speci-center-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speci-image {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.speci-right-wrapper {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speci-single-box {
+    padding: 5% 15px;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.spec-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.spec-line .icon {
+  font-size: 24px;
+  margin-top: 4px;
+}
+
+.spec-line h5,
+.spec-line p {
+  margin: 0;
+  text-align: left;
+}
+
+.speci-right-wrapper{
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+  text-align: left;
+
+}
