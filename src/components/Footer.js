@@ -52,12 +52,12 @@ const Footer = () => {
                 <div className="col-text-div">
                   <h4>Contact Info</h4>
                   <div className="footer-contact-info">
-                    <p><strong>Address:</strong><br />Alutuff International,<br />Choupla Road, Civil Lines, Bareilly.</p>
+                    <p><strong>Address:</strong><br />Bandia Road, Parsakhera Industrial Area,<br />Bareilly-243122, Uttar Pradesh, India</p>
                     <p><strong>Phone:</strong><br />
-                      <a href="tel:+916396854974">+91 63968 54974</a>
+                      <a href="tel:+919557077742">+91 9557077742, +91 8979177743</a>
                     </p>
                     <p><strong>Email:</strong><br />
-                      <a href="mailto:sales@alutuff.in">sales@alutuff.in</a>
+                      <a href="mailto:contact@vardaanev.com">contact@vardaanev.com</a>
                     </p>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className='copyright-div'>
-        Copyright © 2025 <span style={{ color: "#ea3138" }}>Alutuff</span>. All Right Reserved.
+        Copyright © 2025 <span style={{ color: "#ea3138" }}>Vardaan ev</span>. All Right Reserved.
       </div>
     </Container>
   );

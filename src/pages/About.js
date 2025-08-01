@@ -8,7 +8,7 @@ const About = () => {
       {/* Section 1 */}
       <div className="about-section container">
         <div className="about-image">
-          <img src="https://via.placeholder.com/400x300" alt="VARDAAN E-RICKSHAW" />
+          <img src={require("../assets/1 - Edited.png")} alt="VARDAAN E-RICKSHAW" />
         </div>
         <div className="about-text">
           <h2>VARDAAN E-RICKSHAW</h2>
@@ -25,7 +25,7 @@ Our vision is to promote green energy solutions and contribute to a greener futu
       {/* Section 2 */}
       <div className="about-section container reverse">
         <div className="about-image">
-          <img src="https://via.placeholder.com/400x300" alt="Section Two" />
+          <img src={require("../assets/1 - Edited.png")} alt="Section Two" />
         </div>
         <div className="about-text">
           <h2>Quality and Innovation</h2>
@@ -38,7 +38,7 @@ Our vision is to promote green energy solutions and contribute to a greener futu
       {/* Section 3 */}
       <div className="about-section container">
         <div className="about-image">
-          <img src="https://via.placeholder.com/400x300" alt="Section Three" />
+          <img src={require("../assets/1 - Edited.png")} alt="Section Three" />
         </div>
         <div className="about-text">
           <h2>Empowering Local Entrepreneurs</h2>
@@ -49,7 +49,7 @@ Our vision is to promote green energy solutions and contribute to a greener futu
       {/* Section 4 */}
       <div className="about-section container reverse">
         <div className="about-image">
-          <img src="https://via.placeholder.com/400x300" alt="Section Four" />
+          <img src={require("../assets/1 - Edited.png")} alt="Section Four" />
         </div>
         <div className="about-text">
           <h2>A Commitment to Sustainability</h2>

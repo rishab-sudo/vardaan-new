@@ -8,6 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 
@@ -22,13 +23,14 @@ function App() {
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+         <Route path="/contact" element={<Contact />} />
             {/* <Route path="/product" element={<ProductPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/career" element={<Career />} />
           <Route path="/news" element={<News />} />
           <Route path="/testReport" element={<TestReport />} />
           <Route path="/certificates" element={<Certificates />} />
-          <Route path="/contact" element={<Contact />} />
+         
           <Route path="/catalogues" element={<Catalogues />} />
           <Route path="/established" element={<Established />} />
                     <Route path="/dealer" element={<DealerPage />} />*/}

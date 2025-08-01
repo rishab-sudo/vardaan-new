@@ -1,0 +1,46 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.name-row > div {
+  flex: 1;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+button {
+  width: 150px;
+  padding: 12px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}

@@ -13,19 +13,25 @@
 .about-section.reverse {
   flex-direction: row-reverse;
 }
-
+.about-image{
+  display: flex;
+  justify-content: center;
+  max-width: 45%;
+  background-color: black;
+}
 .about-image img {
   width: 100%;
-  max-width: 45%;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
+  
 }
 
 .about-text {
     max-width: 50%;
-    background-color: aqua;
-  flex: 1;
+    /* background-color: aqua; */
+
 }
 
 .about-text h2 {
