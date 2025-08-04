@@ -1,5 +1,8 @@
+.calculator-section{
+    margin-top: 5%;
+}
 .calculator-container {
-  max-width: 800px;
+ width: 100%;
   margin: auto;
   padding: 30px;
   background: linear-gradient(145deg, #f2f2f2, #ffffff);
