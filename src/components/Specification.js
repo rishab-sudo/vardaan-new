@@ -17,16 +17,7 @@ const Specification = () => {
   return (
  <Container fluid className='speci-fluid'>
   <Container className='speci-content-container'>
-    {/* CENTER: Image comes first on small screens */}
-    <div className='speci-center-wrapper'>
-      <img
-        src={
-          colorOptions.find((opt) => opt.color === selectedColor).image
-        }
-        alt="Bike"
-        className='speci-image'
-      />
-    </div>
+  
 
     {/* Color options below image on small screens */}
     <div className='speci-left-wrapper'>
@@ -44,6 +35,16 @@ const Specification = () => {
           />
         </div>
       ))}
+    </div>
+      {/* CENTER: Image comes first on small screens */}
+    <div className='speci-center-wrapper'>
+      <img
+        src={
+          colorOptions.find((opt) => opt.color === selectedColor).image
+        }
+        alt="Bike"
+        className='speci-image'
+      />
     </div>
 
     {/* RIGHT: Specs Info */}
