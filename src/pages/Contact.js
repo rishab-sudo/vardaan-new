@@ -7,7 +7,7 @@ import ContactForm from '../components/ContactForm'
 const Contact = () => {
   return (
     <Container fluid className="contact-page">
-<Container>
+<Container className='contact-content-container'>
       {/* Section 1 - Info Boxes */}
       <section className="contact-info-section">
         <div className="info-box">
@@ -29,8 +29,8 @@ const Contact = () => {
         <div className="form-container">
           <ContactForm />
         </div>
-        <div className="form-image-div">
-          <img src="https://via.placeholder.com/400x300" alt="Contact Visual" />
+        <div className="form-right-image-div">
+          <img className='form-right-img' src="https://via.placeholder.com/400x300" alt="Contact Visual" />
         </div>
       </section>
 

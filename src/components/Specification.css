@@ -135,3 +135,47 @@ padding: 25px 0px;
   text-align: left;
 
 }
+@media screen and (max-width: 768px) {
+  .speci-content-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .speci-center-wrapper {
+    width: 100%;
+    order: 1;
+  }
+
+  .speci-left-wrapper {
+    width: 100%;
+    order: 2;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .speci-right-wrapper {
+    width: 100%;
+    order: 3;
+    align-items: flex-start;
+  }
+
+  .speci-single-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .spec-line {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .spec-line h5,
+  .spec-line p {
+    text-align: left;
+  }
+}

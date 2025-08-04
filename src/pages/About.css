@@ -13,15 +13,15 @@
 .about-section.reverse {
   flex-direction: row-reverse;
 }
-.about-image{
+.about-image-div{
   display: flex;
   justify-content: center;
   max-width: 45%;
   background-color: black;
 }
-.about-image img {
+.about-img {
   width: 100%;
-  max-width: 100%;
+  max-width: 100% !important;
   height: auto;
   display: block;
   border-radius: 10px;
@@ -31,7 +31,6 @@
 .about-text {
     max-width: 50%;
     /* background-color: aqua; */
-
 }
 
 .about-text h2 {
@@ -45,17 +44,30 @@
 }
 
 /* Tablet and below */
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .about-section {
-    flex-direction: column !important;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    background-color: blue;
   }
 
-  .about-image img {
-    max-width: 100%;
+  .about-image-div{
+   min-width: 100% !important;
+     
+  }
+  .about-img {
+    width: 100% !important ;
+   
   }
   .about-text {
-    width: 100% !important;
-
+    min-width: 100% !important;
+    text-align: justify;
 }
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
 }

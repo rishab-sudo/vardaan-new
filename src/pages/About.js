@@ -7,8 +7,9 @@ const About = () => {
 
       {/* Section 1 */}
       <div className="about-section container">
-        <div className="about-image">
-          <img src={require("../assets/1 - Edited.png")} alt="VARDAAN E-RICKSHAW" />
+        
+        <div className="about-image-div">
+          <img className='about-img' src={require("../assets/1 - Edited.png")} alt="VARDAAN E-RICKSHAW" />
         </div>
         <div className="about-text">
           <h2>VARDAAN E-RICKSHAW</h2>
@@ -24,9 +25,9 @@ Our vision is to promote green energy solutions and contribute to a greener futu
 
       {/* Section 2 */}
       <div className="about-section container reverse">
-        <div className="about-image">
-          <img src={require("../assets/1 - Edited.png")} alt="Section Two" />
-        </div>
+        <div className="about-image-div">
+          <img className='about-img' src={require("../assets/1 - Edited.png")} alt="Section Two" />
+        </div> 
         <div className="about-text">
           <h2>Quality and Innovation</h2>
           <p>At Vardaan, we believe in the power of quality and innovation. Our electric rickshaws are designed to be robust, durable, and high-performing, ensuring that drivers and passengers enjoy a comfortable and safe journey. We use cutting-edge technology to ensure that every rickshaw is not only energy-efficient but also equipped with advanced safety features. From the chassis to the battery, each part is carefully engineered to offer long-lasting performance with minimal maintenance costs. We take pride in our rigorous testing process, which guarantees that our vehicles meet the highest standards of safety, reliability, and performance. Our e-rickshaws are powered by advanced lithium-ion batteries, ensuring long battery life, fast charging times, and better overall performance. 
@@ -37,8 +38,8 @@ Our vision is to promote green energy solutions and contribute to a greener futu
 
       {/* Section 3 */}
       <div className="about-section container">
-        <div className="about-image">
-          <img src={require("../assets/1 - Edited.png")} alt="Section Three" />
+        <div className="about-image-div">
+          <img className='about-img' src={require("../assets/1 - Edited.png")} alt="Section Three" />
         </div>
         <div className="about-text">
           <h2>Empowering Local Entrepreneurs</h2>
@@ -48,8 +49,8 @@ Our vision is to promote green energy solutions and contribute to a greener futu
 
       {/* Section 4 */}
       <div className="about-section container reverse">
-        <div className="about-image">
-          <img src={require("../assets/1 - Edited.png")} alt="Section Four" />
+        <div className="about-image-div">
+          <img className='about-img' src={require("../assets/1 - Edited.png")} alt="Section Four" />
         </div>
         <div className="about-text">
           <h2>A Commitment to Sustainability</h2>

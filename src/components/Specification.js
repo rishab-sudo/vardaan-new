@@ -15,62 +15,73 @@ const Specification = () => {
   const [selectedColor, setSelectedColor] = useState(colorOptions[0].color); // ✅ Track color, not image
 
   return (
-    <Container fluid className='speci-fluid'>
-      <Container className='speci-content-container'>
-        {/* LEFT: Color Circles */}
-        <div className='speci-left-wrapper'>
-          {colorOptions.map((option, index) => (
-            <div
-              key={index}
-              className={`color-circle-wrapper ${
-                selectedColor === option.color ? 'selected' : ''
-              }`}
-              onClick={() => setSelectedColor(option.color)}
-            >
-              <div
-                className='color-circle'
-                style={{ backgroundColor: option.color }}
-              />
-            </div>
-          ))}
-        </div>
+ <Container fluid className='speci-fluid'>
+  <Container className='speci-content-container'>
+    {/* CENTER: Image comes first on small screens */}
+    <div className='speci-center-wrapper'>
+      <img
+        src={
+          colorOptions.find((opt) => opt.color === selectedColor).image
+        }
+        alt="Bike"
+        className='speci-image'
+      />
+    </div>
 
-        {/* CENTER: Image */}
-        <div className='speci-center-wrapper'>
-          <img
-            src={
-              colorOptions.find((opt) => opt.color === selectedColor).image
-            }
-            alt="Bike"
-            className='speci-image'
+    {/* Color options below image on small screens */}
+    <div className='speci-left-wrapper'>
+      {colorOptions.map((option, index) => (
+        <div
+          key={index}
+          className={`color-circle-wrapper ${
+            selectedColor === option.color ? 'selected' : ''
+          }`}
+          onClick={() => setSelectedColor(option.color)}
+        >
+          <div
+            className='color-circle'
+            style={{ backgroundColor: option.color }}
           />
         </div>
+      ))}
+    </div>
 
-        {/* RIGHT: Specs Info */}
-        <div className='speci-right-wrapper'>
-          <div className='spec-box'>
-            <span className='icon'>🌍</span>
+    {/* RIGHT: Specs Info */}
+    <div className='speci-right-wrapper'>
+      <div className='speci-single-box'>
+        <div className='spec-line d-flex'>
+          <span className='icon'>🌍</span>
+          <div>
             <h5>Real World Range</h5>
             <p>70+ km</p>
           </div>
-          <div className='spec-box'>
-            <span className='icon'>⚡</span>
+        </div>
+        <div className='spec-line d-flex'>
+          <span className='icon'>⚡</span>
+          <div>
             <h5>Top Speed</h5>
             <p>65 kmph</p>
           </div>
-          <div className='spec-box'>
-            <span className='icon'>💰</span>
+        </div>
+        <div className='spec-line d-flex'>
+          <span className='icon'>💰</span>
+          <div>
             <h5>Starts From</h5>
             <p>₹1,25,615</p>
           </div>
-          <div className='spec-box'>
-            <span className='icon'>🔋</span>
+        </div>
+        <div className='spec-line d-flex'>
+          <span className='icon'>🔋</span>
+          <div>
             <h5>Battery</h5>
             <p>1.9kWh</p>
           </div>
         </div>
-      </Container>
-    </Container>
+      </div>
+    </div>
+  </Container>
+</Container>
+
   );
 };
 

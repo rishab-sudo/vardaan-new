@@ -62,3 +62,38 @@
   width: 100%;
   margin-top: 5%;
 }
+
+@media screen and (max-width: 768px) {
+.contact-content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info-section{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.contact-form-section{
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.form-container{
+  width: 100% !important;
+}
+.form-right-image-div{
+width: 100% ;
+}
+.form-right-img{
+width: 100% ;
+}
+.map-section{
+
+}
+}

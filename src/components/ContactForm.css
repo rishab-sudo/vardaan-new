@@ -44,3 +44,13 @@ button {
   color: green;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .contact-form {
+min-width: 100%;
+}
+  .name-row {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
