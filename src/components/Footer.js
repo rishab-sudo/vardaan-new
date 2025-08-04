@@ -35,10 +35,10 @@ const Footer = () => {
                 <div className="col-text-div">
                   <h4>Quick Links</h4>
                   <div className="footer-links-column">
-                    <a href="/home">Home</a>
-                    <a href="/about">About Us</a>
-                    <a href="/product">Products</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/home"> Home</a>
+                    <a href="/about"> About Us</a>
+                    <a href="/product"> Products</a>
+                    <a href="/contact"> Contact Us</a>
                     {/* <a href="/career">Careers</a>
                     <a href="/dealer">Become a Dealer</a> */}
                   </div>
@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
 
       <div className='copyright-div'>
-        Copyright © 2025 <span style={{ color: "#ea3138" }}>Vardaan ev</span>. All Right Reserved.
+        Copyright © 2025 <span style={{ color: "#05956c" }}>Vardaan ev</span>. All Right Reserved.
       </div>
     </Container>
   );
