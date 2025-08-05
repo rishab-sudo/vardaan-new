@@ -91,13 +91,13 @@ padding: 25px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+
 }
 
 .speci-single-box {
     padding: 5% 15px;
   width: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
