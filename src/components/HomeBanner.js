@@ -22,9 +22,12 @@ const HomeBanner = () => {
       <Container className='banner-content-container'>
         <div className='left-side-wrapper'>
           <div className='left-banner-text-box'>
- <h2>kkkkkkkkkkkkkk</h2>
-          <p>dddddddddddddd</p>
-          <p>dddddddddddddd</p>
+ <h2>Every Journey Becomes Special With
+Vardaan E-Rickshaw
+
+</h2>
+          <p>Experience a low-cost, noise-free, and pollution-free ride with Vardaan EV. </p>
+          <p>With clever features and a strong battery, every trip will be simple and convenient.</p>
           </div>
          
         </div>
