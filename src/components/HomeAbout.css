@@ -1,0 +1,24 @@
+.home-about-fluid{
+    margin-top: 5%;
+}
+.home-about-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-about-img{
+    max-width: 80%;
+}
+.about-left-wraper{
+max-width: auto !important;
+}
+.about-right-wraper{
+max-width: 45%;
+}
+.about-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}

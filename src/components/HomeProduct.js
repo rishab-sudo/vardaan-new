@@ -24,6 +24,14 @@ const HomeProduct = () => {
     infinite: true,
     arrows: false,
     responsive: [
+           {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        },
+        },
+
       {
         breakpoint: 768,
         settings: {
@@ -31,6 +39,7 @@ const HomeProduct = () => {
           centerMode: true,
         },
       },
+    
     ],
   };
 
