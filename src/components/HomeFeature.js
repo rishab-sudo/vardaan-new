@@ -4,11 +4,11 @@ import { FaStar } from 'react-icons/fa';
 import './HomeFeature.css';
 
 const features = [
-  { id: 1, title: 'Fast Service', desc: 'Quick and reliable', icon: <FaStar /> },
-  { id: 2, title: 'Affordable', desc: 'Value for money', icon: <FaStar /> },
-  { id: 3, title: 'Eco Friendly', desc: 'Saves the planet', icon: <FaStar /> },
-  { id: 4, title: 'Modern Tech', desc: 'Latest innovation', icon: <FaStar /> },
-  { id: 5, title: '24/7 Support', desc: 'Always there', icon: <FaStar /> },
+  { id: 1, title: 'Energy Efficient', desc: 'Runs on a battery and consumes 1 unit of power for every 10 Kms', icon: <FaStar /> },
+  { id: 2, title: 'Best Performance', desc: 'Vardaan EV E-Rickshaw delivers unmatched performance, efficiency, and reliability.', icon: <FaStar /> },
+  { id: 3, title: 'Eco Friendly', desc: 'E-rickshaws do not add to the growing air pollution because they don’t release smoke.', icon: <FaStar /> },
+  { id: 4, title: 'Advance Technology', desc: 'High-quality materials and advanced technology are employed to guarantee long-lasting operation.', icon: <FaStar /> },
+  { id: 5, title: 'Comfertable Ride', desc: 'Drivers and passengers can travel in comfort and without tiredness because to the impact-resistance, noise-free, and vibration-free ride.', icon: <FaStar /> },
   { id: 6, title: 'User Friendly', desc: 'Easy to use', icon: <FaStar /> },
 ];
 
