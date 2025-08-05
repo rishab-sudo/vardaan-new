@@ -45,7 +45,11 @@ const HomeProduct = () => {
 
   return (
     <div className="slider-outer">
+
       <div className="slider-container">
+              <div className="page-heading-div">
+<h2 className="page-heading">OUR PRODUCTS</h2>
+      </div>
         <Slider {...settings} className="custom-slick">
           {images.map((img, index) => (
             <div className="slide-wrapper" key={index}>
