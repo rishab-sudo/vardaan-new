@@ -22,3 +22,56 @@ max-width: 45%;
     justify-content: flex-start;
     text-align: left;
 }
+
+@media (max-width: 768px) {
+.home-about-content-container{
+width: 100%;
+flex-direction: column;
+justify-content: center;
+gap: 35px;
+background-color: black;
+}
+.about-left-wraper{
+min-width: 100% !important;
+background-color: black;
+}
+.home-about-img{
+min-width: 100% !important;
+margin: auto !important;
+}
+
+.about-right-wraper{
+min-width: 100% !important;
+
+}
+.about-text-wrapper{
+ width: 100% !important;
+ text-align: left !important ;
+ 
+}
+}
+
+/* Tablets: Portrait & Landscape (up to 1024px) */
+@media (max-width: 1024px) {
+.home-about-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-about-img{
+    max-width: 80%;
+}
+.about-left-wraper{
+max-width: auto !important;
+}
+.about-right-wraper{
+max-width: 45%;
+}
+.about-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+}

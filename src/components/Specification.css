@@ -1,6 +1,6 @@
 .speci-fluid{
   margin-top: 5%;
- background-color: blueviolet;
+ /* background-color: blueviolet; */
   height: 100%;
 }
 .speci-content-container {
@@ -76,7 +76,7 @@ padding: 25px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .speci-image {
