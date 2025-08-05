@@ -25,7 +25,7 @@ const Calculator = () => {
   return (
     <Container fluid className='calculator-section'>
     <Container className="calculator-container">
-      <h2>🚗 EV vs Diesel Cost Calculator</h2>
+      <h2 className='h22'>🚗 EV vs Diesel Cost Calculator</h2>
       <div className="form-section">
         <label>Daily Distance (km): <input name="dailyDistance" type="number" value={inputs.dailyDistance} onChange={handleChange} /></label>
         <label>Days per Month: <input name="daysPerMonth" type="number" value={inputs.daysPerMonth} onChange={handleChange} /></label>
