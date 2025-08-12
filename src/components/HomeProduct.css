@@ -31,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0px;
 }
 
 .slide-image {
@@ -40,14 +41,14 @@
   height: 350px;
   object-fit: contain;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 768px) {
-  .slide-wrapper {
+.slide-wrapper {
 padding: 20px;
 }
-  .slide-image {
+.slide-image {
 max-width: 100% !important;
 margin: auto !important;
 }

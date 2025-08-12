@@ -1,89 +1,42 @@
-import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import redBike from '../assets/auto11.png';
-import blueBike from '../assets/auto11.png';
-import greenBike from '../assets/auto11.png';
-import './Specification.css';
-
-const colorOptions = [
-  { color: '#ff0000', image: redBike },
-  { color: '#0000ff', image: blueBike },
-  { color: '#00ff00', image: greenBike },
-];
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import "./Specification.css"
 
 const Specification = () => {
-  const [selectedColor, setSelectedColor] = useState(colorOptions[0].color); // ✅ Track color, not image
-
   return (
- <Container fluid className='speci-fluid'>
-  <Container className='speci-content-container'>
+<Container fluid className='spec-fluid'>
+  <Container className="spec-content-container">
+    <div className='spec-left-wrapper'>
+  <div className='spec-img-div'>
+      <img className='spec-img' src={require("../assets/auto11.png")} alt=""/>
+    </div>
+    <div className='spec-left-boxs-div'>
+<div  className='spec-left-boxs'>
+  <p>130km</p>
+  <p>Range</p>
+</div>
+
+<div  className='spec-left-boxs'>
+  <p>130km</p>
+  <p>Range</p>
+</div>
+
+<div  className='spec-left-boxs'>
+  <p>130km</p>
+  <p>Range</p>
+</div>
+    </div>
+    </div>
+
+    <div className='spec-right-wrapper'>
+<p>Autoev R200</p>
+<h2>Redefining <br/>Motorcycle<br/> performance</h2>
+    </div>
   
-
-    {/* Color options below image on small screens */}
-    <div className='speci-left-wrapper'>
-      {colorOptions.map((option, index) => (
-        <div
-          key={index}
-          className={`color-circle-wrapper ${
-            selectedColor === option.color ? 'selected' : ''
-          }`}
-          onClick={() => setSelectedColor(option.color)}
-        >
-          <div
-            className='color-circle'
-            style={{ backgroundColor: option.color }}
-          />
-        </div>
-      ))}
-    </div>
-      {/* CENTER: Image comes first on small screens */}
-    <div className='speci-center-wrapper'>
-      <img
-        src={
-          colorOptions.find((opt) => opt.color === selectedColor).image
-        }
-        alt="Bike"
-        className='speci-image'
-      />
-    </div>
-
-    {/* RIGHT: Specs Info */}
-    <div className='speci-right-wrapper'>
-      <div className='speci-single-box'>
-        <div className='spec-line d-flex'>
-          <span className='icon'>🌍</span>
-          <div>
-            <h5>Real World Range</h5>
-            <p>70+ km</p>
-          </div>
-        </div>
-        <div className='spec-line d-flex'>
-          <span className='icon'>⚡</span>
-          <div>
-            <h5>Top Speed</h5>
-            <p>65 kmph</p>
-          </div>
-        </div>
-        <div className='spec-line d-flex'>
-          <span className='icon'>💰</span>
-          <div>
-            <h5>Starts From</h5>
-            <p>₹1,25,615</p>
-          </div>
-        </div>
-        <div className='spec-line d-flex'>
-          <span className='icon'>🔋</span>
-          <div>
-            <h5>Battery</h5>
-            <p>1.9kWh</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Container>
 </Container>
+</Container>
+  )
+}
 
-  );
-};
+export default Specification
 
-export default Specification;

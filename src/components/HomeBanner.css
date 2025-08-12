@@ -1,5 +1,5 @@
 .banner-fluid {
-  margin-top: 160px;
+  margin-top:0px;
     height: 80vh;
     width: 100%;
     position: relative; /* Needed for positioning child elements absolutely */
