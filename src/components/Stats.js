@@ -51,9 +51,9 @@ const Stats = () => {
   };
 
   return (
-    <Container  className="stats-section" ref={statsRef}>
+    <Container fluid className="stats-section" ref={statsRef}>
       <div className="black-overlay" />
-      <Container className="stats-content-container">
+      <Container fluid className="stats-content-container">
         {statsData.map((stat, idx) => (
           <div key={stat.id} className="stat-box">
             <p className="stat-count">{counts[idx]}+</p>

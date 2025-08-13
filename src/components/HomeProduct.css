@@ -1,8 +1,11 @@
 .slider-outer {
+  margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: center;
   background: #f7f7f7;
+  /* background: #05956c; */
+ 
   padding: 3.5% 0;
   perspective: 1000px; /* enable 3D space */
 }
@@ -36,12 +39,13 @@
 
 .slide-image {
   width: 100%;
-  width: 600px;
-  max-width: 600px;
+  width: 500px;
+  max-width: 475px;
   height: 350px;
   object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ 
 }
 
 @media screen and (max-width: 768px) {
