@@ -63,10 +63,10 @@ height: 400px;
 }
 /* Black box inside green box */
 .color-options-wrapper {
-  background-color: #000;
+  /* background-color: #000; */
   padding: 10px;
   border-radius: 8px;
-  margin-top: auto; /* Push to bottom inside green box */
+  margin-top: auto;
   display: flex;
   justify-content: center;
   width: 100%;

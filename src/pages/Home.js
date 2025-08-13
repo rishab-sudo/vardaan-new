@@ -6,6 +6,7 @@ import Calculator from '../components/Calculator'
 import HomeAbout from '../components/HomeAbout'
 import HomeFeature from '../components/HomeFeature'
 import Stats from '../components/Stats'
+import AdvancedFeatures from '../components/AdvancedFeatures'
 
 const Home = () => {
   return (
@@ -14,7 +15,9 @@ const Home = () => {
       <HomeAbout/>
       <Specification/>
       <HomeProduct/>
+      <AdvancedFeatures/>
       <HomeFeature/>
+      
       <Stats/>
       <Calculator/>
     </div>
