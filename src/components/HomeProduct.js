@@ -48,7 +48,7 @@ const HomeProduct = () => {
 
       <div className="slider-container">
               <div className="page-heading-div">
-<h2 className="page-heading">OUR PRODUCTS</h2>
+<h2 className="page-heading" style={{color:"#ffffff"}}>OUR PRODUCTS</h2>
       </div>
         <Slider {...settings} className="custom-slick">
           {images.map((img, index) => (

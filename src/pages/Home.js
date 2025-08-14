@@ -16,7 +16,7 @@ const Home = () => {
       <Specification/>
       <HomeProduct/>
       <AdvancedFeatures/>
-      <HomeFeature/>
+      {/* <HomeFeature/> */}
       
       <Stats/>
       <Calculator/>

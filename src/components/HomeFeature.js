@@ -16,6 +16,7 @@ const HomeFeature = () => {
   return (
     <Container fluid className="home-feature-section">
       <Container className='home-feature-content-container'>
+     
         <Row>
           {features.map((feature) => (
             <Col

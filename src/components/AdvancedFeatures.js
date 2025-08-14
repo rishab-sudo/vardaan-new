@@ -7,6 +7,12 @@ const AdvancedFeatures = () => {
   return (
     <Container fluid className="feature-section">
       <Container className="feature-content-container">
+        <div className="feature-tag-heading-div">
+      <p className='page-tag-heading about-tag-heading'>About Evlon</p>
+        </div>
+                <div className="feature-page-heading-div">
+      <p className='page-heading'>About Evlon</p>
+        </div>
         <Row className="align-items-center">
           {/* Left Column */}
           <Col md={4} className="feature-column">
@@ -40,13 +46,17 @@ const AdvancedFeatures = () => {
           </Col>
 
           {/* Center Image */}
-          <Col md={4} className="text-center">
-            <img
-              src= {require("../assets/about1.jpg")}
-              alt="Feature Illustration"
-              className="feature-image"
-            />
-          </Col>
+<Col md={4} className="text-center feature-image-wrapper">
+  <div className="image-container">
+    <img
+      src={require("../assets/about1.jpg")}
+      alt="Feature Illustration"
+      className="feature-image"
+    />
+  </div>
+</Col>
+
+
 
           {/* Right Column */}
           <Col md={4} className="feature-column">

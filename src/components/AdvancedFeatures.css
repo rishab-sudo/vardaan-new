@@ -6,7 +6,9 @@
 .feature-content-container {
   max-width: 1200px;
 }
-
+.feature-tag-heading-div{
+  max-width:fit-content;
+}
 .feature-column {
   display: flex;
   flex-direction: column;
