@@ -28,7 +28,7 @@
     z-index: 1;
 }
 .left-banner-text-box {
-  width: 75%;
+  width: 80%;
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.92); 
   color: #fff;
@@ -40,6 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-right: 35px;
 }
 
 .right-side-wrapper {
@@ -50,7 +51,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
-  width: 59%;
+  width: 60%;
   z-index: 2; 
   display: flex;
   align-items: center;
@@ -61,8 +62,7 @@
 .image-slider {
   width: 100% !important;
   height: 80%;
-
- 
+  object-fit: contain;
   /* background-color: blue !important; */
 }
 
@@ -74,7 +74,8 @@
 }
 .sliding-img{
   width: 100%;
-    max-width: 100% !important;
-    
+  max-width: 100% !important;
+  object-fit: contain;
+  /* background-color: #000; */
 }
 
