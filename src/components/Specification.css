@@ -36,6 +36,7 @@ height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 25px;
   /* background-color: azure; */
 }
 .spec-left-boxs{
@@ -44,6 +45,7 @@ height: 400px;
   color: #ffffff;
   border-radius: 10px;
   width: 225px;
+  max-width: 225px;
   padding: 20px 0px;
 }
 .spec-right-wrapper{
