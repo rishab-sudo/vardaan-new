@@ -67,6 +67,7 @@ const ContactForm = () => {
       {submitted && <p className="success-message">Message sent successfully!</p>}
       <div className="name-row">
         <div>
+          <label className='form-label'>First Name</label>
           <input
             type="text"
             name="firstname"
@@ -77,6 +78,7 @@ const ContactForm = () => {
           {errors.firstname && <p className="error">{errors.firstname}</p>}
         </div>
         <div>
+             <label className='form-label'>Last Name</label>
           <input
             type="text"
             name="lastname"
@@ -88,6 +90,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div>
+           <label className='form-label'>Email Address</label>
         <input
           type="email"
           name="email"
@@ -98,6 +101,7 @@ const ContactForm = () => {
         {errors.email && <p className="error">{errors.email}</p>}
       </div>
       <div>
+           <label className='form-label'>Enter Message</label>
         <textarea
           name="message"
           placeholder="Message"
