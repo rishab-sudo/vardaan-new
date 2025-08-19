@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Container fluid className="container-fluid about-wrapper">
          {/* Section 1 */}
-{/* <Container>
+<Container className='about-section1-content-container'>
   <div className='about-section1-left-wrapper'>
     <p>ABOUT SCOOTER EV</p>
     <h2>Future Solutions for Smart Scooter EV</h2>
@@ -18,7 +18,7 @@ const About = () => {
        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. 
         dolores eos qui voluptatem sequi nesciunt. Neque porro qui squam est, qui ratione dolorem .</p>
     </div>
-</Container> */}
+</Container>
       {/* Section 2 */}
       <div className="about-section container">
         
