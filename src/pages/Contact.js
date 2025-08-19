@@ -35,7 +35,7 @@ const Contact = () => {
               <div className='info-box-icon-div'>
               <FaEnvelope className="info-icon" />
               </div>
-              <p>contact@vardaanev.com</p>
+              <p> contact@vardaanev.com </p>
             </div>
           </div>
 

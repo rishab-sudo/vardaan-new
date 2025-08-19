@@ -1,11 +1,25 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import './About.css';
 
 const About = () => {
   return (
-    <div className="container-fluid about-wrapper">
+    <Container fluid className="container-fluid about-wrapper">
+         {/* Section 1 */}
+{/* <Container>
+  <div className='about-section1-left-wrapper'>
+    <p>ABOUT SCOOTER EV</p>
+    <h2>Future Solutions for Smart Scooter EV</h2>
+    <img src={require("../assets/about11.png")} alt=""/>
+    </div>
 
-      {/* Section 1 */}
+    <div className='about-section1-right-wrapper'>
+       <img src={require("../assets/about22.png")} alt=""/>
+       <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. 
+        dolores eos qui voluptatem sequi nesciunt. Neque porro qui squam est, qui ratione dolorem .</p>
+    </div>
+</Container> */}
+      {/* Section 2 */}
       <div className="about-section container">
         
         <div className="about-image-div">
@@ -23,7 +37,7 @@ Our vision is to promote green energy solutions and contribute to a greener futu
         </div>
       </div>
 
-      {/* Section 2 */}
+      {/* Section 3 */}
       <div className="about-section container reverse">
         <div className="about-image-div">
           <img className='about-img' src={require("../assets/1 - Edited.png")} alt="Section Two" />
@@ -36,7 +50,7 @@ Our vision is to promote green energy solutions and contribute to a greener futu
         </div>
       </div>
 
-      {/* Section 3 */}
+      {/* Section 4 */}
       <div className="about-section container">
         <div className="about-image-div">
           <img className='about-img' src={require("../assets/1 - Edited.png")} alt="Section Three" />
@@ -47,7 +61,7 @@ Our vision is to promote green energy solutions and contribute to a greener futu
         </div>
       </div>
 
-      {/* Section 4 */}
+      {/* Section 5 */}
       <div className="about-section container reverse">
         <div className="about-image-div">
           <img className='about-img' src={require("../assets/1 - Edited.png")} alt="Section Four" />
@@ -60,8 +74,42 @@ Our vision is to promote green energy solutions and contribute to a greener futu
           </p>
         </div>
       </div>
+{/*  */}
+<Container className='achv-section'>
+<div className='d-flex flex-column -justify-content-center align-items-center m-auto'>
+  <p className='page-tag-heading about-tag-heading' style={{maxWidth:"auto"}}>Know Us</p>
+  <h2 className='page-heading'>Our Achivements</h2>
+  </div>
 
-    </div>
+  <div className='achv-cards-wrapper'>
+<div className='achv-card'>
+<img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
+<p className='mt-3 card-number-text'> 30K</p>
+<p>Scooters Sold</p>
+</div>
+
+<div className='achv-card'>
+<img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
+<p className='mt-3 card-number-text'> 30K</p>
+<p>Scooters Sold</p>
+</div>
+
+<div className='achv-card'>
+<img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
+<p className='mt-3 card-number-text'> 30K</p>
+<p>Scooters Sold</p>
+</div>
+
+<div className='achv-card'>
+<img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
+<p className='mt-3 card-number-text'> 30K</p>
+<p>Scooters Sold</p>
+</div>
+
+  </div>
+</Container>
+   </Container>
+
   );
 };
 

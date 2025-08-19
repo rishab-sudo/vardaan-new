@@ -1,7 +1,12 @@
 .about-wrapper {
   padding: 50px 0;
 }
-
+.about-section1-left-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .about-section {
   display: flex;
   align-items: center;
@@ -42,15 +47,47 @@
   font-size: 16px;
   line-height: 1.6;
 }
-
+.achv-cards-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.achv-card{
+  width: 300px;
+  max-width: 300px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 25px;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+.achv-card-img{
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 10px 25px;
+ 
+}
+.card-number-text{
+  font-size: 45px;
+  font-weight: 700;
+}
 /* Tablet and below */
 @media (max-width: 768px) {
-  .about-section {
+  .about-wrapper {
+  padding: 0px;
+}
+.about-section {
     width: 95%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
+    justify-content: center;
     text-align: center;
-    background-color: blue;
+    gap: 25px;
   }
 
   .about-image-div{
@@ -69,5 +106,11 @@
   font-size: 24px;
   margin-bottom: 15px;
 }
-
+.achv-cards-wrapper{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+gap: 25px;
+}
 }

@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import Product from './pages/Product';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+          <Route path="/product" element={<Product />} />
          <Route path="/contact" element={<Contact />} />
             {/* <Route path="/product" element={<ProductPage />} />
           <Route path="/projects" element={<Projects />} />

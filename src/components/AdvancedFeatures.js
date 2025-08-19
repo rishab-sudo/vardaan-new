@@ -57,7 +57,6 @@ const AdvancedFeatures = () => {
 </Col>
 
 
-
           {/* Right Column */}
           <Col md={4} className="feature-column">
             <div className="feature-item feature-right">
