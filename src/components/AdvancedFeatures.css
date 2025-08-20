@@ -63,11 +63,11 @@
 }
 
 .image-container {
-  margin-top: -25%; /* Image starts halfway down */
+  margin-top: -27%; /* Image starts halfway down */
 }
 
 .feature-image {
-  width: 80%; /* Smaller image */
+  width: 85%; /* Smaller image */
   height: auto;
   border-radius: 20px;
 }

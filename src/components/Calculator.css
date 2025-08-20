@@ -1,86 +1,167 @@
-.calculator-section{
-    margin-top: 5%;
-}
-.calculator-container {
- width: 100%;
-  margin: auto;
-  padding: 30px;
-  background: linear-gradient(145deg, #f2f2f2, #ffffff);
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+/* Calculator Wrapper */
+.calculator-wrapper {
+  width: 100%;
+
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
   font-family: 'Segoe UI', sans-serif;
 }
 
-.h22 {
+/* Calculator Title */
+.calculator-title {
   text-align: center;
-  margin-bottom: 25px;
-  color: #333;
-}
-
-.form-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.form-section label {
-  flex: 1 1 45%;
-  font-weight: 500;
-  color: #444;
-}
-
-.form-section input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 6px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-.result-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.result-box {
-  flex: 1 1 45%;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: #f9f9f9;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
-}
-
-.result-box.ev {
-  border-left: 5px solid #00b894;
-}
-
-.result-box.diesel {
-  border-left: 5px solid #d63031;
-}
-
-.result-box h3 {
-  margin-bottom: 10px;
-}
-
-.result-box p {
-  margin: 6px 0;
-  font-size: 15px;
-  color: #555;
-}
-
-.savings {
-  text-align: center;
-  background: #dff9fb;
-  border: 2px dashed #00cec9;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 18px;
+  margin-bottom: 40px;
+  font-size: 28px;
   font-weight: bold;
   color: #2d3436;
+}
+
+/* Calculator Grid */
+.calculator-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Left Slider Card */
+.slider-card {
+  flex: 1 1 45%;
+  padding: 25px;
+  background: #f8f9fb;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Daily Usage Labels */
+.usage-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d3436;
+  margin-top: 25px;
+}
+
+/* Distance Slider */
+.distance-slider {
+  width: 100%;
+  margin: 2px 0;
+  height: 12px;
+  border-radius: 10px;
+  appearance: none;
+  background: linear-gradient(90deg, #00b894 0%, #d63031 100%);
+}
+
+.distance-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #0984e3;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Slider Value */
+.slider-value {
+ 
+  font-weight: bold;
+  color: #2d3436;
+  font-size: 16px;
+}
+
+/* Monthly Savings Box */
+.monthly-cost-box {
+   margin-top: 25px;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 16px;
+  color: #2d3436;
+  text-align: left;
+}
+
+/* Right Cost Card */
+.cost-card-wrapper {
+  flex: 1 1 45%;
+  padding: 25px;
+  background: #f8f9fb;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+/* Cost Bars */
+.cost-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #2d3436;
+}
+
+.bar-bg {
+  width: 100%;
+  height: 40px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  min-width: 25px; /* ensure visibility at low values */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: width 0.5s ease;
+}
+
+.cost-bar.diesel .bar-fill {
+  background: #d63031;
+}
+
+.cost-bar.ev .bar-fill {
+  background: #00b894;
+  padding-left: 42px;
+}
+/* Approximation Note at bottom of right box */
+.approx-note {
+  font-size: 12px;
+  color: #888; /* light gray */
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .calculator-grid {
+    flex-direction: column;
+  }
+  .slider-card, .cost-card-wrapper {
+    flex: 1 1 100%;
+  }
 }

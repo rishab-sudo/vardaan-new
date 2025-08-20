@@ -18,8 +18,8 @@ const Home = () => {
       <HomeProduct/>
       <AdvancedFeatures/>
       {/* <HomeFeature/> */}
-      <Stats/>
       <Calculator/>
+      <Stats/>
       <BecomeDealerBanner/>
     </div>
   )

@@ -1,5 +1,7 @@
 import React from "react";
 import ProductDetailSection from "../components/ProductDetailSection";
+import ProductPageBanner from "../components/ProductPageBanner";
+import ProductForm from "../components/ProductForm";
 
 const Example = () => {
   const leftItems = [
@@ -9,21 +11,26 @@ const Example = () => {
     { icon: require("../assets/power.png"), text: "Wheels <br/> 16 inch" },
   ];
 
-  const rightItems = [
-    { icon: require("../assets/power.png"), text: "Top Speed <br/> 60km/h" },
-    { icon: require("../assets/power.png"), text: "Charge <br/> 4hr" },
-    { icon: require("../assets/power.png"), text: "Weight <br/> 50kg" },
-    { icon: require("../assets/power.png"), text: "Seats <br/> 2" },
-  ];
+const rightItems = [
+  { icon: require("../assets/power.png"), text: "", color: "#ff0000" }, // Red
+  { icon: require("../assets/power.png"), text: "", color: "#00ff00" }, // Green
+  { icon: require("../assets/power.png"), text: "", color: "#0000ff" }, // Blue
+  { icon: require("../assets/power.png"), text: "", color: "#ffa500" }, // Orange
+];
 
   return (
+    <>
+    <ProductPageBanner/>
     <ProductDetailSection
       heading="Electric Scooter"
       description="A powerful and eco-friendly scooter for city rides."
       image={require("../assets/auto11.png")}
       leftItems={leftItems}
       rightItems={rightItems}
-    />
+      />
+
+      <ProductForm/>
+      </>
   );
 };
 

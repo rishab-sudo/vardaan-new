@@ -3,56 +3,79 @@ import { Container } from 'react-bootstrap';
 import './Calculator.css';
 
 const Calculator = () => {
-  const [inputs, setInputs] = useState({
-    dailyDistance: 50,
-    daysPerMonth: 30,
-    dieselMileage: 18,
-    evEfficiency: 0.15, // kWh per km
-    dieselPrice: 90,
-    electricityRate: 7
-  });
+  const [dailyDistance, setDailyDistance] = useState(54);
 
-  const handleChange = (e) => {
-    setInputs({ ...inputs, [e.target.name]: parseFloat(e.target.value) });
-  };
+  const daysPerMonth = 30;
+  const dieselMileage = 25; // km/l
+  const evEfficiency = 0.05; // kWh/km
+  const dieselPrice = 90; // ₹/l
+  const electricityRate = 7.5; // ₹/unit
 
-  const monthlyDistance = inputs.dailyDistance * inputs.daysPerMonth;
-  const dieselFuelUsed = monthlyDistance / inputs.dieselMileage;
-  const evUnitsUsed = monthlyDistance * inputs.evEfficiency;
-  const dieselCost = dieselFuelUsed * inputs.dieselPrice;
-  const evCost = evUnitsUsed * inputs.electricityRate;
+  const monthlyDistance = dailyDistance * daysPerMonth;
+  const dieselFuelUsed = monthlyDistance / dieselMileage;
+  const evUnitsUsed = monthlyDistance * evEfficiency;
+  const dieselCost = dieselFuelUsed * dieselPrice;
+  const evCost = evUnitsUsed * electricityRate;
+  const savings = dieselCost - evCost;
+
+  // Scale bars (max 100%)
+  const dieselPercent = Math.min(dieselCost / 5000 * 100, 100);
+  const evPercent = Math.min(evCost / 5000 * 100, 100);
 
   return (
-    <Container fluid className='calculator-section'>
-    <Container className="calculator-container">
-      <h2 className='h22'>🚗 EV vs Diesel Cost Calculator</h2>
-      <div className="form-section">
-        <label>Daily Distance (km): <input name="dailyDistance" type="number" value={inputs.dailyDistance} onChange={handleChange} /></label>
-        <label>Days per Month: <input name="daysPerMonth" type="number" value={inputs.daysPerMonth} onChange={handleChange} /></label>
-        <label>Diesel/Petrol Mileage (km/l): <input name="dieselMileage" type="number" value={inputs.dieselMileage} onChange={handleChange} /></label>
-        <label>EV Efficiency (kWh/km): <input name="evEfficiency" step="0.01" type="number" value={inputs.evEfficiency} onChange={handleChange} /></label>
-        <label>Diesel/Petrol Price (₹/litre): <input name="dieselPrice" type="number" value={inputs.dieselPrice} onChange={handleChange} /></label>
-        <label>Electricity Rate (₹/unit): <input name="electricityRate" type="number" value={inputs.electricityRate} onChange={handleChange} /></label>
-      </div>
+    <Container className="calculator-wrapper">
+      <h2 className="calculator-title">🛵 E-Rickshaw Savings Calculator</h2>
+      
+      <div className="calculator-grid">
+        {/* Left Slider Card */}
+        <div className="slider-card">
+          <h3>Daily Usage:</h3>
+          <div className="usage-labels">
+            <span>Regular 15 KM</span>
+            <span>Aggressive 200 KM</span>
+          </div>
+          <input 
+            type="range" 
+            min="10" 
+            max="200" 
+            value={dailyDistance} 
+            onChange={(e) => setDailyDistance(Number(e.target.value))} 
+            className="distance-slider"
+          />
+          <div className="slider-value">{dailyDistance} KM / day</div>
 
-      <div className="result-section">
-        <div className="result-box diesel">
-          <h3>🛻 Diesel/Petrol Vehicle</h3>
-          <p>Monthly Distance: <strong>{monthlyDistance} km</strong></p>
-          <p>Diesel Used: <strong>{dieselFuelUsed.toFixed(2)} litres</strong></p>
-          <p>Total Cost: <strong>₹{dieselCost.toFixed(2)}</strong></p>
+          {/* Monthly Savings Box */}
+          <div className="monthly-cost-box">
+            💰 Monthly Savings: ₹{Math.round(savings)}
+          </div>
         </div>
-        <div className="result-box ev">
-          <h3>⚡ EV Vehicle</h3>
-          <p>EV Units Consumed: <strong>{evUnitsUsed.toFixed(2)} kWh</strong></p>
-          <p>Total Cost: <strong>₹{evCost.toFixed(2)}</strong></p>
-        </div>
-      </div>
 
-      <div className="savings">
-        <h4>💰 Monthly Savings with EV: ₹{(dieselCost - evCost).toFixed(2)}</h4>
+        {/* Right Cost Box */}
+        <div className="cost-card-wrapper">
+          <div className="cost-bar diesel">
+            <span className="bar-label">Diesel Rickshaw</span>
+            <div className="bar-bg">
+              <div className="bar-fill" style={{ width: `${dieselPercent}%` }}>
+                ₹{dieselCost.toFixed(0)}
+              </div>
+            </div>
+          </div>
+
+          <div className="cost-bar ev">
+            <span className="bar-label">E-Rickshaw</span>
+            <div className="bar-bg">
+              <div className="bar-fill" style={{ width: `${evPercent}%` }}>
+                ₹{evCost.toFixed(0)}
+              </div>
+            </div>
+          </div>
+
+          {/* Approximation Note in Right Box */}
+          <div className="approx-note">
+            * Assumes Diesel Rate ₹{dieselPrice}/L, EV Light Rate ₹{electricityRate}/unit, Diesel Efficiency {dieselMileage} km/L, EV Efficiency {evEfficiency} kWh/km. Values are approximate.
+          </div>
+        </div>
       </div>
-    </Container>
     </Container>
   );
 };
