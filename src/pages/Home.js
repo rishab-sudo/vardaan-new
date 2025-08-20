@@ -7,6 +7,7 @@ import HomeAbout from '../components/HomeAbout'
 import HomeFeature from '../components/HomeFeature'
 import Stats from '../components/Stats'
 import AdvancedFeatures from '../components/AdvancedFeatures'
+import BecomeDealerBanner from '../components/BecomeDealerBanner'
 
 const Home = () => {
   return (
@@ -17,9 +18,9 @@ const Home = () => {
       <HomeProduct/>
       <AdvancedFeatures/>
       {/* <HomeFeature/> */}
-      
       <Stats/>
       <Calculator/>
+      <BecomeDealerBanner/>
     </div>
   )
 }

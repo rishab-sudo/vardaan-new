@@ -1,0 +1,99 @@
+.testimonials-section {
+    margin-top: 5%;
+  background: #fff;
+  padding: 0px 20px !important;
+  /* background-color: #444 !important; */
+}
+
+.testimonials-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #222;
+}
+
+.slick-slider {
+display: flex !important;
+  justify-content: center !important;
+}
+
+.slick-list {
+ padding: 25px 0px;
+  margin: 0 auto;
+}
+
+.testimonial-slide {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 20px;
+}
+
+.testimonial-box {
+  position: relative;
+  max-width: 350px;
+  height: 250px;
+  background: #fff;
+  padding: 50px 25px 25px; /* top padding extra for profile image */
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(5, 149, 108, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 24px rgba(5, 149, 108, 0.4);
+}
+
+/* Profile Icon */
+.testimonial-profile {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #05956c;
+  background: #fff;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 40px; /* space for bottom name box */
+}
+
+/* Customer name at bottom-left */
+.testimonial-customer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #eaeaea;
+  padding: 6px 14px;
+ border-top-right-radius: 11px;
+}
+
+.customer-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #05956c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-box {
+    max-width: 90%;
+    height: auto;
+    padding: 50px 15px 40px;
+  }
+  .testimonial-text {
+    font-size: 15px;
+  }
+  .customer-name {
+    font-size: 13px;
+  }
+}

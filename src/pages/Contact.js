@@ -30,6 +30,7 @@ const Contact = () => {
                 +91 9557077742,<br />
                 +91 8979177743
               </p>
+              
             </div>
             <div className="info-box">
               <div className='info-box-icon-div'>
