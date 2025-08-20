@@ -13,12 +13,12 @@ const About = () => {
     <h2>Future Solutions for Smart Scooter EV</h2>
     <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam 
       nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. dolores eos qui voluptatem sequi nesciunt. Neque porro qui squam est, qui ratione dolorem .</p>
-    <img src={require("../assets/about11.png")} alt=""/>
+    <img className='about-top-img mt-3' src={require("../assets/about11.png")} alt=""/>
     </div>
 
     <div className='about-section1-right-wrapper'>
-       <img src={require("../assets/about22.png")} alt=""/>
-       <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. 
+       <img  className='about-top-img' src={require("../assets/about22.png")} alt=""/>
+       <p className='mt-3'>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. 
         dolores eos qui voluptatem sequi nesciunt. Neque porro qui squam est, qui ratione dolorem .</p>
     </div>
 </Container>

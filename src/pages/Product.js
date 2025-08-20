@@ -1,15 +1,30 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import "./Product.css"
+import React from "react";
+import ProductDetailSection from "../components/ProductDetailSection";
 
-const Product = () => {
+const Example = () => {
+  const leftItems = [
+    { icon: require("../assets/power.png"), text: "Range <br/> 75km" },
+    { icon: require("../assets/power.png"), text: "Power <br/> 500W" },
+    { icon: require("../assets/power.png"), text: "Battery <br/> 48V" },
+    { icon: require("../assets/power.png"), text: "Wheels <br/> 16 inch" },
+  ];
+
+  const rightItems = [
+    { icon: require("../assets/power.png"), text: "Top Speed <br/> 60km/h" },
+    { icon: require("../assets/power.png"), text: "Charge <br/> 4hr" },
+    { icon: require("../assets/power.png"), text: "Weight <br/> 50kg" },
+    { icon: require("../assets/power.png"), text: "Seats <br/> 2" },
+  ];
+
   return (
-<Container fluid className="productPage-container-fluid">
-<Container className="productPage-content-container">
+    <ProductDetailSection
+      heading="Electric Scooter"
+      description="A powerful and eco-friendly scooter for city rides."
+      image={require("../assets/auto11.png")}
+      leftItems={leftItems}
+      rightItems={rightItems}
+    />
+  );
+};
 
-</Container>
-</Container>
-  )
-}
-
-export default Product
+export default Example;
