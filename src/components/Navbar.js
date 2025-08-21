@@ -28,19 +28,21 @@ const toggleMenu = () => {
           <li><a href="/home">Home</a></li>
               <li><a href="/about">About Us</a></li>
 
-          {/* <li
-            className="dropdown"
-            onMouseEnter={() => setAboutDropdownOpen(true)}
-            onMouseLeave={() => setAboutDropdownOpen(false)}
-          >
-            <span className="dropdown-toggle">About</span>
-            <ul className={`dropdown-menu ${aboutDropdownOpen ? 'show' : ''}`}>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/established">Established Excellence</a></li>
-            </ul>
-          </li> */}
-
-          <li><a href="/product">Products</a></li>
+         <li
+  className="dropdown"
+  onMouseEnter={() => setAboutDropdownOpen(true)}
+  onMouseLeave={() => setAboutDropdownOpen(false)}
+>
+  <a href="/product" className="dropdown-toggle">
+    Products
+  </a>
+  <ul className={`dropdown-menu ${aboutDropdownOpen ? 'show' : ''}`}>
+    <li><a href="/product/model1"><i className="rickshaw-icon" /> Model 1</a></li>
+    <li><a href="/product/model2"><i className="rickshaw-icon" /> Model 2</a></li>
+    <li><a href="/product/model3"><i className="rickshaw-icon" /> Model 3</a></li>
+  </ul>
+</li>
+          {/* <li><a href="/product">Products</a></li> */}
           {/* <li><a href="/projects" onClick={toggleMenu}>Projects</a></li> */}
           {/* <li><a href="/career" onClick={toggleMenu}>Careers</a></li> */}
 
@@ -76,9 +78,43 @@ const toggleMenu = () => {
 
         <ul className="side-nav-links">
           <li><a href="/home" onClick={toggleMenu}>Home</a></li>
+                    <li><a href="/about" onClick={toggleMenu}>About Us</a></li>
+    <li className="side-dropdown">
+  <div className="side-about-title">
+    {/* Product main link (navigates) */}
+    <a href="/product" onClick={toggleMenu} className="product-link">
+      Products
+    </a>
+
+    {/* Chevron icon (toggles dropdown) */}
+    <span
+      className="dropdown-icon"
+      onClick={(e) => {
+        e.stopPropagation(); // prevent link click
+        e.preventDefault(); // prevent navigation
+        setMobileAboutOpen(!mobileAboutOpen);
+      }}
+    >
+      {mobileAboutOpen ? <FaChevronUp /> : <FaChevronDown />}
+    </span>
+  </div>
+
+  {/* Dropdown inline box */}
+  {mobileAboutOpen && (
+    <ul className="side-dropdown-menu">
+      <li><a href="/product/model1" onClick={toggleMenu}>Model 1</a></li>
+      <li><a href="/product/model2" onClick={toggleMenu}>Model 2</a></li>
+      <li><a href="/product/model3" onClick={toggleMenu}>Model 3</a></li>
+    </ul>
+  )}
+</li>
+
+          <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
+          {/* Mobile Become A Dealer Link */}
+<li><a href="/dealer" onClick={toggleMenu}>Become A Dealer</a> </li>
 
           {/* Mobile About Dropdown */}
-          <li className="side-dropdown">
+          {/* <li className="side-dropdown">
             <span
               className="side-about-title"
               onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
@@ -91,13 +127,12 @@ const toggleMenu = () => {
                 <li><a href="/established" onClick={toggleMenu}>Established Excellence</a></li>
               </ul>
             )}
-          </li>
+          </li> */}
 
-          <li><a href="/product" onClick={toggleMenu}>Products</a></li>
-          <li><a href="/projects" onClick={toggleMenu}>Projects</a></li>
-                    <li><a href="/career" onClick={toggleMenu}>Careers</a></li>
+
+                  
           {/* Mobile More Dropdown */}
-          <li className="side-dropdown">
+          {/* <li className="side-dropdown">
             <span
               className="side-about-title"
               onClick={() => setMobileMoreOpen(!mobileMoreOpen)}
@@ -112,12 +147,9 @@ const toggleMenu = () => {
                 <li><a href="/certificates" onClick={toggleMenu}>Certificates</a></li>
               </ul>
             )}
-          </li>
+          </li> */}
 
-          
-          <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
-          {/* Mobile Become A Dealer Link */}
-<li><a href="/dealer" onClick={toggleMenu}>Become A Dealer</a> </li>
+
 
         </ul>
       </div>

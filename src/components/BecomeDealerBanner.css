@@ -1,8 +1,11 @@
-.becomeD-banner-section{
-background-color: black;
-color: #ffffff !important;
-margin-top: 5%;
-margin-bottom: -75px;
+.becomeD-banner-section {
+  background: url("../assets/Background/istockphoto.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7); /* black overlay */
+  background-blend-mode: overlay;       /* blends overlay with image */
+  color: #ffffff !important;
+  margin-top: 5%;
+  margin-bottom: -75px;
 }
 .becomeD-content-container{
     padding: 20px 0px;
