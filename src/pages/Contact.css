@@ -46,7 +46,7 @@ text-align: center;
 }
 
 .info-box {
-  height: 200px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,13 +59,13 @@ text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .info-box-icon-div{
-  padding: 15px;
+  padding: 8px;
   border-radius: 5px;
   background-color: #fff;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .info-icon {
-  font-size: 30px;
+  font-size: 32px;
   color: #05956c;
 }
 

@@ -38,7 +38,19 @@ const Contact = () => {
               </div>
               <p> contact@vardaanev.com </p>
             </div>
+
+             <div className="info-box">
+              <div className='info-box-icon-div'>
+              <FaEnvelope className="info-icon" />
+              </div>
+              <p> Bandia Road, Parsakhera Industrial Area,<br/>
+
+Bareilly-243122, Uttar Pradesh, India </p>
+            </div>
+
           </div>
+
+          
 
                {/* Right: Contact Form */}
           <div className="form-container">
