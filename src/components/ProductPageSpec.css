@@ -1,13 +1,21 @@
-.auto-section {
+.productpage-spec-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productpage-section {
   position: relative;
   width: 100%;
+  max-width: 1200px; /* keeps layout centered */
   height: 600px; /* adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.circle-bg {
+.productpage-circle-bg {
   width: 400px;
   height: 400px;
   background: #e0e0e0;
@@ -16,14 +24,14 @@
   z-index: 1;
 }
 
-.auto-image {
+.productpage-auto-image {
   position: relative;
   z-index: 2;
   max-width: 90%;
 }
 
 /* Feature Box Common Style */
-.feature-box {
+.productpage-feature-box {
   position: absolute;
   display: flex;
   align-items: center;
@@ -34,24 +42,24 @@
   z-index: 3;
 }
 
-.feature-box .icon {
+.productpage-feature-box .productpage-icon {
   font-size: 24px;
   margin-right: 10px;
   color: #007bff;
 }
 
-.feature-box .text h4 {
+.productpage-feature-box .productpage-text h4 {
   margin: 0;
   font-size: 16px;
 }
-.feature-box .text p {
+.productpage-feature-box .productpage-text p {
   margin: 0;
   font-size: 12px;
   color: gray;
 }
 
 /* Lines */
-.feature-box .line {
+.productpage-feature-box .productpage-line {
   position: absolute;
   border-top: 2px dashed #555;
   width: 120px; /* line length */
@@ -59,25 +67,23 @@
   left: -120px; /* shift line left */
   transform: translateY(-50%);
 }
-.feature-box.left-side .line {
+.productpage-feature-box.productpage-left-side .productpage-line {
   left: 100%;          /* attach line to right edge of box */
-  border-top: 2px dashed #555;
   width: 100%;
 }
 
 /* Positioning Examples */
-/* Positioning with px instead of % */
-.wheel-left {
-  bottom: 120px;  /* instead of bottom: 20% */
-  left: 200px;    /* instead of left: 20% */
+.productpage-wheel-left {
+  bottom: 120px;
+  left: 80px;
 }
 
-.meter {
-  top: 260px;     /* instead of top: 45% */
-  left: 150px;    /* fixed from left */
+.productpage-meter {
+  top: 260px;
+  left: 50px;
 }
 
-.battery {
-  bottom: 180px;  /* instead of bottom: 31% */
-  right: 250px;   /* fixed from right */
+.productpage-battery {
+  bottom: 160px;
+  right: 225px;
 }
