@@ -67,9 +67,14 @@ display: flex;
 }
 /*  */
 .about-mission-section {
+  width: 100%;
   margin-top: 5%;
   background: #f9f9f9;
   padding: 60px 20px;
+}
+.about-mission-content-container{
+  margin: auto !important;
+  max-width: 90%;
 }
 .mission-center-img{
   margin: auto;

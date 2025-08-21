@@ -101,31 +101,32 @@ const ProductDetailSection = ({ heading, description, image, leftItems, rightIte
             </div>
           ))}
         </div>
+      </div>
 
-        <div className="curve-controls">
-          <button
-            type="button"
-            className="control-btn prev"
-            onClick={goPrev}
-            aria-label="Previous image"
-            disabled={computedGallery.length <= 1}
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24">
-              <path d="M15 6L9 12L15 18" stroke="white" strokeWidth="2" />
-            </svg>
-          </button>
-          <button
-            type="button"
-            className="control-btn next"
-            onClick={goNext}
-            aria-label="Next image"
-            disabled={computedGallery.length <= 1}
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24">
-              <path d="M9 6L15 12L9 18" stroke="white" strokeWidth="2" />
-            </svg>
-          </button>
-        </div>
+      {/* Controls BELOW the whole section */}
+      <div className="curve-controls">
+        <button
+          type="button"
+          className="control-btn prev"
+          onClick={goPrev}
+          aria-label="Previous image"
+          disabled={computedGallery.length <= 1}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24">
+            <path d="M15 6L9 12L15 18" stroke="white" strokeWidth="2" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          className="control-btn next"
+          onClick={goNext}
+          aria-label="Next image"
+          disabled={computedGallery.length <= 1}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24">
+            <path d="M9 6L15 12L9 18" stroke="white" strokeWidth="2" />
+          </svg>
+        </button>
       </div>
 
       {/* Mobile/Tablet Layout */}

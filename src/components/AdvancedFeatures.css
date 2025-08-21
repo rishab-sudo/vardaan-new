@@ -8,6 +8,11 @@
 }
 .feature-tag-heading-div{
   max-width:fit-content;
+  margin: auto !important;
+  text-align: center !important;
+}
+.page-heading {
+  text-align: center;
 }
 .feature-column {
   display: flex;
@@ -54,6 +59,7 @@
 }
 
 .feature-image-wrapper {
+  margin-top: 95px;
   border-radius: 25px;
   background-color: #05956c; /* Green background */
   display: flex;
@@ -63,7 +69,9 @@
 }
 
 .image-container {
-  margin-top: -27%; /* Image starts halfway down */
+  margin-top: -27%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-image {

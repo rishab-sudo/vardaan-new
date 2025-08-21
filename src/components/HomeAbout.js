@@ -8,7 +8,7 @@ const HomeAbout = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 250; // target number
+    const end = 50; // target number
     const duration = 2000; // 2 seconds
     const stepTime = Math.abs(Math.floor(duration / end));
 
@@ -40,10 +40,10 @@ const HomeAbout = () => {
                 <FaPlus className="plus-icon" />
                 <span className="count-number">{count}</span>
                 </div>
-                <p className="counter-title">Charging Stations</p>
+                <p className="counter-title">Cities</p>
               </div>
               <div className="counter-text">
-                consectetur adipiscing elit. Pellentesque in metus et purus
+              "Electric. Efficient. Exceptional."
               </div>
             </div>
           </div>
@@ -52,19 +52,19 @@ const HomeAbout = () => {
         {/* RIGHT TEXT SECTION */}
         <div className='about-right-wraper'>
           <div className='about-text-wrapper'>
-            <p className='page-tag-heading about-tag-heading'>About Evlon</p>
-            <h2 className='page-heading'>Zero Emissions, Infinite Possibility</h2>
+            <p className='page-tag-heading about-tag-heading'>ABOUT VARDAAN EV</p>
+            <h2 className='page-heading'>Powering India's Electric Revolution</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in metus et purus gravida sagittis.
-              Donec arcu id ultricies lacinia.<br/>
-              Praesent bibendum urna sit amet ex scelerisque, vitae pellentesque tellus dignissim. Sed viverra lacus ipsum, ut imperdiet neque.
+            At Vardaan EV, we believe the future of mobility is electric, efficient, and environmentally conscious. As pioneers in sustainable transportation solutions, 
+            we design and manufacture premium electric vehicles that don't just meet your needs – they exceed your expectations.<br/>
+            Our commitment goes beyond creating vehicles; we're building a cleaner, greener tomorrow where performance meets responsibility, and innovation drives positive change.
             </p>
             <div className='d-flex flex-column justify-content-start '>
               <div className='about-power-icon-box'>
               <img className='about-power-icon' src={require("../assets/power.png")} alt=""/>
               </div>
-            <p>Our Vision</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style={{fontWeight:"bold"}}>Our Mission</p>
+            <p> Creating world-class electric vehicles that transform how India moves while protecting the planet for future generations.</p>
             </div>
             <div>
 
@@ -72,8 +72,8 @@ const HomeAbout = () => {
               <div className='about-power-icon-box'>
               <img className='about-power-icon' src={require("../assets/power.png")} alt=""/>
               </div>
-            <p>Our Vision</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style={{fontWeight:"bold"}}>Our Vision</p>
+            <p>Empowering every Indian with clean, efficient mobility solutions that protect our planet while enhancing lives.</p>
             </div>          
             </div>
           

@@ -4,7 +4,7 @@ import Specification from '../components/Specification'
 import HomeProduct from '../components/HomeProduct'
 import Calculator from '../components/Calculator'
 import HomeAbout from '../components/HomeAbout'
-import HomeFeature from '../components/HomeFeature'
+
 import Stats from '../components/Stats'
 import AdvancedFeatures from '../components/AdvancedFeatures'
 import BecomeDealerBanner from '../components/BecomeDealerBanner'
@@ -17,8 +17,7 @@ const Home = () => {
       <Specification/>
       <HomeProduct/>
       <AdvancedFeatures/>
-      {/* <HomeFeature/> */}
-      <Calculator/>
+    <Calculator/>
       <Stats/>
       <BecomeDealerBanner/>
     </div>

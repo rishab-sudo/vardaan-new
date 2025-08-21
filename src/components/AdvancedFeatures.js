@@ -8,10 +8,10 @@ const AdvancedFeatures = () => {
     <Container fluid className="feature-section">
       <Container className="feature-content-container">
         <div className="feature-tag-heading-div">
-      <p className='page-tag-heading about-tag-heading'>About Evlon</p>
+      <p className='page-tag-heading about-tag-heading'>KEY FEATURES</p>
         </div>
                 <div className="feature-page-heading-div">
-      <p className='page-heading'>About Evlon</p>
+      <p className='page-heading '>Engineering Excellence in Every Detail</p>
         </div>
         <Row className="align-items-center">
           {/* Left Column */}
@@ -21,8 +21,8 @@ const AdvancedFeatures = () => {
               <FaCogs className="feature-icon" />
               </div>
               <div className="feature-text">
-                <h5 className="feature-heading">Customizable</h5>
-                <p className="feature-description">Easily tailor settings to fit your needs and workflow.</p>
+                <h5 className="feature-heading">Advanced Battery Technology</h5>
+                <p className="feature-description"> Long-lasting lithium-ion batteries with extended range and rapid charging capabilities.</p>
               </div>
             </div>
             <div className="feature-item">
@@ -30,8 +30,8 @@ const AdvancedFeatures = () => {
               <FaShieldAlt className="feature-icon" />
               </div>
               <div className="feature-text">
-                <h5 className="feature-heading">Secure</h5>
-                <p className="feature-description">Advanced protection to keep your data safe at all times.</p>
+                <h5 className="feature-heading"> Smart Charging Solutions</h5>
+                <p className="feature-description"> Fast charging infrastructure compatibility with intelligent power management.</p>
               </div>
             </div>
             <div className="feature-item">
@@ -39,8 +39,8 @@ const AdvancedFeatures = () => {
               <FaBolt className="feature-icon" />
               </div>
               <div className="feature-text">
-                <h5 className="feature-heading">Fast Performance</h5>
-                <p className="feature-description">Experience lightning-fast load times and smooth operation.</p>
+                <h5 className="feature-heading">Safety First Design</h5>
+                <p className="feature-description">Multi-layer safety systems with robust build quality and reliable performance.</p>
               </div>
             </div>
           </Col>
@@ -65,8 +65,8 @@ const AdvancedFeatures = () => {
               <FaChartLine className="feature-icon " />
                 </div>
               <div className="feature-text">
-                <h5 className="feature-heading">Analytics</h5>
-                <p className="feature-description">Track usage and performance with built-in analytics tools.</p>
+                <h5 className="feature-heading"> Zero Emission Performance </h5>
+                <p className="feature-description">100% electric powertrains delivering smooth, silent, and pollution-free rides.</p>
               </div>
             </div>
             <div className="feature-item feature-right">
@@ -74,8 +74,8 @@ const AdvancedFeatures = () => {
               <FaCloud className="feature-icon" />
               </div>
               <div className="feature-text">
-                <h5 className="feature-heading">Cloud Sync</h5>
-                <p className="feature-description">Seamlessly sync your work across devices via cloud.</p>
+                <h5 className="feature-heading">Connected Technology</h5>
+                <p className="feature-description">IoT-enabled smart features with mobile app integration and real-time monitoring.</p>
               </div>
             </div>
             <div className="feature-item feature-right">
@@ -83,8 +83,8 @@ const AdvancedFeatures = () => {
               <FaMobileAlt className="feature-icon" />
               </div>
               <div className="feature-text">
-                <h5 className="feature-heading">Mobile Ready</h5>
-                <p className="feature-description">Access features anytime on any device with full support.</p>
+                <h5 className="feature-heading">Cost-Effective Operation </h5>
+                <p className="feature-description">Significantly lower running costs compared to conventional fuel vehicles.</p>
               </div>
             </div>
           </Col>

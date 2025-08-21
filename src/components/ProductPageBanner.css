@@ -1,8 +1,7 @@
 .productPage-Banner-fluid {
   padding: 5% 0px !important;
   margin: 0 !important;
-  gap: 0;
-background-color: #05956c;
+  background-color: #05956c;
 }
 
 .productPage-banner {
@@ -11,6 +10,7 @@ background-color: #05956c;
   justify-content: space-between;
   padding: 40px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 /* Left Circles */
@@ -56,11 +56,12 @@ background-color: #05956c;
 .productPage-left h2 {
   font-size: 2rem;
   font-weight: bold;
+  color: #fff;
 }
 .productPage-left p {
   font-size: 1rem;
   margin-top: 10px;
-  color: #000;
+  color: #e6e6e6;
 }
 
 /* Product Image */
@@ -73,25 +74,39 @@ background-color: #05956c;
   height: auto;
 }
 
-/* Features Box */
+/* Features Box (below heading) */
 .productPage-features {
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* background: #26a582 !important; */
- background-color: #05956c;
- color: #ffffff;
-   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  padding: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 5%;
+  background: #047b5a;
+  color: #fff;
   border-radius: 12px;
-  max-width: 250px;
-  height: 380px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.feature-box {
+flex: 1;
+  text-align: center;
+  padding:  10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-box:last-child {
+  border-right: none;
 }
 
 /* --- Mobile Responsive --- */
 @media (max-width: 768px) {
   .productPage-banner {
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding: 20px;
@@ -102,18 +117,33 @@ background-color: #05956c;
   }
 
   .productPage-left {
-    margin: 0 0 20px 0;
+    margin: 0;          
+    display: contents;  
   }
+
+  .productPage-left h2 { order: 1; font-size: 1.6rem; margin-bottom: 6px; }
+  .productPage-left p  { order: 2; margin-top: 6px; }
+
+  .productPage-image   { order: 3; }
 
   .productPage-features {
+    order: 4;                
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
     max-width: 100%;
+    margin-top: 15px;
+    width: 100%;
   }
-
-  .productPage-features p {
-    margin: 5px 10px;
+.productPage-image {
+  flex: 1;
+  text-align: center;
+}
+.productPage-image img {
+  max-width: 80%;
+  height: auto;
+}
+  .feature-box {
+    padding:  2px 6px;
+    font-size: 16px;
   }
 }

@@ -31,13 +31,13 @@ const ProductPageBanner = () => {
   ];
 
   return (
-    <Container fluid className="g-0 productPage-Banner-fluid ">
+    <Container fluid className="g-0 productPage-Banner-fluid">
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
-      speed={2000}   // smooth sliding (1 second)
-  effect="slide" 
+        speed={2000}
+        effect="slide"
         className="productPage-swiper"
       >
         {products.map((item, index) => (
@@ -46,28 +46,33 @@ const ProductPageBanner = () => {
               {/* Left Circles */}
               <div className="productPage-circles">
                 {products.map((_, i) => (
-                  <div key={i} className={`circle ${i === index ? "active" : ""}`}>
+                  <div
+                    key={i}
+                    className={`circle ${i === index ? "active" : ""}`}
+                  >
                     <div className="line"></div>
                   </div>
                 ))}
               </div>
 
-              {/* Left Side Text */}
+              {/* Left Side Text + Features */}
               <div className="productPage-left">
-               <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
+                <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
                 <p>{item.desc}</p>
+
+                {/* Horizontal Features (below heading div) */}
+                <div className="productPage-features">
+                  {item.features.map((f, idx) => (
+                    <div className="feature-box" key={idx}>
+                      <p dangerouslySetInnerHTML={{ __html: f }} />
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* Product Image */}
               <div className="productPage-image">
                 <img src={item.image} alt={item.title} />
-              </div>
-
-              {/* Right Side Features */}
-              <div className="productPage-features">
-                {item.features.map((f, idx) => (
-                  <p key={idx} dangerouslySetInnerHTML={{ __html: f }} />
-                ))}
               </div>
             </div>
           </SwiperSlide>

@@ -91,12 +91,15 @@
 }
 
 .arc-icon {
-  width: 28px;
-  height: 28px;
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #EDEDED;
+  padding: 7px;
+  border-radius: 10px;
 }
 
 /* Swatches on right side - same size as icons, zoom on hover */
@@ -111,6 +114,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 180ms ease, box-shadow 180ms ease;
+  
 }
 
 .right-arc-item:hover .arc-swatch {
@@ -124,7 +128,8 @@
   top: 50%;
   right: calc(50% + 22px);
   transform: translateY(-50%);
-  text-align: right;
+  text-align: left;
+  margin-right: 15px;
 }
 
 .right-arc-item .arc-text {
@@ -136,17 +141,23 @@
 }
 
 /* Curve controls under the center curve */
-.curve-controls {
-  position: absolute;
-  bottom: 14px;
-  left: 50%;
-  transform: translateX(-50%) ;
+.product-center {
+  position: relative;
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Controls below the whole section */
+.curve-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 0px;
 }
 
 .control-btn {
-    width: 45px;
+  width: 45px;
   height: 45px;
   border-radius: 50%;
   background: #17a34a;

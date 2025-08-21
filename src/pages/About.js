@@ -9,17 +9,17 @@ const About = () => {
          {/* Section 1 */}
 <Container className='about-section1-content-container'>
   <div className='about-section1-left-wrapper'>
-    <p>ABOUT SCOOTER EV</p>
-    <h2>Future Solutions for Smart Scooter EV</h2>
-    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam 
-      nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. dolores eos qui voluptatem sequi nesciunt. Neque porro qui squam est, qui ratione dolorem .</p>
+    <p>ABOUT Vardaan Ev </p>
+    <h2>Powering India's Electric Revolution</h2>
+    <p>At Vardaan EV, we are more than just a company; we are pioneers in sustainable transportation, driven by a vision to transform how India moves. We believe the future of mobility is electric, efficient, 
+      and environmentally conscious, and our journey began with a simple yet powerful idea: to build a cleaner, greener tomorrow.</p>
     <img className='about-top-img mt-3' src={require("../assets/about11.png")} alt=""/>
     </div>
 
     <div className='about-section1-right-wrapper'>
        <img  className='about-top-img' src={require("../assets/about22.png")} alt=""/>
-       <p className='mt-3'>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as making this the first true generator on the Internet labore set dolore magna aliqua. Vestibu lum euin quam nec neque pellentesque efficitur id eget nisl. Sed quia consequn ture magni. 
-        dolores eos qui voluptatem sequi nesciunt. Neque porro qui squam est, qui ratione dolorem .</p>
+       <p className='mt-3'>We design and manufacture premium electric scooters that don't just meet your needs—they exceed your expectations. Our commitment goes beyond crafting vehicles; it’s about building a better world where performance meets responsibility and innovation drives positive change. 
+        Every Vardaan EV is a testament to our dedication to engineering excellence, safety, and a sustainable future for all.</p>
     </div>
 </Container>
 
@@ -59,7 +59,7 @@ const About = () => {
 </Container>
 
     <Container fluid className="about-mission-section py-5">
-      <Row className="align-items-center">
+      <Row className="align-items-center about-mission-content-container">
         {/* Left Column */}
         <Col md={4} className="about-mission-col text-start">
           <div className="about-mission-box">

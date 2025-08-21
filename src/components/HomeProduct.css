@@ -46,6 +46,39 @@ object-fit: contain;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
  
 }
+.spec-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.spec-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  flex: 1;
+  background: #f0f0f0; /* light gray */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.spec-box:hover {
+  transform: translateY(-5px);
+}
+.model-name {
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
 .slide-wrapper {
