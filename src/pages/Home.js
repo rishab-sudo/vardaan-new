@@ -8,11 +8,14 @@ import HomeAbout from '../components/HomeAbout'
 import Stats from '../components/Stats'
 import AdvancedFeatures from '../components/AdvancedFeatures'
 import BecomeDealerBanner from '../components/BecomeDealerBanner'
+import Demo from '../components/ProductPageSpec'
+import ProductPageSpec from '../components/ProductPageSpec'
 
 const Home = () => {
   return (
     <div>
       <HomeBanner/>
+<ProductPageSpec/>
       <HomeAbout/>
       <Specification/>
       <HomeProduct/>

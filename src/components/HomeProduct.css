@@ -1,10 +1,10 @@
 .slider-outer {
   margin-top: 5%;
   width: 100%;
-  max-height: 95vh;
+  height: 100%;
   display: flex;
   justify-content: center;
-  padding: 3.5% 0;
+  padding: 0px;
   perspective: 1000px; 
 background: url("../assets/Background/HomeProduct-bg.jpeg") no-repeat center center;
   background-size: cover; 
@@ -13,7 +13,7 @@ background: url("../assets/Background/HomeProduct-bg.jpeg") no-repeat center cen
 .slider-container {
   width: 100%;
   max-width: 100%;
-  padding: 50px 25px;
+  padding: 20px ;
 }
 
 .custom-slick .slick-slide {
@@ -40,8 +40,8 @@ background: url("../assets/Background/HomeProduct-bg.jpeg") no-repeat center cen
 }
 
 .slide-image {
-  width: 100%;
-  width: 100%;
+  width: 85%;
+  max-width: 90%;
 object-fit: contain;
   border-radius: 20px;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */

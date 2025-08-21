@@ -54,7 +54,7 @@ const HomeProduct = () => {
                 <div className="spec-box">Range: 120km</div>
                 <div className="spec-box">Speed: 45km/h</div>
               </div>
-              <h3 className="model-name">Model Alpha</h3>
+              {/* <h3 className="model-name">Model Alpha</h3> */}
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const HomeProduct = () => {
                 <div className="spec-box">Range: 100km</div>
                 <div className="spec-box">Speed: 40km/h</div>
               </div>
-              <h3 className="model-name">Model Beta</h3>
+              {/* <h3 className="model-name">Model Beta</h3> */}
             </div>
           </div>
 
@@ -88,7 +88,7 @@ const HomeProduct = () => {
                 <div className="spec-box">Range: 150km</div>
                 <div className="spec-box">Speed: 50km/h</div>
               </div>
-              <h3 className="model-name">Model Gamma</h3>
+              {/* <h3 className="model-name">Model Gamma</h3> */}
             </div>
           </div>
 
@@ -105,7 +105,7 @@ const HomeProduct = () => {
                 <div className="spec-box">Range: 110km</div>
                 <div className="spec-box">Speed: 42km/h</div>
               </div>
-              <h3 className="model-name">Model Delta</h3>
+              {/* <h3 className="model-name">Model Delta</h3> */}
             </div>
           </div>
 
@@ -122,7 +122,7 @@ const HomeProduct = () => {
                 <div className="spec-box">Range: 130km</div>
                 <div className="spec-box">Speed: 47km/h</div>
               </div>
-              <h3 className="model-name">Model Epsilon</h3>
+              {/* <h3 className="model-name">Model Epsilon</h3> */}
             </div>
           </div>
 
@@ -139,7 +139,7 @@ const HomeProduct = () => {
                 <div className="spec-box">Range: 115km</div>
                 <div className="spec-box">Speed: 43km/h</div>
               </div>
-              <h3 className="model-name">Model Zeta</h3>
+              {/* <h3 className="model-name">Model Zeta</h3> */}
             </div>
           </div>
         </Slider>

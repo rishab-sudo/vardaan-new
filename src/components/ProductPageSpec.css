@@ -1,0 +1,83 @@
+.auto-section {
+  position: relative;
+  width: 100%;
+  height: 600px; /* adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-bg {
+  width: 400px;
+  height: 400px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.auto-image {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+}
+
+/* Feature Box Common Style */
+.feature-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 3;
+}
+
+.feature-box .icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.feature-box .text h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.feature-box .text p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Lines */
+.feature-box .line {
+  position: absolute;
+  border-top: 2px dashed #555;
+  width: 120px; /* line length */
+  top: 50%;
+  left: -120px; /* shift line left */
+  transform: translateY(-50%);
+}
+.feature-box.left-side .line {
+  left: 100%;          /* attach line to right edge of box */
+  border-top: 2px dashed #555;
+  width: 100%;
+}
+
+/* Positioning Examples */
+/* Positioning with px instead of % */
+.wheel-left {
+  bottom: 120px;  /* instead of bottom: 20% */
+  left: 200px;    /* instead of left: 20% */
+}
+
+.meter {
+  top: 260px;     /* instead of top: 45% */
+  left: 150px;    /* fixed from left */
+}
+
+.battery {
+  bottom: 180px;  /* instead of bottom: 31% */
+  right: 250px;   /* fixed from right */
+}
