@@ -53,7 +53,7 @@ const Calculator = () => {
         {/* Right Cost Box */}
         <div className="cost-card-wrapper">
           <div className="cost-bar diesel">
-            <span className="bar-label">Diesel Rickshaw</span>
+            <span className="bar-label">Diesel Rickshaw <span style={{fontSize:"11px",fontWeight:"600"}}>(Monthly Expenditure)</span></span>
             <div className="bar-bg">
               <div className="bar-fill" style={{ width: `${dieselPercent}%` }}>
                 ₹{dieselCost.toFixed(0)}
@@ -62,7 +62,7 @@ const Calculator = () => {
           </div>
 
           <div className="cost-bar ev">
-            <span className="bar-label">E-Rickshaw</span>
+            <span className="bar-label">E-Rickshaw <span style={{fontSize:"11px",fontWeight:"600"}}>(Monthly Expenditure)</span></span>
             <div className="bar-bg">
               <div className="bar-fill" style={{ width: `${evPercent}%` }}>
                 ₹{evCost.toFixed(0)}

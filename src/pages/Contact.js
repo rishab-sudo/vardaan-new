@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import './Contact.css';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FaPhoneVolume } from "react-icons/fa6";
+import { SiLibreofficewriter } from "react-icons/si";
 import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
@@ -41,7 +42,7 @@ const Contact = () => {
 
              <div className="info-box">
               <div className='info-box-icon-div'>
-              <FaEnvelope className="info-icon" />
+              <SiLibreofficewriter className="info-icon" />
               </div>
               <p> Bandia Road, Parsakhera Industrial Area,<br/>
 
