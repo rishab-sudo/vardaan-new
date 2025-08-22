@@ -7,8 +7,9 @@
   padding: 20px 0;
   color: #fff;
   overflow: hidden;
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 15px;
+    margin-bottom: -142px;
 }
 
 .black-overlay {
@@ -19,8 +20,7 @@
 }
 
 .stats-content-container {
-
-  position: relative;
+position: relative;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(1, 1fr);

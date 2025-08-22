@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row , Col } from 'react-bootstrap';
 import './About.css';
 import Testimonials from '../components/Testimonials';
+import Stats from "../components/Stats"
 
 const About = () => {
   return (
@@ -126,7 +127,7 @@ const About = () => {
     </Container>
 
 <Testimonials/>
-
+  <Stats/>
    </Container>
 
   );

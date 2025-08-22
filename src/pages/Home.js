@@ -4,8 +4,6 @@ import Specification from '../components/Specification'
 import HomeProduct from '../components/HomeProduct'
 import Calculator from '../components/Calculator'
 import HomeAbout from '../components/HomeAbout'
-
-import Stats from '../components/Stats'
 import AdvancedFeatures from '../components/AdvancedFeatures'
 import BecomeDealerBanner from '../components/BecomeDealerBanner'
 import Demo from '../components/ProductPageSpec'
@@ -21,7 +19,7 @@ const Home = () => {
       <HomeProduct/>
       <AdvancedFeatures/>
     <Calculator/>
-      <Stats/>
+    
       <BecomeDealerBanner/>
     </div>
   )
