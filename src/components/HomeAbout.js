@@ -53,7 +53,7 @@ const HomeAbout = () => {
         <div className='about-right-wraper'>
           <div className='about-text-wrapper'>
             <p className='page-tag-heading about-tag-heading'>ABOUT VARDAAN EV</p>
-            <h2 className='page-heading'>Powering India's Electric Revolution</h2>
+            <h2 className='page-heading aboutpage-heading' >Powering India's Electric Revolution</h2>
             <p>
             At Vardaan EV, we believe the future of mobility is electric, efficient, and environmentally conscious. As pioneers in sustainable transportation solutions, 
             we design and manufacture premium electric vehicles that don't just meet your needs – they exceed your expectations.<br/>

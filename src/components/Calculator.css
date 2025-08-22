@@ -57,7 +57,7 @@
   height: 12px;
   border-radius: 10px;
   appearance: none;
-  background: linear-gradient(90deg, #00b894 0%, #d63031 100%);
+  background: linear-gradient(90deg, #A9A9A9 0%, #00b894 100%);
 }
 
 .distance-slider::-webkit-slider-thumb {
@@ -141,7 +141,7 @@
 }
 
 .cost-bar.diesel .bar-fill {
-  background: #d63031;
+  background: linear-gradient(90deg, #A9A9A9 0%, #00b894 100%);
 }
 
 .cost-bar.ev .bar-fill {

@@ -14,9 +14,10 @@
 
 .navbar-left-bg {
   padding: 0;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
+  padding: 18px 0px;
 }
 
 .navbar-container {
@@ -28,8 +29,8 @@
 }
 
 .logo {
-  width: 120px;  /* Set proper size */
-  height: 85px;
+  max-width: 100%;  /* Set proper size */
+  max-height: 100%;
   background-color: #000;
 }
 
@@ -158,7 +159,7 @@ color: #ffffff;
 }
 
 .side-logo {
-  width: 120px;
+  width: 120px !important;
   height: auto;
 }
 
@@ -252,11 +253,18 @@ color: #ffffff;
   text-align: left;         
   width: 100%;              
 }
-    .navbar-left-bg {
-    width: auto;
-    background-color: #fff !important;
-  }
-
+.navbar-left-bg {
+  padding: 0;
+  max-width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+.logo {
+  max-width: 100%;  /* Set proper size */
+  max-height: 100%;
+  background-color: #000;
+}
     .dealer-btn {
     display: none;
   }

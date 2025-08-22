@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import "./Specification.css";
 
@@ -12,6 +12,22 @@ const Specification = () => {
   ];
 
   const [currentImage, setCurrentImage] = useState(colorOptions[0].img);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    // Run only on small devices
+    if (window.innerWidth <= 768) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % colorOptions.length;
+          setCurrentImage(colorOptions[nextIndex].img);
+          return nextIndex;
+        });
+      }, 1000); // change every 1 sec
+
+      return () => clearInterval(interval);
+    }
+  }, [colorOptions]);
 
   return (
     <Container fluid className='spec-fluid'>
@@ -41,9 +57,9 @@ const Specification = () => {
         {/* Right Section */}
         <div className='spec-right-wrapper'>
           <div className='right-side-text-div'>
-          <p>Autoev R200</p>
-          <h2>Redefining <br />Motorcycle<br /> Performance</h2>
-</div>
+            <p>Autoev R200</p>
+            <h2>Redefining <br />Motorcycle<br /> Performance</h2>
+          </div>
           {/* Black Box with Color Options */}
           <div className='color-options-wrapper'>
             <div className='color-options'>
@@ -51,7 +67,10 @@ const Specification = () => {
                 <div
                   key={index}
                   className='color-box-container'
-                  onClick={() => setCurrentImage(item.img)}
+                  onClick={() => {
+                    setCurrentImage(item.img);
+                    setCurrentIndex(index);
+                  }}
                 >
                   <div className='color-box' style={{ backgroundColor: item.color }}></div>
                 </div>

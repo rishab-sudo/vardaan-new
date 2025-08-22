@@ -1,5 +1,6 @@
 .stats-section {
     margin-top: 5%;
+    margin-bottom: 0;
   position: relative;
   background-image: url('../assets/about1.jpg');
   background-size: cover;
@@ -9,7 +10,6 @@
   overflow: hidden;
     max-width: 100%;
     border-radius: 15px;
-    margin-bottom: -142px;
 }
 
 .black-overlay {

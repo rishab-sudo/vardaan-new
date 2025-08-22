@@ -92,11 +92,15 @@
     margin-bottom: 30px;
   }
   .feature-image-wrapper {
-  
-    max-width: 95%;
-margin: 100px auto 50px auto;
+  max-width: 95%;
+margin: 120px auto 50px auto;
 }
 .feature-image {
 width: 90%;
+}
+.feature-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  flex-shrink: 0;
 }
 }
