@@ -11,16 +11,59 @@
     padding: 20px 0px;
 display: flex;
 flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+
+}
+.BecomeD-text-div{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left !important;
+}
+.heading-text-left{
+text-align: left !important;
+margin-right: auto;
+}
+.becomeD-btn-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .becomeD-content-container{
+    padding: 20px 0px;
+display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
+
 }
-.BecomeD-btn{
-    font-size: 18px;
-    padding: 10px 15px !important;
- background-color: transparent !important;
-    outline: 1px solid #05956c;
-    max-width: fit-content;
+.BecomeD-text-div{
+    min-width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
 }
-.BecomeD-btn:hover{
-    background-color: #05956c !important;
+.heading-text-left{
+text-align: center !important;
+}
+.becomeD-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: auto;
+}
+
+.dealer-contact-btn{
+    display: none;
+}
 }

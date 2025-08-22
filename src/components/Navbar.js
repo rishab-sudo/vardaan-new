@@ -63,7 +63,7 @@ const toggleMenu = () => {
         
           <li><a href="/contact">Contact Us</a></li>
           {/* Desktop Become A Dealer Button */}
-
+ <li><a href="/dealer">Become A Dealer</a></li>
         </ul>
 
         <div className="hamburger" onClick={toggleMenu}>

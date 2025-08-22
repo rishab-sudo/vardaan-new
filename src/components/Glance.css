@@ -1,0 +1,80 @@
+.glance-section {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  background: url("../assets/Background/glance-at-atul-auto.png") no-repeat center center/cover;
+  text-align: center;
+  color: white;
+  padding: 40px 0 20px 0;
+}
+
+.glance-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 3; /* heading hamesha upar dikhai de */
+}
+
+/* Stats ko background ke beech me fix karo */
+.glance-stats {
+  position: absolute;
+  top: 50%;              /* vertical center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Bottom Center Image Overlap */
+.glance-bottom-image {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.glance-bottom-image img {
+  width: 80%;
+  height: auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .glance-stats {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stat-box {
+    flex: 0 0 45%; /* 2 per row */
+  }
+
+  .glance-bottom-image {
+    bottom: -50px;
+  }
+
+  .glance-bottom-image img {
+    width: 100%;
+    max-width: 280px;
+  }
+}

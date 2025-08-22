@@ -13,7 +13,7 @@ const ProductPageSpec = () => {
           className="productpage-auto-image"
         />
 
-        {/* Example Feature Boxes */}
+        {/* Left Side Feature Box */}
         <div className="productpage-feature-box productpage-wheel-left productpage-left-side">
           <div className="productpage-icon">
             <FaWheelchair />
@@ -25,6 +25,7 @@ const ProductPageSpec = () => {
           <div className="productpage-line"></div>
         </div>
 
+        {/* Left Side Feature Box */}
         <div className="productpage-feature-box productpage-meter productpage-left-side">
           <div className="productpage-icon">
             <FaTachometerAlt />
@@ -36,7 +37,8 @@ const ProductPageSpec = () => {
           <div className="productpage-line"></div>
         </div>
 
-        <div className="productpage-feature-box productpage-battery">
+        {/* ✅ Right Side Feature Box */}
+        <div className="productpage-feature-box productpage-battery productpage-right-side">
           <div className="productpage-icon">
             <FaBolt />
           </div>

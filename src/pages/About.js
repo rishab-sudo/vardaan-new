@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row , Col } from 'react-bootstrap';
 import './About.css';
 import Testimonials from '../components/Testimonials';
-import Stats from "../components/Stats"
+
 
 const About = () => {
   return (
@@ -100,7 +100,7 @@ const About = () => {
         {/* Right Column (Repeat of Left) */}
         <Col md={4} className="about-mission-col text-start">
           <div className="about-mission-box">
-            <h3>Our vision</h3>
+            <h3>Our Mission</h3>
             <p>
               To transform the quality of life of people across the world by
               providing mobility solutions that are exciting, responsible,
@@ -127,7 +127,7 @@ const About = () => {
     </Container>
 
 <Testimonials/>
-  <Stats/>
+
    </Container>
 
   );

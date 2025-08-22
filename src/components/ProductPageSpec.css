@@ -8,8 +8,8 @@
 .productpage-section {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* keeps layout centered */
-  height: 600px; /* adjust as needed */
+  max-width: 1200px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,9 @@
   max-width: 90%;
 }
 
-/* Feature Box Common Style */
+/* ==============================
+   Feature Box Common Style
+================================= */
 .productpage-feature-box {
   position: absolute;
   display: flex;
@@ -43,9 +45,9 @@
 }
 
 .productpage-feature-box .productpage-icon {
-  font-size: 24px;
+  font-size: 27px;
   margin-right: 10px;
-  color: #007bff;
+  color: #05956c;
 }
 
 .productpage-feature-box .productpage-text h4 {
@@ -58,21 +60,52 @@
   color: gray;
 }
 
-/* Lines */
+/* ==============================
+   Lines Connected to Boxes
+================================= */
 .productpage-feature-box .productpage-line {
   position: absolute;
   border-top: 2px dashed #555;
-  width: 120px; /* line length */
   top: 50%;
-  left: -120px; /* shift line left */
   transform: translateY(-50%);
-}
-.productpage-feature-box.productpage-left-side .productpage-line {
-  left: 100%;          /* attach line to right edge of box */
-  width: 100%;
+  width: 120px;   /* default length (can adjust per design) */
 }
 
-/* Positioning Examples */
+/* Left side boxes → line grows to RIGHT */
+.productpage-feature-box.productpage-left-side .productpage-line {
+  left: 100%;
+}
+
+/* Right side boxes → line grows to LEFT */
+.productpage-feature-box.productpage-right-side .productpage-line {
+  right: 100%;
+}
+
+/* Top side boxes → vertical line grows DOWN */
+.productpage-feature-box.productpage-top-side .productpage-line {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 120px;
+  border-top: none;
+  border-left: 2px dashed #555;
+}
+
+/* Bottom side boxes → vertical line grows UP */
+.productpage-feature-box.productpage-bottom-side .productpage-line {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 120px;
+  border-top: none;
+  border-left: 2px dashed #555;
+}
+
+/* ==============================
+   Example Box Positions
+================================= */
 .productpage-wheel-left {
   bottom: 120px;
   left: 80px;
@@ -85,5 +118,5 @@
 
 .productpage-battery {
   bottom: 160px;
-  right: 225px;
+  right: 45px;
 }

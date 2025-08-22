@@ -11,6 +11,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Product from './pages/Product';
+import Dealer from './pages/Dealer';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
          <Route path="/contact" element={<Contact />} />
+          <Route path="/dealer" element={< Dealer/>} />
             {/* <Route path="/product" element={<ProductPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/career" element={<Career />} />

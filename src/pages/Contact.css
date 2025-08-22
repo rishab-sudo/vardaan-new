@@ -5,12 +5,14 @@
 /* Main Parallel Section */
 .contact-main-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: flex-start;
-  gap: 40px;
-  padding: 40px 0;
+  gap: 0px;
+  padding: 40px 0 !important;
   flex-wrap: wrap;
   margin-top: 2.5%;
+  margin: auto !important;
+  /* background-color: aliceblue; */
 }
 .contact-tag-heading-div{
 text-align: center;
@@ -31,15 +33,17 @@ text-align: center;
 }
 /* Left: Form */
 .form-container {
-  flex: 1 1 50%;
+  flex: 1 1 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.form-container form {
+margin-left: auto;
+}
 /* Right: Info Boxes */
 .contact-info-section {
-  flex: 1 1 40%;
+  flex: 1 1 35%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -85,4 +89,7 @@ text-align: center;
     flex: 1 1 100%;
     width: 100%;
   }
+  .form-container form {
+margin: auto !important;
+}
 }

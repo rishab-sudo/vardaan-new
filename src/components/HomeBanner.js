@@ -1,62 +1,51 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import banner1 from "../assets/Banner/Banner-1.webp";
+import banner2 from "../assets/Banner/Banner-04-1.webp";
+import banner3 from "../assets/Banner/Banner-1.webp";
 import "./HomeBanner.css";
 
-import auto11 from "../assets/auto11.png"; // ✅ direct import
+const images = [banner1, banner2, banner3];
+
+const PrevArrow = ({ onClick }) => (
+  <div className="slick-arrow slick-prev custom-arrow" onClick={onClick}>
+    <FaArrowLeft size={30} />
+  </div>
+);
+
+const NextArrow = ({ onClick }) => (
+  <div className="slick-arrow slick-next custom-arrow" onClick={onClick}>
+    <FaArrowRight size={30} />
+  </div>
+);
 
 const HomeBanner = () => {
   const settings = {
     dots: false,
-    arrows: false,
     infinite: true,
-    speed: 1800,
     autoplay: true,
     autoplaySpeed: 2500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: false,
-    cssEase: "ease-in-out",
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   };
 
   return (
-    <Container fluid className="banner-fluid g-0">
-      <Container className="banner-content-container">
-        {/* LEFT */}
-        <div className="left-side-wrapper">
-          <div className="left-banner-text-box">
-            <h2>Make Every Journey Extraordinary with Vardaan EV</h2>
-            <p>
-              Enjoy quiet, eco-friendly, and affordable rides for a brighter,
-              cleaner future.
-            </p>
-            <p>
-              With smart features and powerful battery performance, every trip
-              is seamless, comfortable, and dependable.
-            </p>
+    <div style={{ width: "100%", overflow: "hidden" }}>
+      <Slider {...settings}>
+        {images.map((img, index) => (
+          <div key={index}>
+            <img className="home-banner-img" src={img} alt={`slide-${index}`} />
           </div>
-        </div>
-
-        {/* RIGHT */}
-        <div className="right-side-wrapper">
-          <div className="image-slider">
-            <Slider {...settings}>
-              <div className="slide-box">
-                <img src={auto11} alt="Slide 1" className="sliding-img" />
-              </div>
-              <div className="slide-box">
-                <img src={auto11} alt="Slide 2" className="sliding-img" />
-              </div>
-              <div className="slide-box">
-                <img src={auto11} alt="Slide 3" className="sliding-img" />
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </Container>
-    </Container>
+        ))}
+      </Slider>
+    </div>
   );
 };
 

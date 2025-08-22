@@ -8,6 +8,7 @@ import AdvancedFeatures from '../components/AdvancedFeatures'
 import BecomeDealerBanner from '../components/BecomeDealerBanner'
 import Demo from '../components/ProductPageSpec'
 import ProductPageSpec from '../components/ProductPageSpec'
+import Glance from '../components/Glance'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Specification/>
       <HomeProduct/>
       <AdvancedFeatures/>
+      <Glance/>
     <Calculator/>
     
       <BecomeDealerBanner/>

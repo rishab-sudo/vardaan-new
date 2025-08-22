@@ -1,0 +1,42 @@
+.outline-btn{
+    font-size: 18px;
+    padding: 10px 15px !important;
+ background-color: transparent !important;
+    outline: 1px solid #05956c !important;
+width: 225px ;
+}
+.outline-btn:hover{
+    background-color: #05956c !important;
+}
+.background-btn {
+    font-size: 18px;
+  padding: 8px 15px;
+  width: 170px;
+  background-color: #05956c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;          /* thoda curve look */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.background-btn:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.background-btn:active {
+  transform: scale(0.98); 
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+.outline-btn-btn{
+    font-size: 18px;
+    padding: 8px 12px !important;
+ background-color: transparent !important;
+    outline: 1px solid #05956c;
+width: fit-content ;
+}
+}

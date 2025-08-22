@@ -1,0 +1,69 @@
+.become-dealer-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Section 1 - Banner */
+.dealer-banner {
+  height: 40vh;
+  background: url("../assets/Background/bg1.png") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.dealer-banner-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Section 2 - Info */
+.dealer-info {
+  padding: 80px 20px;
+  background: #f8f9fa;
+}
+
+.dealer-info-heading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.dealer-info-desc {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Slider Cards */
+.dealer-cards-slider {
+  margin-top: 30px;
+}
+
+.dealer-card {
+  max-width: 300px;
+  height: 250px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  margin: 10px;
+}
+
+.dealer-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.dealer-card-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}

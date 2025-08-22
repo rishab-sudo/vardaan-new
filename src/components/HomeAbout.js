@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./HomeAbout.css";
 import { Container } from 'react-bootstrap';
+import Button from "./Button";
 import { FaPlus } from 'react-icons/fa';
 
 const HomeAbout = () => {
@@ -77,6 +78,7 @@ const HomeAbout = () => {
             </div>          
             </div>
           
+          <Button text="Read More" className="background-btn" link="/about" />
           </div>
         </div>
 
