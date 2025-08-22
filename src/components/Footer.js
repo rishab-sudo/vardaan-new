@@ -12,19 +12,20 @@ const Footer = () => {
             {/* Left Column */}
             <Col lg={4} md={12} sm={12} className="footer-column-wrapper">
               <div className="footer-left">
+                <div className='footer-logo-div'>
                 <img src={require("../assets/nav-logo.png")} alt="logo" className="footer-logo" />
+                </div>
                 <div className="trust-text">
-                  <h2>Building Trust with Innovation, Quality Panels, and Global Manufacturing Excellence</h2>
+                  <h2>Driving India Towards a Cleaner, Smarter, Sustainable EV Future</h2>
                   <p>
-                    Alutuff delivers world-class aluminium panel solutions with trusted quality, modern design, and sustainable innovation.
-                    Backed by global presence and decades of expertise, we serve architects, developers, and industries with durable, fire-rated, and aesthetic 
-                    cladding solutions across India and beyond.
+Vardaan EV is redefining mobility with premium electric vehicles built for performance, safety, and sustainability. 
+Join our mission to create a greener tomorrow. Explore our eco-friendly rides today and experience the perfect blend of innovation, comfort, and responsibility.
                   </p>
                 </div>
                 <div className="social-icons">
-                  <a href="https://www.facebook.com/profile.php?id=61578129710470"><FaFacebook /></a>
-                  <a href="https://www.linkedin.com/company/alutuff/"><FaLinkedin /></a>
-                  <a href="https://www.instagram.com/alutuff.panels/"><FaInstagram /></a>
+                  <a href=" https://www.facebook.com/profile.php?id=61561890425872"><FaFacebook /></a>
+                  <a href="https://www.instagram.com/vardaan_ev/"><FaInstagram /></a>
+                  <a href=" https://www.linkedin.com/company/vardaan-ev/"><FaLinkedin /></a>
                 </div>
               </div>
             </Col>

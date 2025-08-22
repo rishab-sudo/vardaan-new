@@ -55,12 +55,12 @@
   margin: auto;
 
 }
-.logo-div{
-  min-width: 90% !important;
-  background-color: #ea3138;
+.footer-logo-div{
+  width: 100% !important;
+  /* background-color: #ea3138; */
 }
 .footer-logo {
-  width: 120px;
+  max-width: 90%;
   margin-bottom: 15px;
 }
 
