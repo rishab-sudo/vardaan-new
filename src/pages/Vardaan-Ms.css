@@ -1,0 +1,126 @@
+.product1-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------- Section 1 ---------- */
+.product1-section1 {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.product1-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product1-center-image {
+  max-width:65%;
+display: flex;
+  justify-content: center;
+}
+
+.product1-rotating-image {
+  max-width: 100%;
+  transition: transform 1s ease, opacity 1s ease;
+  animation: rotateFade 1s linear;
+}
+
+@keyframes rotateFade {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+/* color options on right side */
+.product1-color-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product1-color-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+/* Feature boxes */
+.product1-feature-boxes {
+  margin-top: 50px;
+}
+
+.product1-feature-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product1-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.product1-tagline {
+  font-weight: 600;
+}
+
+/* ---------- Section 2 ---------- */
+.product1-section2 {
+  padding: 60px 20px;
+}
+
+.product1-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border-radius: 12px;
+}
+
+.product1-spec-table {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product1-spec-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product1-spec-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.model-name-div{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product1-rotating-image {
+    max-width: 220px;
+  }
+  .product1-color-options {
+    right: 10px;
+  }
+}

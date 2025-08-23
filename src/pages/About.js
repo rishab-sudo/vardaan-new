@@ -6,11 +6,16 @@ import Testimonials from '../components/Testimonials';
 
 const About = () => {
   return (
+<>
+    <Container fluid className='about-banner-bg'>
+  <h1>About Us</h1>
+</Container>
+{/*  */}
     <Container fluid className="container-fluid about-wrapper">
          {/* Section 1 */}
 <Container className='about-section1-content-container'>
   <div className='about-section1-left-wrapper'>
-    <p>ABOUT Vardaan Ev </p>
+    <p className='page-tag-heading about-tag-heading' style={{maxWidth:"auto"}}>ABOUT Vardaan Ev </p>
     <h2>Powering India's Electric Revolution</h2>
     <p>At Vardaan EV, we are more than just a company; we are pioneers in sustainable transportation, driven by a vision to transform how India moves. We believe the future of mobility is electric, efficient, 
       and environmentally conscious, and our journey began with a simple yet powerful idea: to build a cleaner, greener tomorrow.</p>
@@ -129,7 +134,7 @@ const About = () => {
 <Testimonials/>
 
    </Container>
-
+</>
   );
 };
 

@@ -1,122 +1,95 @@
-.productpage-spec-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.detail-feature-section {
+  margin-top: 3.5%;
 }
 
-.productpage-section {
+.hotspot-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 800px;
+  margin: auto;
 }
 
-.productpage-circle-bg {
-  width: 400px;
-  height: 400px;
-  background: #e0e0e0;
+.product-image {
+  width: 100%;
+  display: block;
+}
+
+.hotspot-point {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.plus {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-}
-
-.productpage-auto-image {
-  position: relative;
-  z-index: 2;
-  max-width: 90%;
-}
-
-/* ==============================
-   Feature Box Common Style
-================================= */
-.productpage-feature-box {
-  position: absolute;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background: #fff;
-  padding: 10px 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  z-index: 3;
+  border: 2px solid green;
+  transition: transform 0.3s ease, background 0.3s;
+  animation: pulseZoom 2s infinite ease-in-out;
 }
 
-.productpage-feature-box .productpage-icon {
-  font-size: 27px;
-  margin-right: 10px;
-  color: #05956c;
+/* Hover effect */
+.hotspot-point:hover .plus {
+  background: green;
+  color: white;
+  transform: scale(1.2);
 }
 
-.productpage-feature-box .productpage-text h4 {
-  margin: 0;
-  font-size: 16px;
-}
-.productpage-feature-box .productpage-text p {
-  margin: 0;
-  font-size: 12px;
-  color: gray;
-}
-
-/* ==============================
-   Lines Connected to Boxes
-================================= */
-.productpage-feature-box .productpage-line {
+/* Info box on hover */
+.hotspot-info {
+  max-width: fit-content;
+  height: auto;
   position: absolute;
-  border-top: 2px dashed #555;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 120px;   /* default length (can adjust per design) */
-}
-
-/* Left side boxes → line grows to RIGHT */
-.productpage-feature-box.productpage-left-side .productpage-line {
-  left: 100%;
-}
-
-/* Right side boxes → line grows to LEFT */
-.productpage-feature-box.productpage-right-side .productpage-line {
-  right: 100%;
-}
-
-/* Top side boxes → vertical line grows DOWN */
-.productpage-feature-box.productpage-top-side .productpage-line {
-  top: 100%;
+  top: -60px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 120px;
-  border-top: none;
-  border-left: 2px dashed #555;
+  transform: translateX(-50%) scale(0.8);
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Bottom side boxes → vertical line grows UP */
-.productpage-feature-box.productpage-bottom-side .productpage-line {
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 120px;
-  border-top: none;
-  border-left: 2px dashed #555;
+.hotspot-point:hover .hotspot-info {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+ 
 }
 
-/* ==============================
-   Example Box Positions
-================================= */
-.productpage-wheel-left {
-  bottom: 120px;
-  left: 80px;
+.hotspot-info h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.productpage-meter {
-  top: 260px;
-  left: 50px;
+.hotspot-info p {
+  margin: 2px 0 0;
+  font-size: 12px;
 }
 
-.productpage-battery {
-  bottom: 160px;
-  right: 45px;
+/* PULSE ANIMATION */
+@keyframes pulseZoom {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.6), 0 0 0 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(0, 128, 0, 0), 0 0 30px 15px rgba(0, 0, 0, 0);
+    transform: scale(1.15);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.6), 0 0 0 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+  }
 }

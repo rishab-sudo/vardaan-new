@@ -37,33 +37,15 @@ const toggleMenu = () => {
     Products
   </a>
   <ul className={`dropdown-menu ${aboutDropdownOpen ? 'show' : ''}`}>
-    <li><a href="/product/model1"><i className="rickshaw-icon" /> Model 1</a></li>
+    <li><a href="/VardaanMs"><i className="rickshaw-icon" /> Vardaan MS </a></li>
     <li><a href="/product/model2"><i className="rickshaw-icon" /> Model 2</a></li>
     <li><a href="/product/model3"><i className="rickshaw-icon" /> Model 3</a></li>
   </ul>
 </li>
-          {/* <li><a href="/product">Products</a></li> */}
-          {/* <li><a href="/projects" onClick={toggleMenu}>Projects</a></li> */}
-          {/* <li><a href="/career" onClick={toggleMenu}>Careers</a></li> */}
-
-          {/* <li
-            className="dropdown"
-            onMouseEnter={() => setMoreDropdownOpen(true)}
-            onMouseLeave={() => setMoreDropdownOpen(false)}
-          >
-            <span className="dropdown-toggle">More</span>
-            <ul className={`dropdown-menu ${moreDropdownOpen ? 'show' : ''}`}>
-                 <li><a href="/catalogues">Catalogues</a></li>
-              <li><a href="/News">News & Events</a></li>
-              <li><a href="/testReport">Test Reports</a></li>
-              <li><a href="/certificates">Certificates</a></li>
-            </ul>
-          </li> */}
-
         
-          <li><a href="/contact">Contact Us</a></li>
+  <li><a href="/contact">Contact Us</a></li>
           {/* Desktop Become A Dealer Button */}
- <li><a href="/dealer">Become A Dealer</a></li>
+ <li><a href="/dealer" className='nav-dealer-btn'>Become A Dealer</a></li>
         </ul>
 
         <div className="hamburger" onClick={toggleMenu}>

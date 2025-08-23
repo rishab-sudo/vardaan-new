@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeBanner from '../components/HomeBanner'
-import Specification from '../components/Specification'
+import Specification from '../components/HomeSpecification'
 import HomeProduct from '../components/HomeProduct'
 import Calculator from '../components/Calculator'
 import HomeAbout from '../components/HomeAbout'

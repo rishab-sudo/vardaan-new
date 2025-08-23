@@ -108,21 +108,22 @@ color: #ffffff;
   background-color: #f0f0f0;
 }
 /* Dealer Button - Desktop Only */
-.dealer-btn {
-  background-color: rgba(211, 211, 211, 0.548);
+.nav-dealer-btn {
+background-color: #05956c;
   color: white;
-  padding: 10px 8px;
+  padding: 8px 9px;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
   margin-left: auto;
+  margin-top: 5px !important;
 }
 
-.dealer-btn:hover {
+.nav-dealer-btn:hover {
   /* background-color: #05956c; */
-  color: #05956c;
+  color: #ffffff !important;
 }
 
 

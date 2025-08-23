@@ -12,6 +12,9 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Product from './pages/Product';
 import Dealer from './pages/Dealer';
+import VardaanMs from "./pages/Vardaan-Ms"
+
+
 
 
 function App() {
@@ -26,6 +29,7 @@ function App() {
           <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
+            <Route path="/vardaanMs" element={< VardaanMs/>} />
          <Route path="/contact" element={<Contact />} />
           <Route path="/dealer" element={< Dealer/>} />
             {/* <Route path="/product" element={<ProductPage />} />

@@ -1,0 +1,16 @@
+.our-specification-section {
+  background: url("../assets/Background/glance-at-atul-auto.png") no-repeat center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.our-spec-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.our-full-img {
+  min-width: 100%;
+}
