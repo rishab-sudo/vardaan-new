@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import { Container } from "react-bootstrap";
 import "./DealerForm.css";
 
 const ContactForm = () => {
@@ -65,11 +66,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="form-container">
-      <h2>Contact Form</h2>
+    <Container className="dealerform-container">
+      {/* 🔹 Heading always at the top */}
+      <h2 className="dealerform-heading">Join Our Dealer Network</h2>
+
       <form onSubmit={handleSubmit}>
         {/* Name + Email */}
-        <div className="form-row">
+        <div className="dealerform-row">
           <input
             type="text"
             name="name"
@@ -87,7 +90,7 @@ const ContactForm = () => {
         </div>
 
         {/* Mobile + Area */}
-        <div className="form-row">
+        <div className="dealerform-row">
           <input
             type="text"
             name="mobile"
@@ -105,7 +108,7 @@ const ContactForm = () => {
         </div>
 
         {/* State + Pincode */}
-        <div className="form-row">
+        <div className="dealerform-row">
           <input
             type="text"
             name="state"
@@ -123,7 +126,7 @@ const ContactForm = () => {
         </div>
 
         {/* Message */}
-        <div className="form-row-full">
+        <div className="dealerform-row-full">
           <textarea
             name="message"
             placeholder="Your Message"
@@ -134,11 +137,11 @@ const ContactForm = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="form-submit">
+        <div className="dealerform-submit">
           <button type="submit">Submit</button>
         </div>
       </form>
-    </div>
+    </Container>
   );
 };
 
