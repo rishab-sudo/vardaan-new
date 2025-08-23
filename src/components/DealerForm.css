@@ -18,11 +18,13 @@
 
 .dealerform-row {
   display: flex;
+  justify-content: space-between;
   gap: 15px;
   margin-bottom: 35px;
 }
 
 .dealerform-row input {
+  max-width: 48%;
   flex: 1;
   padding: 12px;
   border: 1px solid #ccc;
@@ -65,10 +67,12 @@
 @media (max-width: 768px) {
   .dealerform-row {
     flex-direction: column;
+   
   }
 
   .dealerform-row input {
-    width: 100%;
+    min-width: 100%;
+    
   }
 
   .dealerform-submit {
@@ -76,11 +80,15 @@
   }
 
   .dealerform-container {
-    margin: 20px;
+  margin: auto !important;
     padding: 20px;
   }
 
   .dealerform-heading {
     font-size: 22px;
   }
+  .dealerform-submit button {
+margin-left: auto !important;
+font-size: 18px;
+}
 }

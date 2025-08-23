@@ -37,13 +37,13 @@ const HomeBanner = () => {
   };
 
   return (
-    <div style={{ width: "100%", overflow: "hidden" }}>
-      <Slider {...settings}>
-        {images.map((img, index) => (
-          <div key={index}>
-            <img className="home-banner-img" src={img} alt={`slide-${index}`} />
-          </div>
-        ))}
+    <div className="home-banner-img-div">
+      <Slider {...settings} className="sliderr">
+             <img className="home-banner-img" src={banner1}  />
+               <img className="home-banner-img" src={banner2}  />
+                  <img className="home-banner-img" src={banner3}  />
+        
+
       </Slider>
     </div>
   );
