@@ -1,0 +1,119 @@
+.missionvisioncore-section {
+    margin-top: 5%;
+  background: #f9f9f9;
+  min-height: 100%;
+}
+
+.mission-heading,
+.vision-heading,
+.corevalues-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mission-desc,
+.vision-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Core Values */
+.corevalues-container {
+  text-align: center;
+  height: auto;
+  /* background-color: aqua; */
+}
+
+.corevalues-content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.mission-col {
+  /* left column */
+}
+
+.corevalues-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.corevalues-slider {
+    height: 100%;
+  max-height: 100% !important;
+}
+
+.corevalue-slide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  padding: 15px;
+}
+
+/* Center slide zoom out effect */
+.corevalue-slide.slick-center {
+  transform: scale(1.2); /* zoom out a bit more */
+  opacity: 1;
+  z-index: 2;
+}
+.corevalue-slide:not(.slick-center) {
+  transform: scale(0.9);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.corevalue-content {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+  flex-shrink: 0;
+  /* color: #2e8b57; */
+  color: #05956c !important;
+}
+
+.text-box h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.text-box p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .corevalues-container{
+min-width: 100% !important;
+/* background-color: #2e8b57; */
+    }
+  .corevalue-content {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Let slider shrink to content height */
+  .corevalues-slider {
+    min-width: 100%;
+    max-height: none;      /* remove fixed height */
+    height: auto !important;
+    min-height: auto !important;
+  }
+}

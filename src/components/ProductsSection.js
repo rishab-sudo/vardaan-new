@@ -54,6 +54,10 @@ const ProductSection = () => {
 
   return (
     <Container className="product-section">
+      <div className='d-flex flex-column -justify-content-center align-items-center m-auto'>
+  {/* <p className='page-tag-heading about-tag-heading' style={{maxWidth:"auto"}}></p> */}
+  <h2 className='page-heading'>Our Products</h2>
+  </div>
       {/* Filter Buttons */}
       <div className="filter-buttons">
         <button

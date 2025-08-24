@@ -45,37 +45,39 @@
 
 /* Info box on hover */
 .hotspot-info {
-  max-width: fit-content;
-  height: auto;
+  width: 160px;          /* fixed width */
+  height: 150px;         /* fixed height (square shape) */
   position: absolute;
-  top: -60px;
+  top: -170px;           /* adjust so box doesn’t overlap the plus */
   left: 50%;
   transform: translateX(-50%) scale(0.8);
   background: green;
   color: white;
-  padding: 10px 15px;
+  padding: 15px;
   border-radius: 8px;
   opacity: 0;
-  white-space: nowrap;
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  word-wrap: break-word;  /* break long words */
+  overflow: hidden;       /* crop extra content */
 }
 
 .hotspot-point:hover .hotspot-info {
   opacity: 1;
   transform: translateX(-50%) scale(1);
- 
 }
 
 .hotspot-info h4 {
-  margin: 0;
+  margin: 0 0 5px;
   font-size: 14px;
   font-weight: bold;
 }
 
 .hotspot-info p {
-  margin: 2px 0 0;
+  margin: 0;
   font-size: 12px;
+  line-height: 1.3;
 }
 
 /* PULSE ANIMATION */

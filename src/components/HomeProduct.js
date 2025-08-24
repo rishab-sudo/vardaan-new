@@ -101,7 +101,7 @@ const HomeProduct = () => {
                 className="slide-image"
               />
               <div className="spec-boxes">
-                <div className="spec-box">Battery: 90Ah</div>
+                <div className="spec-box">Battery: 130/135AH</div>
                 <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>Vardaan Basic </div>
                 <div className="spec-box">Speed: 42km/h</div>
               </div>
@@ -118,7 +118,7 @@ const HomeProduct = () => {
                 className="slide-image"
               />
               <div className="spec-boxes">
-                <div className="spec-box">Battery: 110Ah</div>
+                <div className="spec-box">Battery: 130/135AH</div>
                 <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>Vardaan MS</div>
                 <div className="spec-box">Speed: 47km/h</div>
               </div>
@@ -135,7 +135,7 @@ const HomeProduct = () => {
                 className="slide-image"
               />
               <div className="spec-boxes">
-                <div className="spec-box">Battery: 95Ah</div>
+                <div className="spec-box">Battery: 135/140AH</div>
                 <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>Vardaan SS</div>
                 <div className="spec-box">Speed: 43km/h</div>
               </div>

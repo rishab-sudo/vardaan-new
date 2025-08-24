@@ -12,7 +12,9 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Product from './pages/Product';
 import Dealer from './pages/Dealer';
-import VardaanMs from "./pages/Vardaan-Ms"
+import VardaanSS from "./pages/VardaanSS";
+import VardaanMS from "./pages/VardaanMS";
+import VardaanBasic from "./pages/VardaanBasic";
 
 
 
@@ -29,7 +31,9 @@ function App() {
           <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
-            <Route path="/vardaanMs" element={< VardaanMs/>} />
+            <Route path="/vardaanMS" element={< VardaanMS/>} />
+                        <Route path="/vardaanSS" element={< VardaanSS/>} />
+                                    <Route path="/vardaanBasic" element={< VardaanBasic/>} />
          <Route path="/contact" element={<Contact />} />
           <Route path="/dealer" element={< Dealer/>} />
             {/* <Route path="/product" element={<ProductPage />} />

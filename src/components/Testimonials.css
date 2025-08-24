@@ -41,7 +41,8 @@ display: flex !important;
 }
 
 .testimonial-box:hover {
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
+    transform: scale(1.08); /* zoom effect */
   box-shadow: 0px 10px 24px rgba(5, 149, 108, 0.4);
 }
 

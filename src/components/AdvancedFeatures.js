@@ -49,7 +49,7 @@ const AdvancedFeatures = () => {
 <Col md={4} className="text-center feature-image-wrapper">
   <div className="image-container">
     <img
-      src={require("../assets/about1.jpg")}
+      src={require("../assets/about/about1.jpg")}
       alt="Feature Illustration"
       className="feature-image"
     />

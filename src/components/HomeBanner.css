@@ -1,42 +1,37 @@
-.home-banner-img-div{
-  width: 100% !important;
-  min-height: 80vh !important;
-}
-.home-banner-img {
-  min-height: 80vh !important;
+.homebanner {
   width: 100%;
+  min-height: 100vh; /* make sure container is never 0 height */
+  background: #000; /* fallback background */
+}
+
+.banner-img {
+  width: 100%;
+  min-height: 100vh;
   object-fit: cover;
-  display: block;
-}
-.custom-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 10px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.custom-arrow:hover {
-  background: rgba(0,0,0,0.8);
+  display: block; /* avoid inline gaps */
 }
 
-@media screen and (max-width: 768px) {
-  .home-banner-img-div{
-  width: 100% !important;
-  max-height: 100px !important;
-  background-color: black;
-}
-.home-banner-img {
-  max-height: 100vh !important;
-  width: 100%;
-  object-fit: contain !important;
-  display: block;
-}
-.sliderr{
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .homebanner {
+    min-height: 60vh;
+  }
 
+  .banner-img {
+    min-height: 60vh;
+    object-fit: contain;
+    background: #000;
+  }
 }
+
+
+@media (max-width: 480px) {
+  .homebanner {
+    height: 50vh;
+  }
+
+  .banner-img {
+    height: 50vh;
+    object-fit: contain;
+  }
 }

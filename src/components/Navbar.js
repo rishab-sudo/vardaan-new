@@ -38,8 +38,8 @@ const toggleMenu = () => {
   </a>
   <ul className={`dropdown-menu ${aboutDropdownOpen ? 'show' : ''}`}>
     <li><a href="/VardaanMs"><i className="rickshaw-icon" /> Vardaan MS </a></li>
-    <li><a href="/product/model2"><i className="rickshaw-icon" /> Model 2</a></li>
-    <li><a href="/product/model3"><i className="rickshaw-icon" /> Model 3</a></li>
+    <li><a href="/VardaanSS"><i className="rickshaw-icon" /> Vardaan SS</a></li>
+    <li><a href="/VardaanBasic"><i className="rickshaw-icon" /> Vardaan Basic</a></li>
   </ul>
 </li>
         
