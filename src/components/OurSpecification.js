@@ -12,7 +12,7 @@ import img5 from "../assets/product-parts/xf5 (1).jpg";
 const OurSpecification = () => {
   return (
     <div className="our-specification-section">
-        <h2 className="text-center color-white mb-5">Our Specification</h2>
+        <h2 className="text-center mb-5 page-heading" style={{color:"#fff"}}>Our Specification</h2>
       <Container>
         {/* First Row - 1 Image */}
         <Row className="justify-content-center mb-4 w-100">

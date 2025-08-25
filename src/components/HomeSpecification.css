@@ -44,6 +44,9 @@ height: 100%;
 }
 .spec-left-boxs{
   text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
   background-color: #000;
   color: #ffffff;
   border-radius: 10px;

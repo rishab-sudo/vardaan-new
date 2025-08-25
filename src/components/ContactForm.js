@@ -111,7 +111,7 @@ const ContactForm = () => {
         />
         {errors.message && <p className="error">{errors.message}</p>}
       </div>
-      <button type="submit">Submit</button>
+      <button className="contact-submit-button "type="submit">Submit</button>
     </form>
   );
 };

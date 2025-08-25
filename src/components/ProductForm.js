@@ -42,6 +42,9 @@ export default function ProductForm() {
 
   return (
     <Container fluid className="productForm-fluid">
+        <div>
+          <h2 className="page-heading">Get A Qoute</h2>
+        </div>
       <Container className="productForm-content-container">
         <Form onSubmit={handleSubmit} className="productForm">
           

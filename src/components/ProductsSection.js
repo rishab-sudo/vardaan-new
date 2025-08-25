@@ -7,6 +7,7 @@ const products = [
     id: 1,
     name: "Vardaan MS",
     category: "vardan-ms",
+    link: "/vardaanMs", // 👉 different link
     colors: [
       { color: "red", img: require("../assets/auto11.png") },
       { color: "blue", img: require("../assets/auto11.png") },
@@ -17,6 +18,7 @@ const products = [
     id: 2,
     name: "Vardaan SS",
     category: "vardan-ss",
+    link: "/vardaanSS", // 👉 different link
     colors: [
       { color: "white", img: require("../assets/auto11.png") },
       { color: "gray", img: require("../assets/auto11.png") },
@@ -26,6 +28,7 @@ const products = [
     id: 3,
     name: "Vardaan Basic",
     category: "vardan-basic",
+    link: "/vardaanBasic", // 👉 different link
     colors: [
       { color: "green", img: require("../assets/auto11.png") },
       { color: "black", img: require("../assets/auto11.png") },
@@ -46,7 +49,6 @@ const ProductSection = () => {
     setSelectedImages({ ...selectedImages, [productId]: img });
   };
 
-  // 👉 filter products here
   const filteredProducts =
     selectedFilter === "all"
       ? products
@@ -54,39 +56,10 @@ const ProductSection = () => {
 
   return (
     <Container className="product-section">
-      <div className='d-flex flex-column -justify-content-center align-items-center m-auto'>
-  {/* <p className='page-tag-heading about-tag-heading' style={{maxWidth:"auto"}}></p> */}
-  <h2 className='page-heading'>Our Products</h2>
-  </div>
-      {/* Filter Buttons */}
-      <div className="filter-buttons">
-        <button
-          className={selectedFilter === "all" ? "active" : ""}
-          onClick={() => setSelectedFilter("all")}
-        >
-          All
-        </button>
-        <button
-          className={selectedFilter === "vardan-ms" ? "active" : ""}
-          onClick={() => setSelectedFilter("vardan-ms")}
-        >
-          Vardan MS
-        </button>
-        <button
-          className={selectedFilter === "vardan-ss" ? "active" : ""}
-          onClick={() => setSelectedFilter("vardan-ss")}
-        >
-          Vardan SS
-        </button>
-        <button
-          className={selectedFilter === "vardan-basic" ? "active" : ""}
-          onClick={() => setSelectedFilter("vardan-basic")}
-        >
-          Vardan Basic
-        </button>
+      <div className="d-flex flex-column justify-content-center align-items-center m-auto">
+        <h2 className="page-heading">Our Products</h2>
       </div>
 
-      {/* Cards */}
       <div className="product-grid">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-card">
@@ -108,7 +81,11 @@ const ProductSection = () => {
                 ))}
               </div>
             </div>
-            <button className="know-more-btn">Know More →</button>
+
+            {/* 👉 Know More button with unique link */}
+            <a href={product.link} className="know-more-btn">
+              Know More →
+            </a>
           </div>
         ))}
       </div>

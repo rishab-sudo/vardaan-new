@@ -41,15 +41,15 @@ const HomeSpecification = () => {
           <div className='spec-left-boxs-div'>
             <div className='spec-left-boxs'>
               <p>130km</p>
-              <p>Range</p>
+              <p style={{textTransform:"uppercase",fontSize:"20px" }}>Range</p>
             </div>
             <div className='spec-left-boxs'>
               <p>4hr</p>
-              <p>Charge</p>
+              <p style={{textTransform:"uppercase",fontSize:"20px" }}>Charge</p>
             </div>
             <div className='spec-left-boxs'>
               <p>120km/h</p>
-              <p>Top Speed</p>
+              <p style={{textTransform:"uppercase",fontSize:"20px" }}>Top Speed</p>
             </div>
           </div>
         </div>

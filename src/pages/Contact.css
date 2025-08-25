@@ -54,6 +54,7 @@ margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   gap: 15px;
   padding: 20px;
   font-size: 20px;
@@ -61,6 +62,26 @@ margin-left: auto;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contact-info-btn {
+  width: 95px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 5px 8px;
+  background: #05956c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-info-btn:hover {
+  background: #05956c !important;
+  color: #ffffff !important;
 }
 .info-box-icon-div{
   padding: 8px;
