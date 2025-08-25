@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Button from "../components/Button"
+import "./Button.css"
 import "./BecomeDealerBanner.css"
 
 const BecomeDealerBanner = () => {
@@ -15,8 +16,8 @@ const BecomeDealerBanner = () => {
 <h2 className='page-heading mt-2 heading-text-left'>Join Vardaan EV Dealers Network</h2>
 <p>Become a dealer or find a nearby one – We are your partner in success by delivering reliable three-wheeled vehicles around the globe.</p>
 <div className='becomeD-btn-div'>
-  <Button text="Become A Dealer" className="outline-btn" link="/dealer" />
-  <Button text="Contact Us" className="outline-btn" link="/contact" />
+  <Button text="Become A Dealer" className="outline-btn" id="outline-btn" link="/dealer" />
+  <Button text="Contact Us" className="outline-btn" id="outline-btn" link="/contact" />
 </div>
 </div>
 </Container>

@@ -1,12 +1,18 @@
-.outline-btn{
-    font-size: 18px;
-    padding: 10px 15px !important;
- background-color: transparent !important;
-    outline: 2px solid #05956c !important;
-width: 225px ;
+.outline-btn {
+  font-size: 18px;
+  padding: 10px 15px !important;
+  background-color: transparent !important;
+  border: 2px solid #05956c !important;
+  color: #fff !important;
+  width: 225px;
+  border-radius: 6px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.outline-btn:hover{
-    background-color: #05956c !important;
+
+.outline-btn:hover {
+  background-color: #05956c !important;
+  color: #ffffff !important; 
 }
 .background-btn {
     font-size: 18px;
@@ -15,7 +21,7 @@ width: 225px ;
   background-color: #05956c;
   color: #ffffff;
   border: none;
-  border-radius: 6px;          /* thoda curve look */
+  border-radius: 6px !important;          /* thoda curve look */
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.25s ease, box-shadow 0.25s ease;

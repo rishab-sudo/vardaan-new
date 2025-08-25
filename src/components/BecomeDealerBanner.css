@@ -28,6 +28,7 @@ text-align: left !important;
 margin-right: auto;
 }
 .becomeD-btn-div{
+    margin-top: 25px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
