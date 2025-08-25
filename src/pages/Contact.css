@@ -1,5 +1,5 @@
 .contact-page {
-  margin-top: 8%;
+  margin-top: 12%;
 }
 
 /* Main Parallel Section */
@@ -110,7 +110,14 @@ margin-left: auto;
     flex: 1 1 100%;
     width: 100%;
   }
+  .info-box {
+height: auto !important;
+}
+.contact-info-btn {
+margin-top: 25px !important;
+}
   .form-container form {
 margin: auto !important;
+margin-top: 2.5rem !important;
 }
 }

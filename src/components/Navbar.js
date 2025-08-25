@@ -84,9 +84,9 @@ const toggleMenu = () => {
   {/* Dropdown inline box */}
   {mobileAboutOpen && (
     <ul className="side-dropdown-menu">
-      <li><a href="/product/model1" onClick={toggleMenu}>Model 1</a></li>
-      <li><a href="/product/model2" onClick={toggleMenu}>Model 2</a></li>
-      <li><a href="/product/model3" onClick={toggleMenu}>Model 3</a></li>
+      <li><a href="/VardaanMS" onClick={toggleMenu}>Vardaan MS</a></li>
+      <li><a href="/VardaanSS" onClick={toggleMenu}>Vardaan SS</a></li>
+      <li><a href="/VardaanBasic" onClick={toggleMenu}>Vardaan Basic</a></li>
     </ul>
   )}
 </li>

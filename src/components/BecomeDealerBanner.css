@@ -46,25 +46,25 @@ align-items: center;
 
 }
 .BecomeD-text-div{
-    min-width: 98%;
+    min-width: 95%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center !important;
+    text-align: left !important;
 }
 .heading-text-left{
 text-align: center !important;
 }
 .becomeD-btn-div{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 25px;
-    margin: auto;
+    margin-right: auto;
 }
 
-.dealer-contact-btn{
+.mobile-btn{
     display: none;
 }
 }

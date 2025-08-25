@@ -78,3 +78,8 @@
     align-items: stretch;
   }
 }
+@media (max-width: 991px) {
+.productForm {
+max-width: 95%;
+}
+}

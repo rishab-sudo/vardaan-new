@@ -67,3 +67,18 @@
   color: #333;
   line-height: 1.4;
 }
+@media (max-width: 768px) {
+  .dealer-cards-container{
+  min-width: 100% !important;
+  }
+  .dealer-card {
+ width: 100%;
+  height: auto;
+  margin: auto;
+}
+.dealer-cards-slider {
+  min-width: 100% !important;
+  margin-top: 15px;
+}
+
+}

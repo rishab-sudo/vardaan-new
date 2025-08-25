@@ -5,7 +5,7 @@
   border: 2px solid #05956c !important;
   color: #fff !important;
   width: 225px;
-  border-radius: 6px; 
+  border-radius: 15px; 
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -44,5 +44,8 @@
  background-color: transparent !important;
     outline: 1px solid #05956c;
 width: fit-content ;
+}
+.outline-btn {
+max-width: 185px;
 }
 }

@@ -110,13 +110,31 @@ border-radius: 5px;
 width: 100%;
 flex-direction: column;
 justify-content: center;
-gap: 35px;
-background-color: black;
+gap: 80px;
+/* background-color: black; */
 }
 .about-left-wraper{
-min-width: 100% !important;
-background-color: black;
+min-width: 100% ;
+justify-content: center;
+/* background-color: black; */
 }
+.green-counter-box {
+  position: absolute;
+  bottom: -50px;
+  margin-left: 35px !important;
+  transform: translateX(-50%);
+  background-color: #05956c;
+  color: white;
+  display: flex;
+  align-items: center; 
+  padding: 10px 16px;
+  border-radius: 15px;
+  width: 90%;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  gap: 12px; 
+}
+
 .home-about-img{
 min-width: 100% !important;
 margin: auto !important;

@@ -42,7 +42,7 @@ const Dealer = () => {
 
       {/* Section 2: Info + Slider */}
       <section className="dealer-info">
-        <Container className="text-center">
+        <Container className="text-center dealer-cards-container">
           <h2 className="dealer-info-heading">Join Our Dealer Network</h2>
           <p className="dealer-info-desc">
             Partner with us to unlock growth opportunities, exclusive benefits,

@@ -108,7 +108,9 @@ min-width: 100% !important;
     flex-direction: column;
     text-align: center;
   }
-
+.mission-col{
+  text-align: center;
+}
   /* Let slider shrink to content height */
   .corevalues-slider {
     min-width: 100%;

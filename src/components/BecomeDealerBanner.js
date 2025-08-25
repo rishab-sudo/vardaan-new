@@ -17,7 +17,7 @@ const BecomeDealerBanner = () => {
 <p>Become a dealer or find a nearby one – We are your partner in success by delivering reliable three-wheeled vehicles around the globe.</p>
 <div className='becomeD-btn-div'>
   <Button text="Become A Dealer" className="outline-btn" id="outline-btn" link="/dealer" />
-  <Button text="Contact Us" className="outline-btn" id="outline-btn" link="/contact" />
+  <Button text="Contact Us" className="outline-btn mobile-btn" id="outline-btn" link="/contact" />
 </div>
 </div>
 </Container>
