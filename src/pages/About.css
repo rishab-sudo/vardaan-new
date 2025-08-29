@@ -1,12 +1,13 @@
 .about-banner-bg {
   width: 100%;
-  min-height: 350px; /* adjust as per design */
-  background: url("../assets/Background//glance-at-atul-auto.png") no-repeat center center/cover;
+  height: 45vh; /* adjust as per design */
+  background: url("../assets/Background/aboutbanner-bg.jpg") no-repeat center center/cover;
   display: flex;
-  justify-content: center;  /* horizontal center */
-  align-items: center;      /* vertical center */
-  text-align: center;       /* center the text */
-  color: #fff;              /* white text (optional, for contrast) */
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;
+  object-fit:contain;      
+  color: #fff;              
 }
 .about-wrapper {
   margin-top: 5%;
@@ -23,16 +24,19 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  text-align: justify;
   gap: 5%;
+
 }
 .about-top-img{
-  max-width: 100%;
+  width: 100%;
 }
 .about-section1-left-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  
 }
 .about-text h2 {
   font-size: 28px;

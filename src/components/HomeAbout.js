@@ -31,7 +31,7 @@ const HomeAbout = () => {
           <div className="image-wrapper">
             <img 
               className='home-about-img'  
-              src={require("../assets/image-counter.jpg")} 
+              src={require("../assets/about/habout.jpg")} 
               alt="about"
             />
             {/* Green box overlay */}

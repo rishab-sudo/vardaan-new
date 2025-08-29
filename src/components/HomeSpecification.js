@@ -4,11 +4,11 @@ import "./HomeSpecification.css";
 
 const HomeSpecification = () => {
   const colorOptions = [
-    { color: "#000000", img: require("../assets/products/black.JPG") }, // Black
-    { color: "#ff0000", img: require("../assets/products/red.JPG") }, // Red
-    { color: "#0000ff", img: require("../assets/products/blue.JPG") }, // Blue
-    { color: "#008000", img: require("../assets/products/green.JPG") }, // Green
-    { color: "#ffffff", img: require("../assets/products/white.JPG") }, // Yellow
+    { color: "#000000", img: require("../assets/home/black.jpg") }, // Black
+    { color: "#ff0000", img: require("../assets/home/hred.jpg") }, // Red
+    { color: "#0000ff", img: require("../assets/home/hblue.jpg") }, // Blue
+    { color: "#008000", img: require("../assets/home/hgreen.jpg") }, // Green
+    { color: "#ffffff", img: require("../assets/home/hwhite.jpg") }, // Yellow
   ];
 
   const [currentImage, setCurrentImage] = useState(colorOptions[0].img);

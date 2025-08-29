@@ -1,39 +1,27 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./HomeBanner.css";
-
-// ✅ Use require() to avoid image path issues
-const banners = [
-  require("../assets/Banner/Banner-1.webp"),
-  require("../assets/Banner/Banner-04-1.webp"),
-  require("../assets/Banner/Banner-1.webp"),
-];
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./HomeBanner.css"
+// Agar images src/assets/Banner/ me hain
+import hbn1 from "../assets/Banner/hbn1.jpg";
+import hbn2 from "../assets/Banner/hbn2.jpg";
+import hbn3 from "../assets/Banner/hbn3.png";
 
 const HomeBanner = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    pauseOnHover: false,
-  };
-
   return (
-    <div className="homebanner">
-      <Slider {...settings}>
-        {banners.map((img, index) => (
-          <div key={index}>
-            <img src={img} alt={`Banner ${index + 1}`} className="banner-img" />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <Carousel slide interval={1500} pause={false} controls={false} indicators={true}>
+      <Carousel.Item>
+        <img className="d-block w-100 banner-img" src={hbn1} alt="Slide 1" />
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img className="d-block w-100 banner-img" src={hbn2} alt="Slide 2" />
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img className="d-block w-100 banner-img" src={hbn3} alt="Slide 3" />
+      </Carousel.Item>
+    </Carousel>
   );
 };
 

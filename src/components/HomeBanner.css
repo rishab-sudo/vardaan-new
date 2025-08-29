@@ -1,37 +1,16 @@
-.homebanner {
-  width: 100%;
-  min-height: 100vh; /* make sure container is never 0 height */
-  background: #000; /* fallback background */
-}
-
 .banner-img {
-  width: 100%;
-  min-height: 100vh;
+  min-height: 80vh !important; /* full screen height */
   object-fit: cover;
-  display: block; /* avoid inline gaps */
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .homebanner {
-    min-height: 60vh;
-  }
-
   .banner-img {
-    min-height: 60vh;
-    object-fit: contain;
-    background: #000;
+    height: 65vh;
   }
 }
-
 
 @media (max-width: 480px) {
-  .homebanner {
-    height: 50vh;
-  }
-
   .banner-img {
-    height: 50vh;
-    object-fit: contain;
+    height: 60vh;
   }
 }

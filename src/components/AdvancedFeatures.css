@@ -75,7 +75,7 @@
 }
 
 .feature-image {
-  width: 85%; /* Smaller image */
+  width: 100% !important; /* center image */
   height: auto;
   border-radius: 20px;
 }

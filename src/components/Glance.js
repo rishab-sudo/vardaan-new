@@ -6,7 +6,7 @@ const Glance = () => {
   return (
     <div className="glance-section">
       <div className="glance-overlay">
-        <h2 className="glance-heading">At a Glance</h2>
+        {/* <h2 className="glance-heading">At a Glance</h2> */}
 
         <div className="glance-stats">
           <div className="stat-box">
