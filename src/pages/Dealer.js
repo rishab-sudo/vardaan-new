@@ -3,16 +3,41 @@ import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import DealerForm from "../components/DealerForm"
+import DealerForm from "../components/DealerForm";
 import "./Dealer.css";
 
 // Sample card data
 const cardData = [
-  { id: 1, icon: "🚗", text: "Expand your business with us" },
-  { id: 2, icon: "📦", text: "Access to wide product range" },
-  { id: 3, icon: "💼", text: "Professional support always" },
-  { id: 4, icon: "📈", text: "Grow revenue with trusted brand" },
-  { id: 5, icon: "🌍", text: "Nationwide dealer network" },
+  {
+    id: 1,
+    icon: "🚗",
+    heading: "Accelerate Your Growth",
+    desc: "Partner with us to explore new opportunities, innovative EV solutions, and a market built for long-term success.",
+  },
+  {
+    id: 2,
+    icon: "📦",
+    heading: "Exclusive Rewards & Benefits",
+    desc: "Enjoy dealer-only incentives, profit-boosting offers, and premium privileges to maximize your earnings.",
+  },
+  {
+    id: 3,
+    icon: "💼",
+    heading: "Dedicated Professional Support",
+    desc: "From marketing to after-sales, our expert team guides you to deliver exceptional service with confidence.",
+  },
+  {
+    id: 4,
+    icon: "📈",
+    heading: "Join a Sustainable Future",
+    desc: "Be part of the EV revolution—driving innovation, sustainability, and a greener tomorrow together.",
+  },
+  {
+    id: 5,
+    icon: "🌍",
+    heading: "Nationwide Dealer Network",
+    desc: "Connect with a strong, fast-growing community of trusted partners across India.",
+  },
 ];
 
 const Dealer = () => {
@@ -43,10 +68,12 @@ const Dealer = () => {
       {/* Section 2: Info + Slider */}
       <section className="dealer-info">
         <Container className="text-center dealer-cards-container">
-          <h2 className="dealer-info-heading">Join Our Dealer Network</h2>
+          <h2 className="dealer-info-heading">Drive Growth. Drive Vardaan.</h2>
           <p className="dealer-info-desc">
-            Partner with us to unlock growth opportunities, exclusive benefits,
-            and professional support. Be a part of our expanding family.
+            Become a proud partner in our journey towards a greener tomorrow!{" "}
+            <br />
+            When you join our dealer network, you don’t just sell EVs — you
+            power dreams, opportunities, and progress.
           </p>
 
           <div className="dealer-cards-slider">
@@ -54,15 +81,17 @@ const Dealer = () => {
               {cardData.map((card) => (
                 <div key={card.id} className="dealer-card">
                   <div className="dealer-card-icon">{card.icon}</div>
-                  <p className="dealer-card-text">{card.text}</p>
+                  <p className="dealer-card-text">
+                    <strong>{card.heading}:</strong> <br />
+                    {card.desc}
+                  </p>
                 </div>
               ))}
             </Slider>
           </div>
         </Container>
 
-        <DealerForm/>
-
+        <DealerForm />
       </section>
     </div>
   );

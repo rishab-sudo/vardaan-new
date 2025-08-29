@@ -56,9 +56,7 @@ const HomeAbout = () => {
             <p className='page-tag-heading about-tag-heading'>ABOUT VARDAAN EV</p>
             <h2 className='page-heading aboutpage-heading' >Powering India's Electric Revolution</h2>
             <p>
-            At Vardaan EV, we believe the future of mobility is electric, efficient, and environmentally conscious. As pioneers in sustainable transportation solutions, 
-            we design and manufacture premium electric vehicles that don't just meet your needs – they exceed your expectations.<br/>
-            Our commitment goes beyond creating vehicles; we're building a cleaner, greener tomorrow where performance meets responsibility, and innovation drives positive change.
+Vardaan EV is shaping the future of mobility with premium electric vehicles that blend performance and sustainability. We’re driving innovation towards a cleaner, greener tomorrow.
             </p>
             <div className='d-flex flex-column justify-content-start '>
               <div className='about-power-icon-box'>

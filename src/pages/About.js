@@ -34,32 +34,33 @@ const About = () => {
 <Container className='achv-section'>
 <div className='d-flex flex-column -justify-content-center align-items-center m-auto'>
   <p className='page-tag-heading about-tag-heading' style={{maxWidth:"auto"}}>Know Us</p>
-  <h2 className='page-heading'>Our Achivements</h2>
+  <h2 className='page-heading'>Achivements</h2>
   </div>
 
   <div className='achv-cards-wrapper'>
 <div className='achv-card'>
 <img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
-<p className='mt-3 card-number-text'> 30K</p>
-<p>Scooters Sold</p>
+<p className='mt-3 card-number-text'> 30K+</p>
+<p>EV Sold</p>
 </div>
 
 <div className='achv-card'>
 <img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
-<p className='mt-3 card-number-text'> 30K</p>
-<p>Scooters Sold</p>
+<p className='mt-3 card-number-text'> 25K+</p>
+<p>Happy Customers</p>
 </div>
 
 <div className='achv-card'>
 <img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
-<p className='mt-3 card-number-text'> 30K</p>
-<p>Scooters Sold</p>
+<p className='mt-3 card-number-text'> 50K+</p>
+<p>Cities Covered </p>
 </div>
 
 <div className='achv-card'>
 <img className='achv-card-img' src={require("../assets/our-achivement1.png")} alt=""/>
-<p className='mt-3 card-number-text'> 30K</p>
-<p>Scooters Sold</p>
+<p className='mt-3 card-number-text'> 15 Miles+ </p>
+<p> Green Kilometers Driven
+</p>
 </div>
 
   </div>

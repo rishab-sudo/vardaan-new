@@ -57,8 +57,8 @@ const HomeSpecification = () => {
         {/* Right Section */}
         <div className='spec-right-wrapper'>
           <div className='right-side-text-div'>
-            <p>Autoev R200</p>
-            <h2>Redefining <br />Motorcycle<br /> Performance</h2>
+            <p>Vardaan EV</p>
+            <h2>Ultimate  <br />Electric<br /> Performance</h2>
           </div>
           {/* Black Box with Color Options */}
           <div className='color-options-wrapper'>

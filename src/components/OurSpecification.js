@@ -15,14 +15,14 @@ const OurSpecification = () => {
         <h2 className="text-center mb-5 page-heading" style={{color:"#fff"}}>Our Specification</h2>
       <Container>
         {/* First Row - 1 Image */}
-        <Row className="justify-content-center ">
+        <Row className="justify-content-center mb-3">
           <Col md={12} sm={12}> 
             <img src={img1} alt="our spec 1" className="our-spec-img our-full-img" />
           </Col>
         </Row>
 
         {/* Second Row - 2 Images */}
-        <Row className="">
+        <Row className="justify-content-center mb-3">
           <Col md={6} sm={12}>
             <img src={img2} alt="our spec 2" className="our-spec-img" />
           </Col>
@@ -32,7 +32,7 @@ const OurSpecification = () => {
         </Row>
 
         {/* Third Row - 2 Images */}
-        <Row>
+        <Row className="justify-content-center mb-3">
           <Col md={6} sm={12}>
             <img src={img4} alt="our spec 4" className="our-spec-img" />
           </Col>
