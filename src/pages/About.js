@@ -117,7 +117,7 @@ conscious, and our journey began with a simple yet powerful idea: to build a cle
 
             <div className="achv-card">
               <img className="achv-card-img" src={require('../assets/our-achivement1.png')} alt=""/>
-              <Counter target={15} suffix=" Miles+" delay={2000} />
+              <Counter target={15} suffix=" k+" delay={2000} />
               <p>Green Kilometers Driven</p>
             </div>
           </div>

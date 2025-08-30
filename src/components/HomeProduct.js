@@ -127,21 +127,7 @@ const HomeProduct = () => {
           </div>
 
           {/* Product 6 */}
-          <div className="slide-wrapper">
-            <div className="slide-content">
-              <img
-                src={require("../assets/auto11.png")}
-                alt="Model Zeta"
-                className="slide-image"
-              />
-              <div className="spec-boxes">
-                <div className="spec-box">Battery: 135/140AH</div>
-                <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>Vardaan SS</div>
-                <div className="spec-box">Speed: 43km/h</div>
-              </div>
-              {/* <h3 className="model-name">Model Zeta</h3> */}
-            </div>
-          </div>
+          
         </Slider>
       </div>
     </div>

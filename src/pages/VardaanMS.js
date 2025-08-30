@@ -9,7 +9,6 @@ import product2 from "../assets/products/pside-2.png";
 import product3 from "../assets/products/pside-3.png";
 import product4 from "../assets/products/pside-4.png";
 import product5 from "../assets/products//pside-5.png";
-
 // Specs component
 import ProductPageSpec from "../components/ProductPageSpec";
 
@@ -79,7 +78,7 @@ const VardaanMs = () => {
         {/* Feature Boxes */}
         <Container className="product1-feature-boxes">
           <Row>
-            {["Feature 1", "Feature 2", "Feature 3", "Feature 4"].map(
+            {["Long Battery Life ", "High Load Capacity ", "Smooth Performance", "Fast Charging"].map(
               (tagline, index) => (
                 <Col key={index} md={3} sm={6} xs={12} className="product1-feature-box">
                   <div className="product1-icon">⭐</div>
