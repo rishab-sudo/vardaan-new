@@ -45,7 +45,7 @@ const HomeProduct = () => {
           <div className="slide-wrapper">
             <div className="slide-content">
               <img
-                src={require("../assets/auto11.png")}
+                src={require("../assets/products/pside-1.png")}
                 alt="Model Alpha"
                 className="slide-image"
               />
@@ -62,7 +62,7 @@ const HomeProduct = () => {
           <div className="slide-wrapper">
             <div className="slide-content">
               <img
-                src={require("../assets/auto11.png")}
+               src={require("../assets/products/pside-2.png")}
                 alt="Model Beta"
                 className="slide-image"
               />
@@ -79,7 +79,7 @@ const HomeProduct = () => {
           <div className="slide-wrapper">
             <div className="slide-content">
               <img
-                src={require("../assets/auto11.png")}
+                src={require("../assets/products/pside-3.png")}
                 alt="Model Gamma"
                 className="slide-image"
               />
@@ -96,7 +96,7 @@ const HomeProduct = () => {
           <div className="slide-wrapper">
             <div className="slide-content">
               <img
-                src={require("../assets/auto11.png")}
+                src={require("../assets/products/pside-4.png")}
                 alt="Model Delta"
                 className="slide-image"
               />
@@ -113,7 +113,7 @@ const HomeProduct = () => {
           <div className="slide-wrapper">
             <div className="slide-content">
               <img
-                src={require("../assets/auto11.png")}
+                src={require("../assets/products/pside-5.png")}
                 alt="Model Epsilon"
                 className="slide-image"
               />

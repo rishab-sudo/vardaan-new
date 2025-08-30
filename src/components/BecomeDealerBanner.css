@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.7); /* black overlay */
   background-blend-mode: overlay;       /* blends overlay with image */
   color: #ffffff !important;
-  margin-top: 5%;
+  margin-top: 5% !important;
   padding: 3.5% 0px;
 }
 .becomeD-content-container{

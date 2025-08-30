@@ -64,10 +64,11 @@
 }
 
 .counter-text {
-    margin-left: auto;
-    text-align: left;
-  font-size: 18px;
-  width: 45%; 
+    margin-left: auto !important;
+    text-align: right;
+  font-size: 20px;
+  width: auto; 
+
 }
 
 .about-right-wraper{

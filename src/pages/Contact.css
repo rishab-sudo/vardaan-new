@@ -31,6 +31,9 @@ text-align: center;
   justify-content: center;
   align-items: center;
 }
+.contact-add{
+  max-width: 75%;
+}
 /* Left: Form */
 .form-container {
   flex: 1 1 60%;
@@ -50,7 +53,8 @@ margin-left: auto;
 }
 
 .info-box {
-  height: 170px;
+  height: 190px;
+  max-height: auto !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

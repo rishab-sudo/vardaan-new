@@ -13,28 +13,28 @@ const Glance = () => {
             <h3>
               <CountUp end={50} duration={3} />+
             </h3>
-            <p>Trust</p>
+            <p> Cities Across India</p>
           </div>
 
           <div className="stat-box">
             <h3>
               <CountUp start={1500} end={2000} duration={4} separator="," />+
             </h3>
-            <p>3-Wheelers on the Roads</p>
+            <p>Vehicles on Road</p>
           </div>
 
           <div className="stat-box">
             <h3>
-              <CountUp end={15} duration={3} />+
+              <CountUp  start={1000} end={1500} duration={3} />+
             </h3>
-            <p>Passengers</p>
+            <p> Daily Rides</p>
           </div>
 
           <div className="stat-box">
             <h3>
-              <CountUp end={400} duration={3} />+
+              <CountUp start={80} end={120} duration={3} />+
             </h3>
-            <p>Touch-points PAN India</p>
+            <p>Per Charge</p>
           </div>
         </div>
       </div>

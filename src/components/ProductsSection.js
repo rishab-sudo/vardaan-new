@@ -9,9 +9,11 @@ const products = [
     category: "vardan-ms",
     link: "/vardaanMs", // 👉 different link
     colors: [
-      { color: "red", img: require("../assets/auto11.png") },
-      { color: "blue", img: require("../assets/auto11.png") },
-      { color: "black", img: require("../assets/auto11.png") },
+      { color: "red", img: require("../assets/products/pside-1.png") },
+      { color: "white", img: require("../assets/products/pside-2.png") },
+      { color: "blue", img: require("../assets/products/pside-3.png") },
+      { color: "black", img: require("../assets/products/pside-4.png") },
+      { color: "green", img: require("../assets/products/pside-5.png") },
     ],
   },
   {
@@ -20,8 +22,11 @@ const products = [
     category: "vardan-ss",
     link: "/vardaanSS", // 👉 different link
     colors: [
-      { color: "white", img: require("../assets/auto11.png") },
-      { color: "gray", img: require("../assets/auto11.png") },
+      { color: "green", img: require("../assets/products/pside-5.png") },
+      { color: "red", img: require("../assets/products/pside-1.png") },
+      { color: "white", img: require("../assets/products/pside-2.png") },
+      { color: "blue", img: require("../assets/products/pside-3.png") },
+      { color: "black", img: require("../assets/products/pside-4.png") },
     ],
   },
   {
@@ -30,8 +35,11 @@ const products = [
     category: "vardan-basic",
     link: "/vardaanBasic", // 👉 different link
     colors: [
-      { color: "green", img: require("../assets/auto11.png") },
-      { color: "black", img: require("../assets/auto11.png") },
+      { color: "black", img: require("../assets/products/pside-4.png") },
+      { color: "red", img: require("../assets/products/pside-1.png") },
+      { color: "white", img: require("../assets/products/pside-2.png") },
+      { color: "blue", img: require("../assets/products/pside-3.png") },
+      { color: "green", img: require("../assets/products/pside-5.png") },
     ],
   },
 ];

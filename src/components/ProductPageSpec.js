@@ -5,24 +5,38 @@ import { Container } from "react-bootstrap";
 const hotspots = [
   {
     id: 1,
-    top: "30%",
+    top:  "12%",
     left: "40%",
-    title: "Feature 1",
-    text: "This is the description of feature 1.",
+    title: "Durable Body",
+    text: "Strong build ensures safety and lasting performance.",
   },
   {
     id: 2,
-    top: "60%",
-    left: "70%",
-    title: "Feature 2",
-    text: "This is the description of feature 2.",
+    top: "50%",
+    left: "50%",
+    title: "Comfortable Seat",
+    text: " Ride with ease on cushioned comfort always.",
   },
   {
     id: 3,
-    top: "50%",
+    top: "53%",
     left: "20%",
-    title: "Feature 3",
-    text: "This is the description of feature 3.",
+    title: " LED Lights ",
+    text: "Bright, stylish, energy-efficient visibility for night.",
+  },
+   {
+    id: 4,
+    top: "80%",
+    left: "15%",
+    title: " Sturdy Wheels ",
+    text: " Superior grip for smooth rides on roads.",
+  },
+   {
+    id: 5,
+    top: "60%",
+    left: "70%",
+    title: " Fast Charging Battery ",
+    text: "Quick charge keeps you moving without delays.",
   },
 ];
 

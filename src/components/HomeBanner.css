@@ -1,16 +1,21 @@
-.banner-img {
-  min-height: 80vh !important; /* full screen height */
-  object-fit: cover;
+.banner-slide {
+  width: 100%;
+  height: 80vh; /* default height */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/* Tablet */
 @media (max-width: 768px) {
-  .banner-img {
-    height: 65vh;
+  .banner-slide {
+    height: 50vh;
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
-  .banner-img {
-    height: 60vh;
+  .banner-slide {
+    height: 45vh;
   }
 }

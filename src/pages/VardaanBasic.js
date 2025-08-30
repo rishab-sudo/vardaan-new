@@ -4,11 +4,11 @@ import "./VardaanMs.css";
 // Backgrounds
 import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
 // Product images
-import product1 from "../assets/products/black.JPG";
-import product2 from "../assets/products/red.JPG";
-import product3 from "../assets/products/blue.JPG";
-import product4 from "../assets/products/green.JPG";
-import product5 from "../assets/products/white.JPG";
+import product1 from "../assets/products/pside-1.png";
+import product2 from "../assets/products/pside-2.png";
+import product3 from "../assets/products/pside-3.png";
+import product4 from "../assets/products/pside-4.png";
+import product5 from "../assets/products//pside-5.png";
 
 // Specs component
 import ProductPageSpec from "../components/ProductPageSpec";

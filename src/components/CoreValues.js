@@ -24,18 +24,33 @@ const Corevalues = () => {
   const values = [
     {
       icon: <FaLightbulb size={40} className="value-icon" />,
-      title: "Innovation",
-      desc: "We constantly seek creative solutions to solve modern challenges.",
+      title: "Collaboration",
+      desc: "Together we grow, innovate, and build sustainable mobility solutions.",
     },
     {
       icon: <FaUsers size={40} className="value-icon" />,
-      title: "Collaboration",
-      desc: "We believe teamwork and unity drive better results and trust.",
+      title: "Integrity",
+      desc: "Transparency and honesty drive every ride, every relationship.",
     },
     {
       icon: <FaShieldAlt size={40} className="value-icon" />,
-      title: "Integrity",
-      desc: "We uphold honesty, transparency, and ethics in everything we do.",
+      title: "Innovation",
+      desc: "Smart ideas powering the future of green transportation.",
+    },
+      {
+      icon: <FaShieldAlt size={40} className="value-icon" />,
+      title: "Sustainability",
+      desc: "Clean energy for a healthier planet and brighter tomorrow.",
+    },
+      {
+      icon: <FaShieldAlt size={40} className="value-icon" />,
+      title: "Customer-Centricity",
+      desc: "Every EV designed to serve your comfort, safety, and trust.",
+    },
+         {
+      icon: <FaShieldAlt size={40} className="value-icon" />,
+      title: "Future Vision",
+      desc: " Driving change today for mobility of tomorrow.",
     },
   ];
 

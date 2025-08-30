@@ -59,7 +59,7 @@ const Contact = () => {
               <div className='info-box-icon-div'>
                 <SiLibreofficewriter className="info-icon" />
               </div>
-              <p>
+              <p className='contact-add'>
                 Bandia Road, Parsakhera Industrial Area,<br />
                 Bareilly-243122, Uttar Pradesh, India
               </p>

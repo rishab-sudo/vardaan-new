@@ -1,7 +1,8 @@
 /* Calculator Wrapper */
 .calculator-wrapper {
+  margin-top: 145px !important;
   width: 100%;
-margin: 12% auto;
+margin:  auto;
   padding: 40px;
   background: #fff;
   border-radius: 25px;

@@ -46,7 +46,7 @@
 /* Info box on hover */
 .hotspot-info {
   width: 160px;          /* fixed width */
-  height: 150px;         /* fixed height (square shape) */
+  height: 135px;         /* fixed height (square shape) */
   position: absolute;
   top: -170px;           /* adjust so box doesn’t overlap the plus */
   left: 50%;
@@ -70,13 +70,13 @@
 
 .hotspot-info h4 {
   margin: 0 0 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .hotspot-info p {
   margin: 0;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.3;
 }
 

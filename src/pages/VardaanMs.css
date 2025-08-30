@@ -144,6 +144,7 @@ display: flex;
 @media (max-width: 768px) {
   .product1-rotating-image {
     min-width: 100% !important;
+    
   }
   .product1-color-options {
     right: 10px;
