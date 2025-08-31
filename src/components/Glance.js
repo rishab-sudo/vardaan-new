@@ -41,8 +41,12 @@ const Glance = () => {
 
       {/* Bottom center image (overlapping) */}
       <div className="glance-bottom-image">
-        <img
+        {/* <img
           src={require("../assets/Background/auto-3-icon.webp")}
+          alt="Vehicle"
+        /> */}
+         <img
+          src={require("../assets/products/all5.png")}
           alt="Vehicle"
         />
       </div>

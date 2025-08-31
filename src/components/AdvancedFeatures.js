@@ -18,7 +18,7 @@ const AdvancedFeatures = () => {
           <Col md={4} className="feature-column">
             <div className="feature-item">
                   <div className="feature-icon-box">
-              <FaCogs className="feature-icon" />
+              <img src={require("../assets/icons/kf1.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Advanced Battery Technology</h5>
@@ -27,7 +27,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item">
                   <div className="feature-icon-box">
-              <FaShieldAlt className="feature-icon" />
+                           <img src={require("../assets/icons/kf2.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading"> Smart Charging Solutions</h5>
@@ -36,7 +36,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item">
                   <div className="feature-icon-box">
-              <FaBolt className="feature-icon" />
+                           <img src={require("../assets/icons/kf3.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Safety First Design</h5>
@@ -62,7 +62,7 @@ const AdvancedFeatures = () => {
             <div className="feature-item feature-right">
                 <div className="feature-icon-box">
 
-              <FaChartLine className="feature-icon " />
+                          <img src={require("../assets/icons/kf4.png")} className="feature-icon" alt=""/>
                 </div>
               <div className="feature-text">
                 <h5 className="feature-heading"> Zero Emission Performance </h5>
@@ -71,7 +71,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item feature-right">
                    <div className="feature-icon-box">
-              <FaCloud className="feature-icon" />
+                           <img src={require("../assets/icons/kf5.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Connected Technology</h5>
@@ -80,7 +80,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item feature-right">
                    <div className="feature-icon-box">
-              <FaMobileAlt className="feature-icon" />
+              <img src={require("../assets/icons/kf6.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Cost-Effective Operation </h5>

@@ -37,9 +37,10 @@
     padding: 15px;
 }
 .feature-icon {
-  font-size: 2.5rem;
-  color: #fff;
-  flex-shrink: 0;
+height: 45px;
+width: 45px;
+flex-shrink: 0;
+
 }
 
 .feature-text {

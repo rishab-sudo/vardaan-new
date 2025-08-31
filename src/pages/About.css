@@ -1,6 +1,6 @@
 .about-banner-bg {
   width: 100%;
-  min-height: 65vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,11 +107,12 @@ display: flex;
 /* Tablet and below */
 @media (max-width: 768px) {
   .about-banner-bg {
-    height: auto;  
+  min-height: fit-content !important;
+  max-height: fit-content;
   }
   .about-banner-bg img {
     object-fit: contain;  
-      max-height: 50vh;  
+    height: 100%; 
       /* background-color: aqua; */
   }
   .about-wrapper {
