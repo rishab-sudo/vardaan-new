@@ -98,25 +98,37 @@ conscious, and our journey began with a simple yet powerful idea: to build a cle
 
           <div className="achv-cards-wrapper">
             <div className="achv-card">
-              <img className="achv-card-img" src={require('../assets/our-achivement1.png')} alt=""/>
+              <div className='achv-card-icon-div'>
+
+              <img className="achv-card-img" src={require('../assets/icons/Ac1.png')} alt=""/>
+              </div>
               <Counter target={30} suffix="K+" delay={2000} />
               <p>EV Sold</p>
             </div>
 
             <div className="achv-card">
-              <img className="achv-card-img" src={require('../assets/our-achivement1.png')} alt=""/>
+              <div className='achv-card-icon-div'>
+
+              <img className="achv-card-img" src={require('../assets/icons/Ac2.png')} alt=""/>
+              </div>
               <Counter target={25} suffix="K+" delay={2000} />
               <p>Happy Customers</p>
             </div>
 
             <div className="achv-card">
-              <img className="achv-card-img" src={require('../assets/our-achivement1.png')} alt=""/>
+              <div className='achv-card-icon-div'>
+
+              <img className="achv-card-img" src={require('../assets/icons/Ac3.png')} alt=""/>
+              </div>
               <Counter target={50} suffix="K+" delay={2000} />
               <p>Cities Covered</p>
             </div>
 
             <div className="achv-card">
-              <img className="achv-card-img" src={require('../assets/our-achivement1.png')} alt=""/>
+              <div className='achv-card-icon-div'>
+
+              <img className="achv-card-img" src={require('../assets/icons/Ac4.png')} alt=""/>
+              </div>
               <Counter target={15} suffix=" k+" delay={2000} />
               <p>Green Kilometers Driven</p>
             </div>

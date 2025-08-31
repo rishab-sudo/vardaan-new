@@ -10,31 +10,31 @@ import "./Dealer.css";
 const cardData = [
   {
     id: 1,
-    icon: "🚗",
+    img: require("../assets/icons/accelerate.gif"),
     heading: "Accelerate Your Growth",
     desc: "Partner with us to explore new opportunities, innovative EV solutions, and a market built for long-term success.",
   },
   {
     id: 2,
-    icon: "📦",
+  img: require("../assets/icons/reward.gif"),
     heading: "Exclusive Rewards & Benefits",
     desc: "Enjoy dealer-only incentives, profit-boosting offers, and premium privileges to maximize your earnings.",
   },
   {
     id: 3,
-    icon: "💼",
+    img: require("../assets/icons/nationwide support.gif"),
     heading: "Dedicated Professional Support",
     desc: "From marketing to after-sales, our expert team guides you to deliver exceptional service with confidence.",
   },
   {
     id: 4,
-    icon: "📈",
+   img: require("../assets/icons/sustinabe.gif"),
     heading: "Join a Sustainable Future",
     desc: "Be part of the EV revolution—driving innovation, sustainability, and a greener tomorrow together.",
   },
   {
     id: 5,
-    icon: "🌍",
+   img: require("../assets/icons/nationwide support.gif"),
     heading: "Nationwide Dealer Network",
     desc: "Connect with a strong, fast-growing community of trusted partners across India.",
   },
@@ -79,13 +79,16 @@ const Dealer = () => {
           <div className="dealer-cards-slider">
             <Slider {...sliderSettings}>
               {cardData.map((card) => (
-                <div key={card.id} className="dealer-card">
-                  <div className="dealer-card-icon">{card.icon}</div>
-                  <p className="dealer-card-text">
-                    <strong>{card.heading}:</strong> <br />
-                    {card.desc}
-                  </p>
-                </div>
+               <div key={card.id} className="dealer-card">
+  <div className="dealer-card-icon">
+    <img className="dealer-card-icon" src={card.img} alt={card.heading} />
+  </div>
+  <p className="dealer-card-text">
+    <strong>{card.heading}:</strong> <br />
+    {card.desc}
+  </p>
+</div>
+
               ))}
             </Slider>
           </div>

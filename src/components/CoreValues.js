@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaLightbulb, FaUsers, FaShieldAlt } from "react-icons/fa";
 import "./CoreValues.css";
 
 const Corevalues = () => {
@@ -23,34 +22,34 @@ const Corevalues = () => {
 
   const values = [
     {
-      icon: <FaLightbulb size={40} className="value-icon" />,
+      icon: require("../assets/icons/cv1.png"),
       title: "Collaboration",
       desc: "Together we grow, innovate, and build sustainable mobility solutions.",
     },
     {
-      icon: <FaUsers size={40} className="value-icon" />,
+      icon: require("../assets/icons/cv2.png"),
       title: "Integrity",
       desc: "Transparency and honesty drive every ride, every relationship.",
     },
     {
-      icon: <FaShieldAlt size={40} className="value-icon" />,
+      icon: require("../assets/icons/cv3.png"),
       title: "Innovation",
       desc: "Smart ideas powering the future of green transportation.",
     },
-      {
-      icon: <FaShieldAlt size={40} className="value-icon" />,
+    {
+      icon: require("../assets/icons/cv4.png"),
       title: "Sustainability",
       desc: "Clean energy for a healthier planet and brighter tomorrow.",
     },
-      {
-      icon: <FaShieldAlt size={40} className="value-icon" />,
+    {
+      icon: require("../assets/icons/cv5.png"),
       title: "Customer-Centricity",
       desc: "Every EV designed to serve your comfort, safety, and trust.",
     },
-         {
-      icon: <FaShieldAlt size={40} className="value-icon" />,
+    {
+      icon: require("../assets/icons/cv6.png"),
       title: "Future Vision",
-      desc: " Driving change today for mobility of tomorrow.",
+      desc: "Driving change today for mobility of tomorrow.",
     },
   ];
 
@@ -85,7 +84,9 @@ const Corevalues = () => {
                 {values.map((item, index) => (
                   <div key={index} className="corevalue-slide">
                     <div className="corevalue-content">
-                      <div className="icon-box">{item.icon}</div>
+                      <div className="icon-box">
+                        <img className="value-icon" src={item.icon} alt={item.title} />
+                      </div>
                       <div className="text-box">
                         <h3>{item.title}</h3>
                         <p>{item.desc}</p>

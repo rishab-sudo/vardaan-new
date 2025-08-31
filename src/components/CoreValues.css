@@ -95,7 +95,10 @@
   color: #555;
 }
 
-
+.value-icon{
+  height: 60px;
+  width: 60px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -118,4 +121,8 @@ min-width: 100% !important;
     height: auto !important;
     min-height: auto !important;
   }
+  .value-icon{
+  height: 45px !important;
+  width: 45px !important;
+}
 }

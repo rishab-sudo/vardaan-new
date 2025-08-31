@@ -62,15 +62,28 @@
 @media (max-width: 768px) {
   .glance-stats {
     flex-wrap: wrap;
-    gap: 15px;
+     justify-content: space-between !important;
+   
   }
 
   .stat-box {
-    flex: 0 0 45%; /* 2 per row */
+    /* flex: 0 0 45%;  */
+    flex: 0 0  100%;
+ justify-content: space-between !important;
+ align-items: center;
   }
+.stat-box h3 {
+  font-size: 20px;
 
+}
+
+.stat-box p {
+  font-size: 15px;
+  margin: 0;
+}
   .glance-bottom-image {
     bottom: -50px;
+
   }
 
   .glance-bottom-image img {
