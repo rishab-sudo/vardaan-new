@@ -145,6 +145,16 @@ display: flex;
 
 /* Responsive */
 @media (max-width: 768px) {
+  .product1-section1 {
+  background-size: cover;
+  background-position: center;
+  padding: 25px 15px;
+}
+.product1-center-image {
+  min-width:100%;
+display: flex;
+  justify-content: center;
+}
   .product1-rotating-image {
     min-width: 100% !important;
   }

@@ -84,10 +84,18 @@ object-fit: contain;
 
 @media screen and (max-width: 768px) {
 .slide-wrapper {
+  width: 100% !important;
 padding: 20px;
 }
 .slide-image {
-max-width: 100% !important;
+min-width: 100% !important;
 margin: auto !important;
+}
+.spec-box {
+height: 50px;
+font-size: 12px !important;
+}
+.spec-small-box{
+ 
 }
 }
