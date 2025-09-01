@@ -89,7 +89,7 @@ const VardaanMs = () => {
         </div>
 
         {/* Feature Boxes */}
-        <Container className="product1-feature-boxes">
+        {/* <Container className="product1-feature-boxes">
           <Row>
             {["Long Battery Life ", "High Load Capacity ", "Smooth Performance", "Fast Charging"].map(
               (tagline, index) => (
@@ -100,7 +100,7 @@ const VardaanMs = () => {
               )
             )}
           </Row>
-        </Container>
+        </Container> */}
       </section>
 
       {/* ---------- Section 2 ---------- */}
