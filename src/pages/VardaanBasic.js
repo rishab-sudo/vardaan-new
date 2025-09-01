@@ -2,20 +2,34 @@ import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./VardaanMs.css";
 // Backgrounds
-import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
+// import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
+ import bg1 from "../assets/Background/download.jpg";
 // Product images
-import product1 from "../assets/products/pside-1.png";
-import product2 from "../assets/products/pside-2.png";
-import product3 from "../assets/products/pside-3.png";
-import product4 from "../assets/products/pside-4.png";
-import product5 from "../assets/products//pside-5.png";
+import product01 from "../assets/products/pside-1.png";
+import product02 from "../assets/products/pside-2.png";
+import product03 from "../assets/products/pside-3.png";
+import product04 from "../assets/products/pside-4.png";
+import product05 from "../assets/products//pside-5.png";
+// ------------------side images for banner--------------------
+import product1 from "../assets/products/angle1.png";
+import product2 from "../assets/products/angle2.png";
+import product3 from "../assets/products/angle3.png";
+import product4 from "../assets/products/angle4.png";
+import product5 from "../assets/products/angle5.png";
+import product6 from "../assets/products/angle6.png";
+import product7 from "../assets/products/angle7.png";
+import product8 from "../assets/products/angle8.png";
+import product9 from "../assets/products/angle9.png";
+import product10 from "../assets/products/angle10.png";
+import product11 from "../assets/products/angle11.png";
+import product12 from "../assets/products/angle12.png";
 
 // Specs component
 import ProductPageSpec from "../components/ProductPageSpec";
 
-const VardaanBasic = () => {
-  const productImages = [product1, product2, product3, product4, product5];
-  const colors = ["black", "red", "blue", "green", "white"];
+const VardaanMs = () => {
+  const productImages = [product1, product2, product3, product4, product5,product6, product7, product8, product9, product10, product11, product12];
+  const colors = ["red", " black", "blue", "green", "white"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
 
@@ -64,7 +78,7 @@ const VardaanBasic = () => {
           </div>
 
           {/* Color options */}
-          <div className="product1-color-options">
+          {/* <div className="product1-color-options">
             {productImages.map((_, idx) => (
               <span
                 key={idx}
@@ -73,13 +87,13 @@ const VardaanBasic = () => {
                 onClick={() => handleColorClick(idx)}
               ></span>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Feature Boxes */}
-        <Container className="product1-feature-boxes">
+        {/* <Container className="product1-feature-boxes">
           <Row>
-            {["Feature 1", "Feature 2", "Feature 3", "Feature 4"].map(
+            {["Long Battery Life ", "High Load Capacity ", "Smooth Performance", "Fast Charging"].map(
               (tagline, index) => (
                 <Col key={index} md={3} sm={6} xs={12} className="product1-feature-box">
                   <div className="product1-icon">⭐</div>
@@ -88,7 +102,7 @@ const VardaanBasic = () => {
               )
             )}
           </Row>
-        </Container>
+        </Container> */}
       </section>
 
       {/* ---------- Section 2 ---------- */}
@@ -99,12 +113,12 @@ const VardaanBasic = () => {
     <Row className="align-items-center mb-5 justify-content-between">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product1} alt="Product" className="product1-img" />
+          <img src={product01} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1000W</h4>   {/* ✅ Product name moved here */}
+          <h4>Vardaan Basic 1000W</h4>   {/* ✅ Product name moved here */}
           <table>
             <tbody>
               <tr><td>Power</td><td>1000W</td></tr>
@@ -122,12 +136,12 @@ const VardaanBasic = () => {
     <Row className="align-items-center mb-5 justify-content-between flex-row-reverse">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product2} alt="Product" className="product1-img" />
+          <img src={product02} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1000W - Red</h4>
+          <h4>Vardaan Basic 1000W </h4>
           <table>
             <tbody>
               <tr><td>Power</td><td>1000W</td></tr>
@@ -145,12 +159,12 @@ const VardaanBasic = () => {
     <Row className="align-items-center mb-5 justify-content-between">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product3} alt="Product" className="product1-img" />
+          <img src={product03} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1200W</h4>
+          <h4>Vardaan Basic 1200W</h4>
           <table>
             <tbody>
               <tr><td>Power</td><td className="highlight">1200W</td></tr>
@@ -168,12 +182,12 @@ const VardaanBasic = () => {
     <Row className="align-items-center mb-5 justify-content-between flex-row-reverse">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product4} alt="Product" className="product1-img" />
+          <img src={product04} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1200W - Green</h4>
+          <h4>Vardaan Basic 1200W </h4>
           <table>
             <tbody>
               <tr><td>Power</td><td>1200W</td></tr>
@@ -191,12 +205,12 @@ const VardaanBasic = () => {
     <Row className="align-items-center mb-5 justify-content-between">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product5} alt="Product" className="product1-img" />
+          <img src={product05} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1200W - White</h4>
+          <h4>Vardaan Basic 1200W </h4>
           <table>
             <tbody>
               <tr><td>Power</td><td>1200W</td></tr>
@@ -219,4 +233,4 @@ const VardaanBasic = () => {
   );
 };
 
-export default VardaanBasic;
+export default VardaanMs;

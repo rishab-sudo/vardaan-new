@@ -10,7 +10,7 @@ import product02 from "../assets/products/pside-2.png";
 import product03 from "../assets/products/pside-3.png";
 import product04 from "../assets/products/pside-4.png";
 import product05 from "../assets/products//pside-5.png";
-// side images for banner-----------------------------------
+// ------------------side images for banner--------------------
 import product1 from "../assets/products/angle1.png";
 import product2 from "../assets/products/angle2.png";
 import product3 from "../assets/products/angle3.png";
