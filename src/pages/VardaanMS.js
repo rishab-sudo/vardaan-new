@@ -26,7 +26,7 @@ import product12 from "../assets/products/angle12.png";
 import ProductPageSpec from "../components/ProductPageSpec";
 
 const VardaanMs = () => {
-  const productImages = [product1, product2, product3, product4, product5,, product6, product7, product8, product9, product10, product11, product12];
+  const productImages = [product1, product2, product3, product4, product5,product6, product7, product8, product9, product10, product11, product12];
   const colors = ["red", " black", "blue", "green", "white"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
