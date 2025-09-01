@@ -4,11 +4,12 @@ import "./VardaanMs.css";
 // Backgrounds
 import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
 // Product images
-// import product1 from "../assets/products/pside-1.png";
-// import product2 from "../assets/products/pside-2.png";
-// import product3 from "../assets/products/pside-3.png";
-// import product4 from "../assets/products/pside-4.png";
-// import product5 from "../assets/products//pside-5.png";
+import product01 from "../assets/products/pside-1.png";
+import product02 from "../assets/products/pside-2.png";
+import product03 from "../assets/products/pside-3.png";
+import product04 from "../assets/products/pside-4.png";
+import product05 from "../assets/products//pside-5.png";
+// side images for banner-----------------------------------
 import product1 from "../assets/products/angle1.png";
 import product2 from "../assets/products/angle2.png";
 import product3 from "../assets/products/angle3.png";
@@ -111,7 +112,7 @@ const VardaanMs = () => {
     <Row className="align-items-center mb-5 justify-content-between">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product1} alt="Product" className="product1-img" />
+          <img src={product01} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
@@ -134,7 +135,7 @@ const VardaanMs = () => {
     <Row className="align-items-center mb-5 justify-content-between flex-row-reverse">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product2} alt="Product" className="product1-img" />
+          <img src={product02} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
@@ -157,7 +158,7 @@ const VardaanMs = () => {
     <Row className="align-items-center mb-5 justify-content-between">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product3} alt="Product" className="product1-img" />
+          <img src={product03} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
@@ -180,7 +181,7 @@ const VardaanMs = () => {
     <Row className="align-items-center mb-5 justify-content-between flex-row-reverse">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product4} alt="Product" className="product1-img" />
+          <img src={product04} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
@@ -203,7 +204,7 @@ const VardaanMs = () => {
     <Row className="align-items-center mb-5 justify-content-between">
       <Col md={5}>
         <div className="product1-img-wrapper">
-          <img src={product5} alt="Product" className="product1-img" />
+          <img src={product05} alt="Product" className="product1-img" />
         </div>
       </Col>
       <Col md={6}>
