@@ -66,6 +66,7 @@ const ContactForm = () => {
   };
 
   return (
+    <Container fluid className="">
     <Container className="dealerform-container">
       {/* 🔹 Heading always at the top */}
       <h2 className="dealerform-heading">Join Our Dealer Network</h2>
@@ -141,6 +142,7 @@ const ContactForm = () => {
           <button type="submit">Submit</button>
         </div>
       </form>
+    </Container>
     </Container>
   );
 };

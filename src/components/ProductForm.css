@@ -1,9 +1,11 @@
 .productForm-fluid {
-    margin-top: 1px;
-    margin-bottom: 1px;
-  background: #000;
-  padding: 50px 0;
-  color: #fff;
+  background: url("../assets/Background/homeDealer-bg.png") no-repeat center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7); /* black overlay */
+  background-blend-mode: overlay;       /* blends overlay with image */
+  color: #ffffff !important;
+  margin-top: 0 !important;
+  padding: 3.5% 0px;
 }
 
 .productForm-content-container {
