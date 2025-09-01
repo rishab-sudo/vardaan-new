@@ -1,11 +1,13 @@
 .banner-slide {
   width: 100%;
-  height: 80vh; /* default height */
+  height: 80vh !important; 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* .banner-img{
+  height: 80vh !important;
+} */
 /* Tablet */
 @media (max-width: 768px) {
   .banner-slide {
