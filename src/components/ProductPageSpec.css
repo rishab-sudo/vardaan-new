@@ -31,14 +31,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  border: 2px solid #05956c;
   transition: transform 0.3s ease, background 0.3s;
   animation: pulseZoom 2s infinite ease-in-out;
 }
 
 /* Hover effect */
 .hotspot-point:hover .plus {
-  background: green;
+  background: #05956c;
   color: white;
   transform: scale(1.2);
 }
@@ -51,7 +51,7 @@
   top: -170px;           /* adjust so box doesn’t overlap the plus */
   left: 50%;
   transform: translateX(-50%) scale(0.8);
-  background: green;
+  background: #05956c;
   color: white;
   padding: 15px;
   border-radius: 8px;
