@@ -19,7 +19,6 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-
 .plus {
   width: 30px;
   height: 30px;
@@ -45,10 +44,10 @@
 
 /* Info box on hover */
 .hotspot-info {
-  width: 160px;          /* fixed width */
-  height: 135px;         /* fixed height (square shape) */
+  width: 160px;         
+  height: 135px;         
   position: absolute;
-  top: -170px;           /* adjust so box doesn’t overlap the plus */
+  top: -170px;           
   left: 50%;
   transform: translateX(-50%) scale(0.8);
   background: #05956c;
@@ -59,8 +58,8 @@
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
   text-align: center;
-  word-wrap: break-word;  /* break long words */
-  overflow: hidden;       /* crop extra content */
+  word-wrap: break-word;  
+  overflow: hidden;      
 }
 
 .hotspot-point:hover .hotspot-info {
