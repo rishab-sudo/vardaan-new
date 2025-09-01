@@ -53,14 +53,17 @@ const HomeAbout = () => {
         {/* RIGHT TEXT SECTION */}
         <div className='about-right-wraper'>
           <div className='about-text-wrapper'>
+
+            <div>
             <p className='page-tag-heading about-tag-heading'>ABOUT VARDAAN EV</p>
+            </div>
             <h2 className='page-heading aboutpage-heading' >Powering India's Electric Revolution</h2>
             <p>
 Vardaan EV is shaping the future of mobility with premium electric vehicles that blend performance and sustainability. We’re driving innovation towards a cleaner, greener tomorrow.
             </p>
             <div className='d-flex flex-column justify-content-start '>
               <div className='about-power-icon-box'>
-              <img className='about-power-icon' src={require("../assets/power.png")} alt=""/>
+              <img className='about-power-icon' src={require("../assets/icons/mission.png")} alt=""/>
               </div>
             <p style={{fontWeight:"bold"}}>Our Mission</p>
             <p> Creating world-class electric vehicles that transform how India moves while protecting the planet for future generations.</p>
@@ -69,7 +72,7 @@ Vardaan EV is shaping the future of mobility with premium electric vehicles that
 
         <div className='d-flex flex-column justify-content-start '>
               <div className='about-power-icon-box'>
-              <img className='about-power-icon' src={require("../assets/power.png")} alt=""/>
+              <img className='about-power-icon' src={require("../assets/icons/vision.png")} alt=""/>
               </div>
             <p style={{fontWeight:"bold"}}>Our Vision</p>
             <p>Empowering every Indian with clean, efficient mobility solutions that protect our planet while enhancing lives.</p>
