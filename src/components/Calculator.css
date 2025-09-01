@@ -21,6 +21,7 @@ margin:  auto;
 
 /* Calculator Grid */
 .calculator-grid {
+  margin-top: 3.5% !important;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;

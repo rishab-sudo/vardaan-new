@@ -13,12 +13,12 @@ const AdvancedFeatures = () => {
                 <div className="feature-page-heading-div">
       <p className='page-heading '>Engineering Excellence in Every Detail</p>
         </div>
-        <Row className="align-items-center">
+        <Row className="align-items-center mt-5">
           {/* Left Column */}
           <Col md={4} className="feature-column">
             <div className="feature-item">
                   <div className="feature-icon-box">
-              <img src={require("../assets/icons/kf1.png")} className="feature-icon" alt=""/>
+              <img src={require("../assets/icons/kf11.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Advanced Battery Technology</h5>
@@ -27,7 +27,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item">
                   <div className="feature-icon-box">
-                           <img src={require("../assets/icons/kf2.png")} className="feature-icon" alt=""/>
+                           <img src={require("../assets/icons/kf22.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading"> Smart Charging Solutions</h5>
@@ -36,7 +36,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item">
                   <div className="feature-icon-box">
-                           <img src={require("../assets/icons/kf3.png")} className="feature-icon" alt=""/>
+                           <img src={require("../assets/icons/kf33.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Safety First Design</h5>
@@ -62,7 +62,7 @@ const AdvancedFeatures = () => {
             <div className="feature-item feature-right">
                 <div className="feature-icon-box">
 
-                          <img src={require("../assets/icons/kf4.png")} className="feature-icon" alt=""/>
+                          <img src={require("../assets/icons/kf44.png")} className="feature-icon" alt=""/>
                 </div>
               <div className="feature-text">
                 <h5 className="feature-heading"> Zero Emission Performance </h5>
@@ -71,7 +71,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item feature-right">
                    <div className="feature-icon-box">
-                           <img src={require("../assets/icons/kf5.png")} className="feature-icon" alt=""/>
+                           <img src={require("../assets/icons/kf55.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Connected Technology</h5>
@@ -80,7 +80,7 @@ const AdvancedFeatures = () => {
             </div>
             <div className="feature-item feature-right">
                    <div className="feature-icon-box">
-              <img src={require("../assets/icons/kf6.png")} className="feature-icon" alt=""/>
+              <img src={require("../assets/icons/kf66.png")} className="feature-icon" alt=""/>
               </div>
               <div className="feature-text">
                 <h5 className="feature-heading">Cost-Effective Operation </h5>

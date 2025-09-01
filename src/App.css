@@ -11,9 +11,9 @@ font-size: 2vw;
 margin-bottom: 2.5rem;
 font-weight: 700;
 font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, black 90%, #05956c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* background: linear-gradient(to right, black 90%, #05956c 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
 }
 .page-tag-heading{
   font-weight: 700;
