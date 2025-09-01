@@ -4,7 +4,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  padding: 0px;
+  padding: 2.5% 0px;
   perspective: 1000px; 
 background: url("../assets/Background/hp-1.jpg") no-repeat center center;
   background-size: cover; 
