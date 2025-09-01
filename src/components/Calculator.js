@@ -24,7 +24,7 @@ const Calculator = () => {
 
   return (
     <Container className="calculator-wrapper">
-      <h2 className="calculator-title"> E-Rickshaw Savings Calculator</h2>
+      <h2 className="calculator-title page-heading"> E-Rickshaw Savings Calculator</h2>
       
       <div className="calculator-grid">
         {/* Left Slider Card */}

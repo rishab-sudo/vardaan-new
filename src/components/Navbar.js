@@ -37,6 +37,7 @@ const toggleMenu = () => {
     Products
   </a>
   <ul className={`dropdown-menu ${aboutDropdownOpen ? 'show' : ''}`}>
+    <li><a href="/product"><i className="rickshaw-icon" /> Our Products </a></li>
     <li><a href="/VardaanMs"><i className="rickshaw-icon" /> Vardaan MS </a></li>
     <li><a href="/VardaanSS"><i className="rickshaw-icon" /> Vardaan SS</a></li>
     <li><a href="/VardaanBasic"><i className="rickshaw-icon" /> Vardaan Basic</a></li>
@@ -84,6 +85,7 @@ const toggleMenu = () => {
   {/* Dropdown inline box */}
   {mobileAboutOpen && (
     <ul className="side-dropdown-menu">
+       <li><a href="/product" onClick={toggleMenu}>Our Products</a></li>
       <li><a href="/VardaanMS" onClick={toggleMenu}>Vardaan MS</a></li>
       <li><a href="/VardaanSS" onClick={toggleMenu}>Vardaan SS</a></li>
       <li><a href="/VardaanBasic" onClick={toggleMenu}>Vardaan Basic</a></li>

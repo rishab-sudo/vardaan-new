@@ -91,9 +91,11 @@ const ProductSection = () => {
             </div>
 
             {/* 👉 Know More button with unique link */}
+            <div className="know-more-btn-div">
             <a href={product.link} className="know-more-btn">
               Know More →
             </a>
+             </div>
           </div>
         ))}
       </div>

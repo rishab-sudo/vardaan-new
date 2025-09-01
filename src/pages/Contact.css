@@ -1,127 +1,169 @@
+/* Contact Page Wrapper */
 .contact-page {
-  margin-top: 125px;
+  background: #f9f9f9;
+  padding: 50px 0;
 }
 
-/* Main Parallel Section */
+.contact-content-container {
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Tag + Heading */
+.contact-tag-heading-div {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: auto; 
+  margin-bottom: 25px;
+  padding: 2px 15px;
+  background: #fff; 
+  border-radius: 30px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.page-tag-heading {
+  margin: auto;
+  text-align: center !important;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.contact-page-heading-div {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-heading {
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Main Section (Info + Form) */
 .contact-main-section {
   display: flex;
-  justify-content: space-between !important;
-  align-items: flex-start;
-  gap: 0px;
-  padding: 40px 0 !important;
   flex-wrap: wrap;
-  margin-top: 2.5%;
-  margin: auto !important;
-  /* background-color: aliceblue; */
-}
-.contact-tag-heading-div{
-text-align: center;
-  background-color: #F6F6F5;
-  max-width: fit-content !important;
-  padding: 0px 15px;
-  border-radius: 30px;
-  margin: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.contact-page-heading-div{
-  margin: auto;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact-add{
-  max-width: 75%;
-}
-/* Left: Form */
-.form-container {
-  flex: 1 1 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-container form {
-margin-left: auto;
-}
-/* Right: Info Boxes */
-.contact-info-section {
-  flex: 1 1 35%;
-  display: flex;
-  flex-direction: column;
   gap: 30px;
 }
 
-.info-box {
-  height: 200px;
-  max-height: auto !important;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  gap: 15px;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.contact-info-btn {
-  width: 95px;
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  padding: 5px 8px;
-  background: #05956c;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 6px;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.3s;
+/* Left Info Section */
+.contact-info-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
-.contact-info-btn:hover {
-  background: #05956c !important;
-  color: #ffffff !important;
+/* Info Box */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* icon upar, text+btn neeche */
+  height: 200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
-.info-box-icon-div{
-  padding: 8px;
-  border-radius: 5px;
-  background-color: #fff;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+.info-box:hover {
+  transform: translateY(-5px);
 }
+
+.info-box-icon-div {
+  align-self: flex-start;
+}
+
 .info-icon {
-  font-size: 32px;
+  font-size: 28px;
   color: #05956c;
 }
 
-/* Map */
-.map-section {
+/* Bottom section of box */
+.info-bottom {
+  display: flex;
+  justify-content: space-between; /* text left, button right */
+  align-items: flex-end;
   width: 100%;
-  margin-top: 5%;
+  gap: 10px;
+}
+
+.info-bottom p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.contact-add {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.contact-info-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #05956c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.contact-info-btn:hover {
+  background: #047d5a;
+}
+
+/* Right Contact Form */
+.form-container {
+  flex: 2;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 50px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media (max-width: 992px) {
   .contact-main-section {
     flex-direction: column;
-    align-items: center;
   }
-  .form-container, .contact-info-section {
-    flex: 1 1 100%;
-    width: 100%;
+
+  .form-container {
+    order: 2;
   }
+
+  .contact-info-section {
+    order: 1;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
   .info-box {
-height: auto !important;
-}
-.contact-info-btn {
-margin-top: 25px !important;
-}
-  .form-container form {
-margin: auto !important;
-margin-top: 2.5rem !important;
-}
+    height: auto;
+  }
+
+  .info-bottom {
+    flex-direction: column;
+    align-items: flex-start; /* mobile pe text + button stack honge */
+  }
+
+  .contact-info-btn {
+    margin-top: 8px;
+  }
 }

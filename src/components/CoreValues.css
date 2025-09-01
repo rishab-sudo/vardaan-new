@@ -117,7 +117,7 @@ min-width: 100% !important;
   /* Let slider shrink to content height */
   .corevalues-slider {
     min-width: 100%;
-    max-height: none;      /* remove fixed height */
+    max-height: none;      
     height: auto !important;
     min-height: auto !important;
   }

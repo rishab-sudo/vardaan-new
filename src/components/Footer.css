@@ -122,8 +122,8 @@
 .footer-links-column a::before {
   content: "•";
   margin-right: 8px;
-  color: #05956c; /* Change dot color if needed */
-  font-size: 1.2em; /* Optional: size of the dot */
+  color: #05956c; 
+  font-size: 1.2em; 
 }
 .footer-links-column a:hover {
   color: #05956c;

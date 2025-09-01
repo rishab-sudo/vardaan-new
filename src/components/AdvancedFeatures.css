@@ -62,11 +62,11 @@ flex-shrink: 0;
 .feature-image-wrapper {
   margin-top: 95px;
   border-radius: 25px;
-  background-color: #05956c; /* Green background */
+  background-color: #05956c; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 400px; /* Adjust background height */
+  height: 400px; 
 }
 
 .image-container {
@@ -76,7 +76,7 @@ flex-shrink: 0;
 }
 
 .feature-image {
-  width: 100% !important; /* center image */
+  width: 100% !important; 
   height: auto;
   border-radius: 20px;
 }

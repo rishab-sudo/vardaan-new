@@ -13,13 +13,13 @@
   font-weight: bold;
   margin-bottom: 30px;
   position: relative;
-  z-index: 3; /* heading hamesha upar dikhai de */
+  z-index: 3; 
 }
 
 /* Stats ko background ke beech me fix karo */
 .glance-stats {
   position: absolute;
-  top: 50%;              /* vertical center */
+  top: 50%;              
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;

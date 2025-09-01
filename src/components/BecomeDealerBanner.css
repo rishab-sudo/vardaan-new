@@ -16,6 +16,7 @@ align-items: flex-start;
 
 }
 .BecomeD-text-div{
+    color: #ffffff !important;
     max-width: 45%;
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ align-items: flex-start;
     text-align: left !important;
 }
 .heading-text-left{
-text-align: left !important;
+   text-align: left !important;
 margin-right: auto;
 }
 .becomeD-btn-div{

@@ -14,7 +14,7 @@ import ProductPageSpec from "../components/ProductPageSpec";
 
 const VardaanMs = () => {
   const productImages = [product1, product2, product3, product4, product5];
-  const colors = ["black", "red", "blue", "green", "white"];
+  const colors = ["red", " black", "blue", "green", "white"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
 
@@ -63,7 +63,7 @@ const VardaanMs = () => {
           </div>
 
           {/* Color options */}
-          <div className="product1-color-options">
+          {/* <div className="product1-color-options">
             {productImages.map((_, idx) => (
               <span
                 key={idx}
@@ -72,7 +72,7 @@ const VardaanMs = () => {
                 onClick={() => handleColorClick(idx)}
               ></span>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Feature Boxes */}
@@ -126,7 +126,7 @@ const VardaanMs = () => {
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1000W - Red</h4>
+          <h4>Vardaan MS 1000W </h4>
           <table>
             <tbody>
               <tr><td>Power</td><td>1000W</td></tr>
@@ -172,7 +172,7 @@ const VardaanMs = () => {
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1200W - Green</h4>
+          <h4>Vardaan MS 1200W </h4>
           <table>
             <tbody>
               <tr><td>Power</td><td>1200W</td></tr>
@@ -195,7 +195,7 @@ const VardaanMs = () => {
       </Col>
       <Col md={6}>
         <div className="product1-spec-table">
-          <h4>Vardaan MS 1200W - White</h4>
+          <h4>Vardaan MS 1200W </h4>
           <table>
             <tbody>
               <tr><td>Power</td><td>1200W</td></tr>

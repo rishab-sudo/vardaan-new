@@ -21,7 +21,7 @@
   background-color: #05956c;
   color: #ffffff;
   border: none;
-  border-radius: 6px !important;          /* thoda curve look */
+  border-radius: 6px !important;          
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
