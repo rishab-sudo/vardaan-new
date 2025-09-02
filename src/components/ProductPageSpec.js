@@ -5,36 +5,36 @@ import { Container } from "react-bootstrap";
 const hotspots = [
   {
     id: 1,
-    top:  "12%",
-    left: "40%",
+    top:  "24%",
+    left: "45%",
     title: "Durable Body",
     text: "Strong build ensures safety and lasting performance.",
   },
   {
     id: 2,
-    top: "50%",
+    top: "52%",
     left: "50%",
     title: "Comfortable Seat",
     text: " Ride with ease on cushioned comfort always.",
   },
   {
     id: 3,
-    top: "53%",
-    left: "20%",
+    top: "57%",
+    left: "25%",
     title: " LED Lights ",
     text: "Bright, stylish, energy-efficient visibility for night.",
   },
    {
     id: 4,
-    top: "80%",
-    left: "15%",
+    top: "78%",
+    left: "22%",
     title: " Sturdy Wheels ",
     text: " Superior grip for smooth rides on roads.",
   },
    {
     id: 5,
     top: "60%",
-    left: "70%",
+    left: "65%",
     title: " Fast Charging Battery ",
     text: "Quick charge keeps you moving without delays.",
   },
@@ -43,10 +43,10 @@ const hotspots = [
 const ProductPageSpec = () => {
   return (
     <Container className="detail-feature-section">
-    <h2 className="text-center">Detailed Features</h2>
+    <h2 className="text-center detail-feature-heading">Detailed Features</h2>
     <div className="hotspot-container">
       <img
-        src= {require("../assets/auto11.png")}
+        src= {require("../assets/products/501.png")}
         alt="Product"
         className="product-image"
       />

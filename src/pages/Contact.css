@@ -108,6 +108,8 @@
   display: inline-block;
   padding: 6px 16px;
   background: #05956c;
+  text-align: center;
+  width: 95px;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;

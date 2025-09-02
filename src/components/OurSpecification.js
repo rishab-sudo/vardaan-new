@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./OurSpecification.css";
 
 // Example images (replace with your actual assets)
-import img1 from "../assets/product-parts/xf1 (1).jpg";
-import img2 from "../assets/product-parts/xf2 (1).jpg";
-import img3 from "../assets/product-parts/xf3 (1).jpg";
-import img4 from "../assets/product-parts/xf4 (1).jpg";
-import img5 from "../assets/product-parts/xf5 (1).jpg";
+import img1 from "../assets/product-parts/durable body.jpg";
+import img2 from "../assets/product-parts/Artboard 1 (1).png";
+import img3 from "../assets/product-parts/Artboard 1 copy (1).png";
+import img5 from "../assets/product-parts/Artboard 1 copy 2 (1).png";
+import img4 from "../assets/product-parts/Artboard 1 copy 3 (1).jpg";
 
 const OurSpecification = () => {
   return (
@@ -24,17 +24,17 @@ const OurSpecification = () => {
         {/* Second Row - 2 Images */}
         <Row className="justify-content-center mb-3">
           <Col md={6} sm={12}>
-            <img src={img2} alt="our spec 2" className="our-spec-img" />
+            <img src={img2} alt="our spec 2" className="our-spec-img our-spec-sq-img" />
           </Col>
           <Col md={6} sm={12}>
-            <img src={img3} alt="our spec 3" className="our-spec-img" />
+            <img src={img3} alt="our spec 3" className="our-spec-img our-spec-sq-img" />
           </Col>
         </Row>
 
         {/* Third Row - 2 Images */}
         <Row className="justify-content-center mb-3">
           <Col md={6} sm={12}>
-            <img src={img4} alt="our spec 4" className="our-spec-img" />
+            <img src={img4} alt="our spec 4" className="our-spec-img our-spec-sq-img" />
           </Col>
           <Col md={6} sm={12}>
             <img src={img5} alt="our spec 5" className="our-spec-img" />

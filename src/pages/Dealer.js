@@ -59,11 +59,12 @@ const Dealer = () => {
   return (
     <div className="become-dealer-page">
       {/* Section 1: Banner */}
-      <section className="dealer-banner d-flex align-items-center">
-        <Container fluid className="text-center">
-          <h1 className="dealer-banner-heading">Become Our Dealer</h1>
-        </Container>
-      </section>
+  <section className="dealer-banner">
+  <div  className="">
+    <h1 className="dealer-banner-heading">Become Our Dealer</h1>
+  </div>
+</section>
+
 
       {/* Section 2: Info + Slider */}
       <section className="dealer-info">

@@ -1,18 +1,18 @@
 .become-dealer-page {
-  
   width: 100%;
   overflow-x: hidden;
 }
 
 /* Section 1 - Banner */
 .dealer-banner {
-  height: 40vh;
-  background: url("../assets/Background/bg1.png") no-repeat center center/cover;
+  height: 50vh;
+  background: url("../assets/Background/homeDealer-bg.png") no-repeat center center;
+  background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 60px;
+  align-items: center; /* ✅ center text vertically */
+  text-align: center;
 }
 
 .dealer-banner-heading {
@@ -23,7 +23,7 @@
 }
 
 /* Section 2 - Info */
-.dealer-card-icon{
+.dealer-card-icon {
   max-height: 65px !important;
   max-width: 65px !important;
   margin: auto !important;
@@ -63,28 +63,44 @@
   margin: 10px;
 }
 
-
 .dealer-card-text {
   font-size: 1rem;
   color: #333;
   line-height: 1.4;
 }
-@media (max-width: 768px) {
-  .dealer-cards-container{
-  min-width: 100% !important;
-  }
-  .dealer-card {
- width: 100%;
-  height: auto;
-  margin: auto;
-}
 
-.dealer-cards-slider {
-  min-width: 100% !important;
-  margin-top: 15px;
-}
-.dealer-card-icon{
-  max-height: 45px !important;
-  max-width: 45px !important;
+/* 📱 Mobile Fix */
+@media (max-width: 768px) {
+  .dealer-banner {
+    height: 40vh;
+    background-position: center top;
+    background-size: contain; 
+    align-items: center; 
+    padding-top: 0; 
+  }
+
+  .dealer-banner-heading {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  .dealer-cards-container {
+    min-width: 100% !important;
+  }
+
+  .dealer-card {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .dealer-cards-slider {
+    min-width: 100% !important;
+    margin-top: 15px;
+  }
+
+  .dealer-card-icon {
+    max-height: 45px !important;
+    max-width: 45px !important;
   }
 }
