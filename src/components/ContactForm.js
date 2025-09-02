@@ -6,6 +6,7 @@ const ContactForm = () => {
     firstname: '',
     lastname: '',
     email: '',
+    phone: '',
     message: ''
   });
 
@@ -18,6 +19,8 @@ const ContactForm = () => {
     if (!formData.lastname.trim()) newErrors.lastname = 'Last name is required';
     if (!formData.email.trim()) newErrors.email = 'Email is required';
     else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Email is invalid';
+    if (!formData.phone.trim()) newErrors.phone = 'Mobile number is required';
+    else if (!/^\d{10}$/.test(formData.phone)) newErrors.phone = 'Enter a valid 10-digit number';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
     return newErrors;
   };
@@ -53,7 +56,7 @@ const ContactForm = () => {
 
       if (res.ok) {
         setSubmitted(true);
-        setFormData({ firstname: '', lastname: '', email: '', message: '' });
+        setFormData({ firstname: '', lastname: '', email: '', phone: '', message: '' });
       } else {
         alert("Something went wrong. Please try again later.");
       }
@@ -65,6 +68,8 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="contact-form">
       {submitted && <p className="success-message">Message sent successfully!</p>}
+      
+      {/* First & Last Name Row */}
       <div className="name-row">
         <div>
           <label className='form-label'>First Name</label>
@@ -78,7 +83,7 @@ const ContactForm = () => {
           {errors.firstname && <p className="error">{errors.firstname}</p>}
         </div>
         <div>
-             <label className='form-label'>Last Name</label>
+          <label className='form-label'>Last Name</label>
           <input
             type="text"
             name="lastname"
@@ -89,19 +94,37 @@ const ContactForm = () => {
           {errors.lastname && <p className="error">{errors.lastname}</p>}
         </div>
       </div>
-      <div>
-           <label className='form-label'>Email Address</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        {errors.email && <p className="error">{errors.email}</p>}
+
+      {/* Email & Phone Row */}
+      <div className="name-row">
+        <div>
+          <label className='form-label'>Email Address</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p className="error">{errors.email}</p>}
+        </div>
+        <div>
+          <label className='form-label'>Mobile Number</label>
+          <input
+            type="text"
+            name="phone"
+            placeholder=" Mobile Number"
+            value={formData.phone}
+            onChange={handleChange}
+            maxLength="10"
+          />
+          {errors.phone && <p className="error">{errors.phone}</p>}
+        </div>
       </div>
+
+      {/* Message */}
       <div>
-           <label className='form-label'>Enter Message</label>
+        <label className='form-label'>Enter Message</label>
         <textarea
           name="message"
           placeholder="Message"
@@ -111,7 +134,8 @@ const ContactForm = () => {
         />
         {errors.message && <p className="error">{errors.message}</p>}
       </div>
-      <button className="contact-submit-button "type="submit">Submit</button>
+
+      <button className="contact-submit-button" type="submit">Submit</button>
     </form>
   );
 };
