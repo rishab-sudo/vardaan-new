@@ -75,18 +75,14 @@
   }
 .stat-box h3 {
   font-size: 20px;
-
 }
-
 .stat-box p {
   font-size: 15px;
   margin: 0;
 }
   .glance-bottom-image {
     bottom: -50px;
-
   }
-
   .glance-bottom-image img {
     width: 100%;
     max-width: 280px;

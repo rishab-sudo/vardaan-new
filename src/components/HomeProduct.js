@@ -51,7 +51,7 @@ const HomeProduct = () => {
               />
               <div className="spec-boxes">
                 <div className="spec-box spec-small-box">Battery: 100Ah</div>
-                <div className="spec-box " style={{fontSize:"20px", fontWeight:"700"}}>Vardaan Basic</div>
+                <div className="spec-box " style={{fontSize:"20px", fontWeight:"700"}}>VARDAAN BASIC</div>
                 <div className="spec-box spec-small-box">Speed: 45km/h</div>
               </div>
               {/* <h3 className="model-name">Model Alpha</h3> */}
@@ -68,7 +68,7 @@ const HomeProduct = () => {
               />
               <div className="spec-boxes">
                 <div className="spec-box spec-small-box">Battery: 80Ah</div>
-                <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>Vardaan MS</div>
+                <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>VARDAAN MS</div>
                 <div className="spec-box spec-small-box">Speed: 40km/h</div>
               </div>
               {/* <h3 className="model-name">Model Beta</h3> */}
@@ -85,7 +85,7 @@ const HomeProduct = () => {
               />
               <div className="spec-boxes">
                 <div className="spec-box spec-small-box">Battery: 120Ah</div>
-                <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>Vardaan SS</div>
+                <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>VARDAAN SS</div>
                 <div className="spec-box spec-small-box">Speed: 50km/h</div>
               </div>
               {/* <h3 className="model-name">Model Gamma</h3> */}
