@@ -63,7 +63,7 @@
   .glance-stats {
     flex-wrap: wrap;
      justify-content: space-between !important;
-   
+  gap: 75px !important;
   }
 
   .stat-box {
@@ -71,6 +71,7 @@
     flex: 0 0  100%;
  justify-content: space-between !important;
  align-items: center;
+
   }
 .stat-box h3 {
   font-size: 20px;
