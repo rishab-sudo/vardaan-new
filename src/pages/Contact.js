@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
 
             {/* Address Box */}
-            <div className="info-box">
+            <div className="info-box add-info-box">
               <div className='info-box-icon-div'>
                 <SiLibreofficewriter className="info-icon" />
               </div>
