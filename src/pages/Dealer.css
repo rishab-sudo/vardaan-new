@@ -5,15 +5,21 @@
 
 /* Section 1 - Banner */
 .dealer-banner {
-  height: 50vh;
-  background: url("../assets/Background/homeDealer-bg.png") no-repeat center center;
-  background-size: cover;
-  position: relative;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-items: center; /* ✅ center text vertically */
-  text-align: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.dealer-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* image banner style */
+}
+
 
 .dealer-banner-heading {
   font-size: 3rem;
@@ -71,18 +77,14 @@
 
 /* 📱 Mobile Fix */
 @media (max-width: 768px) {
-  .dealer-banner {
-    height: 40vh;
-    background-position: center top;
-    background-size: contain; 
-    align-items: center; 
-    padding-top: 0; 
-  }
 
-  .dealer-banner-heading {
-    font-size: 2rem;
-    padding: 0 10px;
-  }
+.dealer-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* image banner style */
+}
+
 
   .dealer-cards-container {
     min-width: 100% !important;

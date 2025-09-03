@@ -58,11 +58,13 @@ const Dealer = () => {
 
   return (
     <div className="become-dealer-page">
-      {/* Section 1: Banner */}
-  <section className="dealer-banner">
-  <div  className="">
-    <h1 className="dealer-banner-heading">Become Our Dealer</h1>
-  </div>
+{/* Section 1: Banner */}
+<section className="dealer-banner">
+  <img
+    src={require("../assets/Banner/Become our dealer (1).png")}
+    alt="Dealer Banner"
+    className="dealer-banner-img"
+  />
 </section>
 
 
