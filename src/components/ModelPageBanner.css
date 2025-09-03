@@ -1,73 +1,17 @@
 .banner-container {
   width: 100%;
-  height: 800px;
-  background: url("../assets/Background/product-base-background.png") no-repeat center center/cover;
+  height: auto; /* height auto so it adjusts */
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  background: url("../assets/Background/product-base-background.png") no-repeat center center/cover;
+  padding:0px; /* spacing for mobile */
+  /* box-sizing: border-box; */
 }
 
 .model-product-img {
-    width: 45%;
-  max-width: 100%;
-  z-index: 2;
-  position: relative;
-  background: none !important;
-}
-
-/* SVG overlay for lines */
-.svg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  pointer-events: none; /* prevent blocking clicks */
-}
-
-/* Line style */
-.path {
-  stroke: #222; /* line color */
-  stroke-width: 2;
-  fill: none;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  transition: stroke-dashoffset 1s ease-out;
-}
-
-/* Animate lines when active */
-.active .path {
-  stroke-dashoffset: 0;
-}
-
-/* Feature box style */
-.feature-box {
-  position: absolute;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-
-  opacity: 0;
-  transform: translateY(5px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* Show boxes after line animation */
-.active .feature-box {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 1s; /* delay box after line grows */
-}
-
-/* Optional hover effect on box */
-.feature-box:hover {
-  background: #f7f7f7;
-  border-color: #888;
-  cursor: default;
+  max-width: 100%; /* limit max size for large screens */
+  height: auto;
+  display: block;
 }

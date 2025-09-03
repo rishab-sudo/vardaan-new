@@ -16,7 +16,6 @@
 .name-row > div {
   flex: 1;
 }
-
 input,
 textarea {
   width: 100%;
@@ -25,7 +24,7 @@ textarea {
  border: none;
  outline: none;
  border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .form-label{
   font-size: 18px;
@@ -45,7 +44,6 @@ textarea {
   max-width: 150px !important;
   margin-left: auto !important;
 }
-
 .error {
   color: red;
   font-size: 14px;
