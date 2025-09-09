@@ -62,7 +62,7 @@ const About = () => {
         <Container className="about-section1-content-container">
           <div className="about-section1-left-wrapper">
             <div className='about-tag-heading-div'>
-            <p className="page-tag-heading about-tag-heading">ABOUT Vardaan Ev </p>
+            <p className="page-tag-heading about-tag-heading">ABOUT VARDAAN EV  </p>
             </div>
             <h2 className='about-sec1-heading'>Powering India's Electric Revolution</h2>
             <p>
@@ -94,7 +94,7 @@ conscious, and our journey began with a simple yet powerful idea: to build a cle
         {/* Achievements */}
         <Container className="achv-section">
           <div className="d-flex flex-column justify-content-center align-items-center m-auto">
-            <p className="page-tag-heading about-tag-heading">Know Us</p>
+            <p className="page-tag-heading about-tag-heading">KNOW US</p>
             <h2 className="page-heading">Achievements</h2>
           </div>
 
