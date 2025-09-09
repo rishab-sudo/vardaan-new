@@ -61,7 +61,9 @@ const About = () => {
         {/* Section 1 */}
         <Container className="about-section1-content-container">
           <div className="about-section1-left-wrapper">
+            <div className='about-tag-heading-div'>
             <p className="page-tag-heading about-tag-heading">ABOUT Vardaan Ev </p>
+            </div>
             <h2 className='about-sec1-heading'>Powering India's Electric Revolution</h2>
             <p>
 At Vardaan EV, we are more than just a company; we are pioneers in sustainable transportation, driven by a vision 

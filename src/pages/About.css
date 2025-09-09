@@ -57,6 +57,7 @@
   font-size: 16px;
   line-height: 1.6;
 }
+
 /* ------------ */
 .achv-section{
   margin-top: 5%;
@@ -139,6 +140,10 @@ align-items: center !important;
 .about-text h2 {
   font-size: 24px;
   margin-bottom: 15px;
+}
+.about-tag-heading{
+  text-align: left;
+  margin-right: auto;
 }
 .achv-cards-wrapper{
 flex-direction: column;
