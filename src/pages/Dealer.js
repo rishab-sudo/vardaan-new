@@ -75,7 +75,7 @@ const Dealer = () => {
           <p className="dealer-info-desc">
             Become a proud partner in our journey towards a greener tomorrow!{" "}
             <br />
-            When you join our dealer network, you don’t just sell EVs — you
+            When you join our dealer network, you don’t just sell EVs you
             power dreams, opportunities, and progress.
           </p>
 

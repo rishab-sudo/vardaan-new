@@ -106,3 +106,26 @@ width: 90%;
   flex-shrink: 0;
 }
 }
+
+@media (max-width: 991px) {
+  .feature-item,
+  .feature-item.feature-right {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .feature-column {
+    margin-bottom: 30px;
+  }
+  .feature-image-wrapper {
+  max-width: 95%;
+margin: 120px auto 50px auto;
+}
+.feature-image {
+width: 90%;
+}
+.feature-icon {
+  color: #fff;
+  flex-shrink: 0;
+}
+}
