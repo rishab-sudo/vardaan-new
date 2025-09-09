@@ -85,7 +85,7 @@ const Corevalues = () => {
                   <div key={index} className="corevalue-slide">
                     <div className="corevalue-content">
                       <div className="icon-box">
-                        <img className="value-icon" src={item.icon} alt={item.title} />
+                        <img loading="lazy" className="value-icon" src={item.icon} alt={item.title} />
                       </div>
                       <div className="text-box">
                         <h3>{item.title}</h3>

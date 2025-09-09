@@ -88,7 +88,7 @@ const HomeProduct = () => {
                 <div className="spec-box "  style={{fontSize:"20px", fontWeight:"700"}}>VARDAAN SS</div>
                 <div className="spec-box spec-small-box">Speed: 50km/h</div>
               </div>
-              {/* <h3 className="model-name">Model Gamma</h3> */}
+              {/*<h3 className="model-name">Model Gamma</h3>*/}
             </div>
           </div>
 
