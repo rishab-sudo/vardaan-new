@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ModelPageBanner from "../components/ModelPageBanner";
 import "./VardaanMs.css";
 // Backgrounds
 import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
@@ -49,45 +50,8 @@ const VardaanSS = () => {
   return (
     <div className="product1-page">
       {/* ---------- Section 1 ---------- */}
-      <section
-        className="product1-section1"
-        style={{ backgroundImage: `url(${bg1})` }}
-      >
-        <div className="product1-banner-wrapper">
-          <div className="product1-center-image">
-            <img
-              src={productImages[currentIndex]}
-              alt="Product"
-              className="product1-rotating-image"
-            />
-          </div>
-
-          {/* Color options */}
-          {/* <div className="product1-color-options">
-            {productImages.map((_, idx) => (
-              <span
-                key={idx}
-                className="product1-color-circle"
-                style={{ backgroundColor: colors[idx] }}
-                onClick={() => handleColorClick(idx)}
-              ></span>
-            ))}
-          </div> */}
-        </div>
-
-        {/* Feature Boxes */}
-        {/* <Container className="product1-feature-boxes">
-          <Row>
-            {["Feature 1", "Feature 2", "Feature 3", "Feature 4"].map(
-              (tagline, index) => (
-                <Col key={index} md={3} sm={6} xs={12} className="product1-feature-box">
-                  <div className="product1-icon">⭐</div>
-                  <p className="product1-tagline">{tagline}</p>
-                </Col>
-              )
-            )}
-          </Row>
-        </Container> */}
+  <section>
+    <ModelPageBanner/>
       </section>
 
       {/* ---------- Section 2 ---------- */}

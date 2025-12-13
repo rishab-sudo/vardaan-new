@@ -5,6 +5,7 @@ import "./VardaanMs.css";
 // import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
  import bg1 from "../assets/Background/download.jpg";
 // Product images
+import ModelPageBanner from "../components/ModelPageBanner";
 import product01 from "../assets/products/pside-1.png";
 import product02 from "../assets/products/pside-2.png";
 import product03 from "../assets/products/pside-3.png";
@@ -64,45 +65,8 @@ const VardaanMs = () => {
   return (
     <div className="product1-page">
       {/* ---------- Section 1 ---------- */}
-      <section
-        className="product1-section1"
-        style={{ backgroundImage: `url(${bg1})` }}
-      >
-        <div className="product1-banner-wrapper">
-          <div className="product1-center-image">
-            <img
-              src={productImages[currentIndex]}
-              alt="Product"
-              className="product1-rotating-image"
-            />
-          </div>
-
-          {/* Color options */}
-          {/* <div className="product1-color-options">
-            {productImages.map((_, idx) => (
-              <span
-                key={idx}
-                className="product1-color-circle"
-                style={{ backgroundColor: colors[idx] }}
-                onClick={() => handleColorClick(idx)}
-              ></span>
-            ))}
-          </div> */}
-        </div>
-
-        {/* Feature Boxes */}
-        {/* <Container className="product1-feature-boxes">
-          <Row>
-            {["Long Battery Life ", "High Load Capacity ", "Smooth Performance", "Fast Charging"].map(
-              (tagline, index) => (
-                <Col key={index} md={3} sm={6} xs={12} className="product1-feature-box">
-                  <div className="product1-icon">⭐</div>
-                  <p className="product1-tagline">{tagline}</p>
-                </Col>
-              )
-            )}
-          </Row>
-        </Container> */}
+    <section>
+    <ModelPageBanner/>
       </section>
 
       {/* ---------- Section 2 ---------- */}
