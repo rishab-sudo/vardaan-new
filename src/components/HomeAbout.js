@@ -60,9 +60,9 @@ const HomeAbout = () => {
           {/* RIGHT TEXT SECTION */}
           <div className='about-right-wraper'>
             <div className='about-text-wrapper'>
-
+<div>
               <p className='page-tag-heading about-tag-heading'> ABOUT VARDAAN EV </p>
-
+</div>
               <h2 className='page-heading aboutpage-heading'>
                 Powering India's Electric Revolution
               </h2>
