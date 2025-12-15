@@ -18,7 +18,8 @@
 .rickshaw {
   position: absolute;
   top: -45px;
-  font-size: 40px;
+ width: 52px;
+ height: 52px;
   color: #ffffff;
   transition: left 0.05s linear;
 }
