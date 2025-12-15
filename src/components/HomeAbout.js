@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
 import "./HomeAbout.css";
 import { Container } from 'react-bootstrap';
 import Button from "./Button";
@@ -9,8 +10,8 @@ const HomeAbout = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 50; // target number
-    const duration = 2000; // 2 seconds
+    const end = 50;
+    const duration = 2000;
     const stepTime = Math.abs(Math.floor(duration / end));
 
     const timer = setInterval(() => {
@@ -24,66 +25,78 @@ const HomeAbout = () => {
 
   return (
     <Container fluid className="home-about-fluid">
-      <Container className="home-about-content-container">
-        
-        {/* LEFT IMAGE + COUNTER BOX */}
-        <div className='about-left-wraper'>
-          <div className="image-wrapper">
-            <img 
-              className='home-about-img'  
-              src={require("../assets/about/habout.jpg")} 
-              alt="about"
-            />
-            {/* Green box overlay */}
-            <div className="green-counter-box">
-              <div className="counter-left">
-                <div className='d-flex justify-content-center align-items-center'>
-                <FaPlus className="plus-icon" />
-                <span className="count-number">{count}</span>
+      <motion.div
+        initial={{ y: 80, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <Container className="home-about-content-container">
+
+          {/* LEFT IMAGE + COUNTER BOX */}
+          <div className='about-left-wraper'>
+            <div className="image-wrapper">
+              <img loading="lazy" 
+                className='home-about-img'  
+                src={require("../assets/about/habout.jpg")} 
+                alt="about"
+              />
+
+              <div className="green-counter-box">
+                <div className="counter-left">
+                  <div className='d-flex justify-content-center align-items-center'>
+                    <FaPlus className="plus-icon" />
+                    <span className="count-number">{count}</span>
+                  </div>
+                  <p className="counter-title">Cities</p>
                 </div>
-                <p className="counter-title">Cities</p>
-              </div>
-              <div className="counter-text">
-              "Electric. Efficient. Exceptional."
+                <div className="counter-text">
+                  "Electric. Efficient. Exceptional."
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* RIGHT TEXT SECTION */}
-        <div className='about-right-wraper'>
-          <div className='about-text-wrapper'>
+          {/* RIGHT TEXT SECTION */}
+          <div className='about-right-wraper'>
+            <div className='about-text-wrapper'>
 
-            <div>
-            <p className='page-tag-heading about-tag-heading'> ABOUT VARDAAN EV </p>
-            </div>
-            <h2 className='page-heading aboutpage-heading'> Powering India's Electric Revolution </h2>
-            <p>
-Vardaan EV is shaping the future of mobility with premium electric vehicles that blend performance and sustainability. We’re driving innovation towards a cleaner, greener tomorrow.
-            </p>
-            <div className='d-flex flex-column justify-content-start '>
-              <div className='about-power-icon-box'>
-              <img className='about-power-icon' src={require("../assets/icons/mission.png")} alt=""/>
+              <p className='page-tag-heading about-tag-heading'> ABOUT VARDAAN EV </p>
+
+              <h2 className='page-heading aboutpage-heading'>
+                Powering India's Electric Revolution
+              </h2>
+
+              <p>
+                Vardaan EV is shaping the future of mobility with premium electric vehicles that blend performance and sustainability. We’re driving innovation towards a cleaner, greener tomorrow.
+              </p>
+
+              <div className='d-flex flex-column justify-content-start'>
+                <div className='about-power-icon-box'>
+                  <img loading="lazy" className='about-power-icon' src={require("../assets/icons/mission.png")} alt="" />
+                </div>
+                <p style={{ fontWeight: "bold" }}>Our Mission</p>
+                <p>
+                  Creating world-class electric vehicles that transform how India moves while protecting the planet for future generations.
+                </p>
               </div>
-            <p style={{fontWeight:"bold"}}> Our Mission </p>
-            <p> Creating world-class electric vehicles that transform how India moves while protecting the planet for future generations.</p>
-            </div>
-            <div>
 
-        <div className='d-flex flex-column justify-content-start '>
-              <div className='about-power-icon-box'>
-              <img className='about-power-icon' src={require("../assets/icons/vision.png")} alt=""/>
+              <div className='d-flex flex-column justify-content-start'>
+                <div className='about-power-icon-box'>
+                  <img loading="lazy" className='about-power-icon' src={require("../assets/icons/vision.png")} alt="" />
+                </div>
+                <p style={{ fontWeight: "bold" }}>Our Vision</p>
+                <p>
+                  Empowering every Indian with clean, efficient mobility solutions that protect our planet while enhancing lives.
+                </p>
               </div>
-            <p style={{fontWeight:"bold"}}>Our Vision</p>
-            <p>Empowering every Indian with clean, efficient mobility solutions that protect our planet while enhancing lives.</p>
-            </div>          
+
+              <Button text="Read More" className="background-btn" link="/about" />
             </div>
-          
-          <Button text="Read More" className="background-btn" link="/about" />
           </div>
-        </div>
 
-      </Container>
+        </Container>
+      </motion.div>
     </Container>
   );
 };

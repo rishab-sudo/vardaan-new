@@ -11,15 +11,15 @@ const HomeBanner = () => {
   return (
     <Carousel slide interval={1500} pause={false} controls={false} indicators={true}>
       <Carousel.Item>
-        <img className="d-block w-100 banner-img" src={hbn1} alt="Slide 1" />
+        <img  loading="lazy" className="d-block w-100 banner-img" src={hbn1} alt="Slide 1" />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img className="d-block w-100 banner-img" src={hbn2} alt="Slide 2" />
+        <img  loading="lazy" className="d-block w-100 banner-img" src={hbn2} alt="Slide 2" />
       </Carousel.Item>
 
       <Carousel.Item>
-        <img className="d-block w-100 banner-img" src={hbn3} alt="Slide 3" />
+        <img  loading="lazy" className="d-block w-100 banner-img" src={hbn3} alt="Slide 3" />
       </Carousel.Item>
     </Carousel>
   );

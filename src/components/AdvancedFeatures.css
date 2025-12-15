@@ -17,13 +17,15 @@
 .feature-column {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 50px !important;
+  
 }
 
 .feature-item {
   display: flex;
   align-items: center;
   gap: 25px;
+  margin-bottom: 50px;
 }
 
 .feature-item.feature-right {

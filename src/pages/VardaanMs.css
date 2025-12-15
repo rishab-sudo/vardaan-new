@@ -104,8 +104,7 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   border-radius: 12px;
 }
-
-.model-name-div {
+.model-name-div{
   position: absolute;
   left: 15px;
   bottom: 15px;
@@ -113,15 +112,12 @@
   padding: 6px 12px;
   border-radius: 6px;
 }
-
 .product1-spec-table h4 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
   color: #222;
 }
-
-
 /* Specification table */
 .product1-spec-table {
   background: #fff;
@@ -129,7 +125,6 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 .product1-spec-table table {
   width: 100%;
   border-collapse: collapse;
@@ -144,9 +139,6 @@
   font-weight: bold;
   color: #222;
 }
-
-/* Responsive */
-
 
 /* Responsive */
 @media (max-width: 768px) {
