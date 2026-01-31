@@ -61,7 +61,7 @@ const HomeProduct = () => {
                 <div className="spec-boxes">
                   <div className="spec-box spec-small-box">Battery: 105Ah</div>
                   <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
-                    VARDAAN BASIC
+                    VARDAAN 
                   </div>
                   <div className="spec-box spec-small-box">Speed: 45km/h</div>
                 </div>

@@ -29,19 +29,19 @@ const products = [
       { color: "black", img: require("../assets/products/pside-4.png") },
     ],
   },
-  {
-    id: 3,
-    name: "Vardaan Basic",
-    category: "vardan-basic",
-    link: "/vardaanBasic", // 👉 different link
-    colors: [
-      { color: "black", img: require("../assets/products/pside-4.png") },
-      { color: "red", img: require("../assets/products/pside-1.png") },
-      { color: "white", img: require("../assets/products/pside-2.png") },
-      { color: "blue", img: require("../assets/products/pside-3.png") },
-      { color: "green", img: require("../assets/products/pside-5.png") },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   name: "Vardaan Basic",
+  //   category: "vardan-basic",
+  //   link: "/vardaanBasic", 
+  //   colors: [
+  //     { color: "black", img: require("../assets/products/pside-4.png") },
+  //     { color: "red", img: require("../assets/products/pside-1.png") },
+  //     { color: "white", img: require("../assets/products/pside-2.png") },
+  //     { color: "blue", img: require("../assets/products/pside-3.png") },
+  //     { color: "green", img: require("../assets/products/pside-5.png") },
+  //   ],
+  // },
 ];
 
 const ProductSection = () => {

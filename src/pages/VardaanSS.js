@@ -1,85 +1,76 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ModelPageBanner from "../components/ModelPageBanner";
 import "./VardaanMs.css";
-// Backgrounds
-import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
+
 // Product images
 import product1 from "../assets/products/pside-1.png";
 import product2 from "../assets/products/pside-2.png";
 import product3 from "../assets/products/pside-3.png";
 import product4 from "../assets/products/pside-4.png";
-import product5 from "../assets/products//pside-5.png";
+import product5 from "../assets/products/pside-5.png";
+
 // Specs component
 import ProductPageSpec from "../components/ProductPageSpec";
 
 const VardaanSS = () => {
   const productImages = [product1, product2, product3, product4, product5];
-  const colors = ["black", "red", "blue", "green", "white"];
-  const [currentIndex, setCurrentIndex] = useState(0);
+
   const intervalRef = useRef(null);
+  const indexRef = useRef(0); // internal index, no state needed
 
   // Auto rotate
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % productImages.length);
+      indexRef.current = (indexRef.current + 1) % productImages.length;
     }, 2000);
+
     return () => clearInterval(intervalRef.current);
-  }, []);
+  }, [productImages.length]);
 
   // Scroll to change image
   useEffect(() => {
     const handleScroll = () => {
-      setCurrentIndex((prev) => (prev + 1) % productImages.length);
+      indexRef.current = (indexRef.current + 1) % productImages.length;
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleColorClick = (idx) => {
-    setCurrentIndex(idx);
-    clearInterval(intervalRef.current);
-    setTimeout(() => {
-      intervalRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % productImages.length);
-      }, 2000);
-    }, 5000);
-  };
-// ---------------------------------------------------------------------------------------------
+  }, [productImages.length]);
 
   return (
     <div className="product1-page">
-      {/* ---------- Section 1 ---------- */}
-  <section>
-    <ModelPageBanner/>
+      {/* Section 1 */}
+      <section>
+        <ModelPageBanner />
       </section>
 
-      {/* ---------- Section 2 ---------- */}
-    {/* ---------- Section 2 ---------- */}
-<section className="product1-section2">
-  <Container>
-    {/* Row 1 */}
-    <Row className="align-items-center mb-5 justify-content-between">
-      <Col md={5}>
-        <div className="product1-img-wrapper">
-          <img src={product1} alt="Product" className="product1-img" />
-        </div>
-      </Col>
-      <Col md={6}>
-        <div className="product1-spec-table">
-          <h4>Vardaan SS 1000W</h4>   
-          <table>
-            <tbody>
-              <tr><td>Power</td><td>1000W</td></tr>
-              <tr><td>Battery</td><td>Eastman </td></tr>
-              <tr><td>Battery warranty</td><td className="highlight">12 Months</td></tr>
-              <tr><td>Battery Count</td><td>4 (Four)</td></tr>
-              <tr><td>AH</td><td>135/140AH</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </Col>
-    </Row>
+      {/* Section 2 */}
+      <section className="product1-section2">
+        <Container>
+
+          {/* Row 1 */}
+          <Row className="align-items-center mb-5 justify-content-between">
+            <Col md={5}>
+              <div className="product1-img-wrapper">
+                <img src={product1} alt="Product" className="product1-img" />
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="product1-spec-table">
+                <h4>Vardaan SS 1000W</h4>
+                <table>
+                  <tbody>
+                    <tr><td>Power</td><td>1000W</td></tr>
+                    <tr><td>Battery</td><td>Eastman</td></tr>
+                    <tr><td>Battery warranty</td><td className="highlight">12 Months</td></tr>
+                    <tr><td>Battery Count</td><td>4 (Four)</td></tr>
+                    <tr><td>AH</td><td>135/140AH</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </Col>
+          </Row>
 
     {/* Row 2 */}
     <Row className="align-items-center mb-5 justify-content-between flex-row-reverse">

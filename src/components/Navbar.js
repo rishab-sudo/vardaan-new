@@ -40,7 +40,7 @@ const toggleMenu = () => {
     <li><a href="/product"><i className="rickshaw-icon" /> Our Products </a></li>
     <li><a href="/VardaanMs"><i className="rickshaw-icon" /> Vardaan MS </a></li>
     <li><a href="/VardaanSS"><i className="rickshaw-icon" /> Vardaan SS</a></li>
-    <li><a href="/VardaanBasic"><i className="rickshaw-icon" /> Vardaan Basic</a></li>
+    {/* <li><a href="/VardaanBasic"><i className="rickshaw-icon" /> Vardaan Basic</a></li> */}
   </ul>
 </li>
         

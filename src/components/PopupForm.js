@@ -11,24 +11,16 @@ const PopupForm = () => {
   const [errors, setErrors] = useState({});
 
   // Show popup after 5 seconds (only first visit)
-//   useEffect(() => {
-//     const isShown = localStorage.getItem("popupShown");
-//     if (!isShown) {
-//       const timer = setTimeout(() => {
-//         setShowPopup(true);
-//         localStorage.setItem("popupShown", "true");
-//       }, 5000);
-//       return () => clearTimeout(timer);
-//     }
-//   }, []);
-useEffect(() => {
-  const timer = setTimeout(() => {
-    setShowPopup(true);
-  }, 5000);
-
-  return () => clearTimeout(timer);
-}, []);
-
+  useEffect(() => {
+    const isShown = localStorage.getItem("popupShown");
+    if (!isShown) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+        localStorage.setItem("popupShown", "true");
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

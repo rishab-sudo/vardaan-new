@@ -28,6 +28,7 @@ const Preloader = ({ onFinish }) => {
         <img src={require("../assets/icons/Artboard 1trgtrf.png")}
           className="rickshaw"
           style={{ left: `${100 - count}%` }}
+          alt=""
         />
 
         {/* Line */}
