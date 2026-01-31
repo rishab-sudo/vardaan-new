@@ -59,7 +59,7 @@ const HomeProduct = () => {
                   loading="lazy"
                 />
                 <div className="spec-boxes">
-                  <div className="spec-box spec-small-box">Battery: 100Ah</div>
+                  <div className="spec-box spec-small-box">Battery: 105Ah</div>
                   <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
                     VARDAAN BASIC
                   </div>

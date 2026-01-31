@@ -87,7 +87,7 @@
 
 /* ---------- Section 2 ---------- */
 .product1-section2 {
-  padding: 60px 20px;
+  padding: 45px 20px;
 }
 
 .product1-img-wrapper {
@@ -101,7 +101,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 7px 15px rgba(0,0,0,0.1);
   border-radius: 12px;
 }
 .model-name-div{

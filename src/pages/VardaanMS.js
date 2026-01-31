@@ -51,8 +51,8 @@ const VardaanMs = () => {
             <tbody>
               <tr><td>Power</td><td>1000W</td></tr>
               <tr><td>Battery</td><td>Eastman</td></tr>
-              <tr><td>Battery warranty</td><td className="highlight">12 Months</td></tr>
-              <tr><td>Battery Count</td><td>4 (Four)</td></tr>
+              <tr><td>Battery warranty</td><td className="highlight">15 Months</td></tr>
+              <tr><td>Battery Count</td><td>4 (Four )</td></tr>
               <tr><td>AH</td><td>130/135AH</td></tr>
             </tbody>
           </table>
@@ -74,7 +74,7 @@ const VardaanMs = () => {
             <tbody>
               <tr><td>Power</td><td>1000W</td></tr>
               <tr><td>Battery</td><td>Eastman</td></tr>
-              <tr><td>Battery warranty</td><td className="highlight">15 Months</td></tr>
+              <tr><td>Battery warranty</td><td className="highlight">36 Months</td></tr>
               <tr><td>Battery Count</td><td>4 (Four)</td></tr>
               <tr><td>AH</td><td className="highlight">135/140AH</td></tr>
             </tbody>
@@ -145,7 +145,7 @@ const VardaanMs = () => {
               <tr><td>Battery</td><td>Eastman</td></tr>
               <tr><td>Battery warranty</td><td className="highlight">36 Months</td></tr>
               <tr><td>Battery Count</td><td className="highlight">1 (One)</td></tr>
-              <tr><td>AH</td><td className="highlight">100AH</td></tr>
+              <tr><td>AH</td><td className="highlight">105AH</td></tr>
             </tbody>
           </table>
         </div>

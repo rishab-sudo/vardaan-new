@@ -104,7 +104,7 @@ conscious, and our journey began with a simple yet powerful idea: to build a cle
 
               <img className="achv-card-img" src={require('../assets/icons/Ac1.png')} alt=""/>
               </div>
-              <Counter target={30} suffix="K+" delay={2000} />
+              <Counter target={3.2} suffix="K+" delay={2000} />
               <p>EV Sold</p>
             </div>
 
@@ -113,7 +113,7 @@ conscious, and our journey began with a simple yet powerful idea: to build a cle
 
               <img className="achv-card-img" src={require('../assets/icons/Ac2.png')} alt=""/>
               </div>
-              <Counter target={25} suffix="K+" delay={2000} />
+              <Counter target={3.1} suffix="k+" delay={2000} />
               <p>Happy Customers</p>
             </div>
 
@@ -131,7 +131,7 @@ conscious, and our journey began with a simple yet powerful idea: to build a cle
 
               <img className="achv-card-img" src={require('../assets/icons/Ac4.png')} alt=""/>
               </div>
-              <Counter target={15} suffix=" k+" delay={2000} />
+              <Counter target={33} suffix="k+" delay={2000} />
               <p>Green Kilometers Driven</p>
             </div>
           </div>

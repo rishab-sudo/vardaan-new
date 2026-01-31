@@ -50,7 +50,7 @@ const HomeSpecification = () => {
 
           <div className='spec-left-boxs-div'>
             <div className='spec-left-boxs'>
-              <p>120km</p>
+              <p>100+ km</p>
               <p style={{ textTransform: "uppercase", fontSize: "20px" }}>Range</p>
             </div>
             <div className='spec-left-boxs'>

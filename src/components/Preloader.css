@@ -23,7 +23,6 @@
   color: #ffffff;
   transition: left 0.05s linear;
 }
-
 /* Grey line */
 .loader-line {
   width: 100%;
@@ -31,7 +30,6 @@
   background: #777;
   margin: 20px auto 10px;
 }
-
 /* Text */
 .loader-text {
   color: #ccc;

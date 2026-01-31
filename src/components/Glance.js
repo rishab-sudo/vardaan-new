@@ -31,7 +31,8 @@ const Glance = () => {
             <h3>
               <CountUp
                 start={1500}
-                end={2000}
+                end={ 3300
+}
                 duration={4}
                 separator=","
                 enableScrollSpy
@@ -44,8 +45,8 @@ const Glance = () => {
           <div className="stat-box">
             <h3>
               <CountUp
-                start={1000}
-                end={1500}
+                start={3500}
+                end={5000}
                 duration={3}
                 enableScrollSpy
                 scrollSpyOnce
@@ -57,8 +58,8 @@ const Glance = () => {
           <div className="stat-box">
             <h3>
               <CountUp
-                start={80}
-                end={120}
+                start={50}
+                end={100}
                 duration={3}
                 enableScrollSpy
                 scrollSpyOnce
