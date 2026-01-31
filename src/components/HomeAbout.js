@@ -10,7 +10,7 @@ const HomeAbout = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 50;
+    const end = 20;
     const duration = 2000;
     const stepTime = Math.abs(Math.floor(duration / end));
 
