@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./VardaanMs.css";
 // Backgrounds
-// import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
- import bg1 from "../assets/Background/product-base-background.png";
 // Product images
 import product01 from "../assets/products/pside-1.png";
 import product02 from "../assets/products/pside-2.png";
@@ -11,19 +9,11 @@ import product03 from "../assets/products/pside-3.png";
 import product04 from "../assets/products/pside-4.png";
 import product05 from "../assets/products//pside-5.png";
 // ------------------side images for banner--------------------
-
-
 // Specs component
 import ProductPageSpec from "../components/ProductPageSpec";
 import ModelPageBanner from "../components/ModelPageBanner";
 
 const VardaanMs = () => {
-
-  const colors = ["red", " black", "blue", "green", "white"];
-
-
-
-// ---------------------------------------------------------------------------------------------
 
   return (
     <div className="product1-page">

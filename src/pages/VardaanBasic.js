@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./VardaanMs.css";
 // Backgrounds
 // import bg1 from "../assets/Background/HomeProduct-bg.jpeg";
- import bg1 from "../assets/Background/download.jpg";
 // Product images
 import ModelPageBanner from "../components/ModelPageBanner";
 import product01 from "../assets/products/pside-1.png";

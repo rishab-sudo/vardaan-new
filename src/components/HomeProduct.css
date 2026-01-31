@@ -40,7 +40,7 @@ background: url("../assets/Background/hp-1.jpg") no-repeat center center;
 }
 
 .slide-image {
-  width: 95%;
+  width: 100%;
   max-width: 100%;
   height: auto;
 object-fit: contain;

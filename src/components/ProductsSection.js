@@ -45,7 +45,7 @@ const products = [
 ];
 
 const ProductSection = () => {
-  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [selectedFilter, ] = useState("all");
   const [selectedImages, setSelectedImages] = useState(
     products.reduce((acc, p) => {
       acc[p.id] = p.colors[0].img;

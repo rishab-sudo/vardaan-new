@@ -9,22 +9,27 @@ const Counter = ({ target, suffix = "", delay = 500 }) => {
   const [start, setStart] = useState(false);
   const ref = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setTimeout(() => setStart(true), delay);
-        }
-      },
-      { threshold: 0.5 }
-    );
+useEffect(() => {
+  const element = ref.current; // 👈 copy ref value once
 
-    if (ref.current) observer.observe(ref.current);
+  if (!element) return;
 
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
-  }, [delay]);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        setTimeout(() => setStart(true), delay);
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(element);
+
+  return () => {
+    observer.unobserve(element); // 👈 use copied variable
+  };
+}, [delay]);
+
 
   useEffect(() => {
     if (!start) return;
