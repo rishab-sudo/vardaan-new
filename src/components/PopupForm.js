@@ -3,23 +3,24 @@ import "./PopupForm.css";
 
 const PopupForm = () => {
   const [showPopup, setShowPopup] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
     city: "",
+    district: "",
+    planning: "",
   });
+
   const [errors, setErrors] = useState({});
 
-  // Show popup after 5 seconds (only first visit)
+  // 🔥 Popup appears after 5 seconds (EVERY TIME)
   useEffect(() => {
-    const isShown = localStorage.getItem("popupShown");
-    if (!isShown) {
-      const timer = setTimeout(() => {
-        setShowPopup(true);
-        localStorage.setItem("popupShown", "true");
-      }, 5000);
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const handleChange = (e) => {
@@ -29,9 +30,7 @@ const PopupForm = () => {
   const validate = () => {
     let newErrors = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
+    if (!formData.name.trim()) newErrors.name = "Name is required";
 
     if (!formData.mobile) {
       newErrors.mobile = "Mobile number is required";
@@ -39,9 +38,9 @@ const PopupForm = () => {
       newErrors.mobile = "Enter valid 10-digit mobile number";
     }
 
-    if (!formData.city.trim()) {
-      newErrors.city = "City is required";
-    }
+    if (!formData.city.trim()) newErrors.city = "City is required";
+    if (!formData.district.trim()) newErrors.district = "District is required";
+    if (!formData.planning.trim()) newErrors.planning = "Select planning time";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -50,7 +49,7 @@ const PopupForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log("Form Submitted:", formData);
+      console.log("Form Data:", formData);
       setShowPopup(false);
     }
   };
@@ -64,9 +63,10 @@ const PopupForm = () => {
           ✕
         </button>
 
-        <h3>Get in Touch</h3>
+        <h3>Become Our Dealer</h3>
 
         <form onSubmit={handleSubmit}>
+          {/* Name */}
           <div className="form-group">
             <input
               type="text"
@@ -78,23 +78,24 @@ const PopupForm = () => {
             {errors.name && <span className="error">{errors.name}</span>}
           </div>
 
+          {/* Mobile */}
           <div className="form-group">
-           <input
-  type="tel"
-  name="mobile"
-  placeholder="Mobile Number"
-  value={formData.mobile}
-  maxLength="10"
-  inputMode="numeric"
-  onChange={(e) => {
-    const value = e.target.value.replace(/\D/g, "");
-    setFormData({ ...formData, mobile: value });
-  }}
-/>
-
+            <input
+              type="tel"
+              name="mobile"
+              placeholder="Mobile Number"
+              maxLength="10"
+              inputMode="numeric"
+              value={formData.mobile}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, "");
+                setFormData({ ...formData, mobile: value });
+              }}
+            />
             {errors.mobile && <span className="error">{errors.mobile}</span>}
           </div>
 
+          {/* City */}
           <div className="form-group">
             <input
               type="text"
@@ -104,6 +105,38 @@ const PopupForm = () => {
               onChange={handleChange}
             />
             {errors.city && <span className="error">{errors.city}</span>}
+          </div>
+
+          {/* District */}
+          <div className="form-group">
+            <input
+              type="text"
+              name="district"
+              placeholder="District"
+              value={formData.district}
+              onChange={handleChange}
+            />
+            {errors.district && <span className="error">{errors.district}</span>}
+          </div>
+
+          {/* Planning dropdown inside input */}
+          <div className="form-group">
+            <input
+              type="text"
+              name="planning"
+              placeholder="When are you planning?"
+              list="planning-options"
+              value={formData.planning}
+              onChange={handleChange}
+            />
+            <datalist id="planning-options">
+              <option value="Start Immediate" />
+              <option value="Within Week" />
+              <option value="Start Within Month" />
+              <option value="Start Within Two Month" />
+              <option value="Start Within Three Month" />
+            </datalist>
+            {errors.planning && <span className="error">{errors.planning}</span>}
           </div>
 
           <button type="submit" className="submit-btn">
