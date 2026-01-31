@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaTruckMoving } from "react-icons/fa"; // e-rickshaw like icon
+// import { FaTruckMoving } from "react-icons/fa"; // e-rickshaw like icon
 import "./Preloader.css";
 
 const Preloader = ({ onFinish }) => {

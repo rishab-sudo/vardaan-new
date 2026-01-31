@@ -6,8 +6,8 @@ import Calculator from '../components/Calculator'
 import HomeAbout from '../components/HomeAbout'
 import AdvancedFeatures from '../components/AdvancedFeatures'
 import BecomeDealerBanner from '../components/BecomeDealerBanner'
-import Demo from '../components/ProductPageSpec'
-import ProductPageSpec from '../components/ProductPageSpec'
+// import Demo from '../components/ProductPageSpec'
+// import ProductPageSpec from '../components/ProductPageSpec'
 import Glance from '../components/Glance'
 
 const Home = () => {
