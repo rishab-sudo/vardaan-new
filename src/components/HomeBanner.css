@@ -1,9 +1,11 @@
 .banner-slide {
   width: 100%;
-  height: 80vh !important; 
+  height: auto !important; 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 85px!important;
+ 
 }
 /* .banner-img{
   height: 80vh !important;
@@ -12,12 +14,15 @@
 @media (max-width: 768px) {
   .banner-slide {
     height: 50vh;
+    height: 100%;
+     margin-top: 52px!important;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .banner-slide {
-    height: 45vh;
+    height: 50vh;
+     margin-top: 52px!important;
   }
 }

@@ -9,6 +9,7 @@ import hbn3 from "../assets/Banner/hbn3.png";
 
 const HomeBanner = () => {
   return (
+    <div className="banner-slide">
     <Carousel slide interval={1500} pause={false} controls={false} indicators={true}>
       <Carousel.Item>
         <img  loading="lazy" className="d-block w-100 banner-img" src={hbn1} alt="Slide 1" />
@@ -22,6 +23,7 @@ const HomeBanner = () => {
         <img  loading="lazy" className="d-block w-100 banner-img" src={hbn3} alt="Slide 3" />
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 };
 
