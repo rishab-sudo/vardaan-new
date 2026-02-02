@@ -36,7 +36,7 @@ const Preloader = ({ onFinish }) => {
 
         {/* Text */}
         <p className="loader-text">
-          Charging and start {count}%
+          Loading {count}%
         </p>
 
       </div>
