@@ -14,6 +14,7 @@ import Dealer from "./pages/Dealer";
 import VardaanSS from "./pages/VardaanSS";
 import VardaanMS from "./pages/VardaanMS";
 import VardaanBasic from "./pages/VardaanBasic";
+import AppButtons from "./components/AppButtons";
 
 import Preloader from "./components/Preloader";
 
@@ -41,6 +42,7 @@ function App() {
         <div className="App">
           <Navbar />
  <PopupForm />
+     <AppButtons />
           <Routes>
             <Route path="*" element={<Home />} />
             <Route path="/home" element={<Home />} />

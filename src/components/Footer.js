@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import "./Footer.css";
 
 const Footer = () => {
@@ -26,6 +26,7 @@ Join our mission to create a greener tomorrow. Explore our eco-friendly rides to
                   <a href=" https://www.facebook.com/profile.php?id=61561890425872"><FaFacebook /></a>
                   <a href="https://www.instagram.com/vardaan_ev/"><FaInstagram /></a>
                   <a href=" https://www.linkedin.com/company/vardaan-ev/"><FaLinkedin /></a>
+                 <a href="  https://youtube.com/shorts/F9EsfyJBWAo?si=mJUvIflHEwDLcKUi"><FaYoutube /></a>
                 </div>
               </div>
             </Col>
@@ -69,7 +70,7 @@ Join our mission to create a greener tomorrow. Explore our eco-friendly rides to
       </div>
 
       <div className='copyright-div'>
-        Copyright © 2025 <span style={{ color: "#05956c" }}>Vardaan ev</span>. All Right Reserved.
+        Copyright © 2026 <span style={{ color: "#05956c" }}>Vardaan ev</span>. All Right Reserved.
       </div>
     </Container>
   );

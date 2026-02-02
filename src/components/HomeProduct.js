@@ -59,11 +59,11 @@ const HomeProduct = () => {
                   loading="lazy"
                 />
                 <div className="spec-boxes">
-                  <div className="spec-box spec-small-box">Battery: 105Ah</div>
-                  <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
-                    VARDAAN 
+                  <div className="spec-box spec-small-box">Battery: 135/140AH, 48V</div>
+                  <div className="spec-box" style={{ fontSize: "15px", fontWeight: "700" }}>
+                    VARDAAN MS 1250W DLX
                   </div>
-                  <div className="spec-box spec-small-box">Speed: 45km/h</div>
+                  <div className="spec-box spec-small-box">Speed: 40km/h</div>
                 </div>
               </div>
             </div>
@@ -78,9 +78,9 @@ const HomeProduct = () => {
                   loading="lazy"
                 />
                 <div className="spec-boxes">
-                  <div className="spec-box spec-small-box">Battery: 80Ah</div>
-                  <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
-                    VARDAAN MS
+                  <div className="spec-box spec-small-box">Battery: 135/140AH, 60V</div>
+                  <div className="spec-box" style={{ fontSize: "15px", fontWeight: "700" }}>
+                    VARDAAN MS 1250W DLX
                   </div>
                   <div className="spec-box spec-small-box">Speed: 40km/h</div>
                 </div>
@@ -97,11 +97,11 @@ const HomeProduct = () => {
                   loading="lazy"
                 />
                 <div className="spec-boxes">
-                  <div className="spec-box spec-small-box">Battery: 120Ah</div>
-                  <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
-                    VARDAAN SS
+                  <div className="spec-box spec-small-box">Battery: 105AH, 48V</div>
+                  <div className="spec-box" style={{ fontSize: "15px", fontWeight: "700" }}>
+                    VARDAAN MS 1250W DLX
                   </div>
-                  <div className="spec-box spec-small-box">Speed: 50km/h</div>
+                  <div className="spec-box spec-small-box">Speed: 40km/h</div>
                 </div>
               </div>
             </div>
@@ -116,11 +116,11 @@ const HomeProduct = () => {
                   loading="lazy"
                 />
                 <div className="spec-boxes">
-                  <div className="spec-box spec-small-box">Battery: 130/135AH</div>
-                  <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
-                    Vardaan Basic
+                  <div className="spec-box spec-small-box">Battery: 135/140AH, 48V</div>
+                  <div className="spec-box" style={{ fontSize: "15px", fontWeight: "700" }}>
+                    VARDAAN SS 1250W DLX
                   </div>
-                  <div className="spec-box spec-small-box">Speed: 42km/h</div>
+                  <div className="spec-box spec-small-box">Speed: 40km/h</div>
                 </div>
               </div>
             </div>
@@ -135,13 +135,34 @@ const HomeProduct = () => {
                   loading="lazy"
                 />
                 <div className="spec-boxes">
-                  <div className="spec-box spec-small-box">Battery: 130/135AH</div>
-                  <div className="spec-box" style={{ fontSize: "20px", fontWeight: "700" }}>
-                    Vardaan MS
+                  <div className="spec-box spec-small-box">Battery: 135/140AH, 60V</div>
+                  <div className="spec-box" style={{ fontSize: "15px", fontWeight: "700" }}>
+                   VARDAAN SS 1250W DLX
                   </div>
-                  <div className="spec-box spec-small-box">Speed: 47km/h</div>
+                  <div className="spec-box spec-small-box">Speed: 40km/h</div>
                 </div>
               </div>
+              
+            </div>
+
+                 {/* Product 6 */}
+            <div className="slide-wrapper">
+              <div className="slide-content">
+                <img
+                  src={require("../assets/products/pside-5.png")}
+                  alt="Model Epsilon"
+                  className="slide-image"
+                  loading="lazy"
+                />
+                <div className="spec-boxes">
+                  <div className="spec-box spec-small-box">Battery: 105AH, 48V</div>
+                  <div className="spec-box" style={{ fontSize: "15px", fontWeight: "700" }}>
+                  VARDAAN SS 1250W DLX
+                  </div>
+                  <div className="spec-box spec-small-box">Speed: 40km/h</div>
+                </div>
+              </div>
+              
             </div>
           </Slider>
         </div>

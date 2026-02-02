@@ -126,6 +126,7 @@ const ContactForm = () => {
       <div>
         <label className='form-label'>Enter Message</label>
         <textarea
+        className='message-input'
           name="message"
           placeholder="Message"
           rows={4}

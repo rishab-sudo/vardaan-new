@@ -60,7 +60,7 @@ const colorOptions = useMemo(() => [
               <p style={{ textTransform: "uppercase", fontSize: "20px" }}>Charge</p>
             </div>
             <div className='spec-left-boxs'>
-              <p>60km/h</p>
+              <p>40km/h</p>
               <p style={{ textTransform: "uppercase", fontSize: "20px" }}>Top Speed</p>
             </div>
           </div>

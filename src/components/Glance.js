@@ -18,7 +18,7 @@ const Glance = () => {
           <div className="stat-box">
             <h3>
               <CountUp
-                end={50}
+                end={20}
                 duration={3}
                 enableScrollSpy
                 scrollSpyOnce
@@ -65,7 +65,7 @@ const Glance = () => {
                 scrollSpyOnce
               />+
             </h3>
-            <p>Per Charge</p>
+            <p> Km/Charge</p>
           </div>
 
         </div>

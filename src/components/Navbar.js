@@ -88,12 +88,11 @@ const toggleMenu = () => {
        <li><a href="/product" onClick={toggleMenu}>Our Products</a></li>
       <li><a href="/VardaanMS" onClick={toggleMenu}>Vardaan MS</a></li>
       <li><a href="/VardaanSS" onClick={toggleMenu}>Vardaan SS</a></li>
-      <li><a href="/VardaanBasic" onClick={toggleMenu}>Vardaan Basic</a></li>
+      {/* <li><a href="/VardaanBasic" onClick={toggleMenu}>Vardaan Basic</a></li> */}
     </ul>
   )}
 </li>
-
-          <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
+  <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
           {/* Mobile Become A Dealer Link */}
 <li><a href="/dealer" onClick={toggleMenu}>Become A Dealer</a> </li>
 
