@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
-import { FaQuoteLeft, FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaArrowLeft, FaArrowRight, FaMapMarkerAlt, FaUser } from "react-icons/fa";
 
 import "./Testimonials.css";
 
@@ -208,9 +208,17 @@ const settings = {
               </div>
 
               <div className="testimonial-customer">
-                <span className="customer-name">{review.name}</span>
+<span className="customer-name">
+  <FaUser style={{ marginRight: "6px", color: "#000" }} />
+  {review.name}
+</span>
+
                 <br />
-                <span className="customer-place">{review.place}</span>
+              <span className="customer-place">
+  <FaMapMarkerAlt style={{ marginRight: "6px", color: "#000" }} />
+  {review.place}
+</span>
+
               </div>
             </div>
           </div>
