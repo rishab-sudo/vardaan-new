@@ -5,7 +5,7 @@ import "./HomeBanner.css"
 // Agar images src/assets/Banner/ me hain
 import hbn1 from "../assets/Banner/Artboard 1 (1).png";
 import hbn2 from "../assets/Banner/Artboard 1 copy 2.png";
-import hbn3 from "../assets/Banner/hbn3.png";
+import hbn3 from "../assets/Banner/Artboard 1 copy.png";
 
 const HomeBanner = () => {
   return (
