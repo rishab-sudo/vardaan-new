@@ -1,5 +1,6 @@
 .testimonials-section {
     margin-top: 3.5%;
+    margin-bottom: 60px;
   background: #fff;
   padding: 0px 20px !important;
   /* background-color: #444 !important; */
@@ -35,7 +36,7 @@ display: flex !important;
   background: #fff;
   padding: 50px 25px 25px; /* top padding extra for profile image */
   border-radius: 12px;
-  box-shadow: 0px 6px 18px rgba(5, 149, 108, 0.3);
+  box-shadow: 0px 5px 9px rgba(5, 149, 108, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
@@ -52,8 +53,8 @@ display: flex !important;
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   border: 3px solid #05956c;
   background: #fff;
@@ -63,13 +64,20 @@ display: flex !important;
 
 .testimonial-text {
   font-size: 16px;
-  line-height: 1.6;
+  font-weight: 600;
+  line-height: 1.72;
   color: #444;
-  margin-bottom: 40px; /* space for bottom name box */
+  margin-top: 25px;
+  margin-bottom: 25px; /* space for bottom name box */
+}
+.testimonial-stars {
+  margin-top: -26px;
+ margin-bottom: 35px;
 }
 
 /* Customer name at bottom-left */
 .testimonial-customer {
+  text-align: left;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -79,15 +87,61 @@ display: flex !important;
 }
 
 .customer-name {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+}
+.customer-place{
+    font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+}
+/* Custom arrows container style */
+.custom-arrow {
+  position: absolute;
+  bottom: -35px;  
+  margin-right: 50px;        /* slider ke niche */
+  width: 42px;
+  height: 42px;
+  border: 2px solid #05956c;
+  border-radius: 8px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
   color: #05956c;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+/* Hover effect */
+.custom-arrow:hover {
+  background: #05956c;
+  color: #fff;
+}
+
+/* Positioning bottom right */
+.prev-arrow {
+  right: 60px;   /* left box */
+}
+
+.next-arrow {
+  right: 10px;   /* right box */
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .testimonials-section {
+margin-bottom: 15px;
+}
+  .custom-arrow{
+    display: none !important;
+  }
   .testimonial-box {
-    max-width: 90%;
+    width: 100%;
     height: auto;
     padding: 50px 15px 40px;
   }
