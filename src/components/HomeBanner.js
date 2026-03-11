@@ -3,9 +3,9 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HomeBanner.css"
 // Agar images src/assets/Banner/ me hain
-import hbn1 from "../assets/Banner/Artboard 1 (1).png";
-import hbn2 from "../assets/Banner/Artboard 1 copy 2.png";
-import hbn3 from "../assets/Banner/Artboard 1 copy.png";
+import hbn1 from "../assets/Banner/vd-bn1.png";
+import hbn2 from "../assets/Banner/vd-bn2.png";
+import hbn3 from "../assets/Banner/vd-bn3.png";
 
 const HomeBanner = () => {
   return (
